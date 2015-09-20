@@ -1,4 +1,15 @@
-<div class="jumbotron text-center">
-    <h1>The forecast Page</h1>
-    <p>This page demonstrates <span class="text-danger">nested</span> views.</p>    
+<div class="header-content-inner">
+    <div class="row">
+        <h4>Forecast</h4>
+    </div>
+    <div class="row">
+        <div ng-repeat="dayF in forecast.list">
+            <div class="col-xs-6 col-sm-3 col-md-2">
+                <h4>{{ nextDays[$index] | date : 'EEE' }}</h4>
+                <img ng-src="{{ imageLinkF[$index] }}">
+            
+                <h5>{{ dayF.temp.day}}°C</h5>
+            </div>
+        </div>
+    </div>
 </div>

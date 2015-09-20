@@ -1,4 +1,39 @@
-<div class="jumbotron text-center">
-    <h1>The currentWeather Page</h1>
-    <p>This page demonstrates <span class="text-danger">nested</span> views.</p>    
+<div class="header-content-inner">
+    <div class="row">
+    <h3>{{ weatherCurrent.name }}</h3>
+    </div>
+    <div class="row">
+    {{ today | date : 'EEEE' }}
+    <h4>{{ weatherCurrent.weather[0].description }}</h4>
+    </div>
+    
+    <div class="row">
+        <div class="col" style="float:left">
+            <img ng-src="{{ imageLink }}" class="img-responsive"/>
+        </div>
+        <div class="col">
+            <h5>{{ weatherCurrent.main.temp }} °C</h5>
+        </div>
+    </div>
+        
+    <div class="row">
+    <table class="table">
+        <tr>
+            <td>Min temp</td>
+            <td>{{ weatherCurrent.main.temp_min }} °C</td> 
+        </tr>
+        <tr>
+            <td>Max temp</td>
+            <td>{{ weatherCurrent.main.temp_max }} °C</td> 
+        </tr>
+        <tr>
+            <td>Humidity</td>
+            <td>{{ weatherCurrent.main.humidity }} %</td> 
+        </tr>
+        <tr>
+            <td>Wind</td>
+            <td>{{ weatherCurrent.wind.speed }} km/h</td> 
+        </tr>
+    </table>
+    </div>
 </div>
