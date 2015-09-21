@@ -106,14 +106,14 @@ angular.module('weatherApp')
             // console.log('Geen info opgehaald');
         // })
     // }
-    function changeInfo(dat) {
-        console.log("IK BEN HIER");
+    $scope.changeInfo = function(dat) {
+        console.log("IK BEN HIER" + dat);
         for (i=0; i<$scope.analysisData.length; i++) {
             $scope.analytics[i].name = $scope.analysisData[i].name;
             $scope.analytics[i].info = $scope.analysisData[i][dat];
         }
     }
-    changeInfo('temp');
+    $scope.changeInfo('temp');
     
     
     

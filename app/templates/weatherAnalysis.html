@@ -3,9 +3,9 @@
         <h4>Analytics</h4>
     </div>
     <div class="btn-group">
-      <button type="button" class="btn btn-default" ng-click="changeInfo()">Temp</button>
-      <button type="button" class="btn btn-default" ng-click="changeInfo()">Humidity</button>
-      <button type="button" class="btn btn-default" ng-click="changeInfo()">Wind</button>
+      <button type="button" class="btn btn-default" ng-click="changeInfo('temp')">Temperature</button>
+      <button type="button" class="btn btn-default" ng-click="changeInfo('humidity')">Humidity</button>
+      <button type="button" class="btn btn-default" ng-click="changeInfo('wind')">Wind speed</button>
     </div>
     <div class="row">
         <div ng-repeat="stad in analytics">
