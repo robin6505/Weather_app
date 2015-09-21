@@ -1,3 +1,23 @@
-<div class="header-content-inner">
-    <h3>The livestream section</h3>
+<div class="header-content-inner" style="margin-top: 10px">
+    <div class="row .text-center" >
+        <div class="col-md-2 col-md-offset-5">
+            <h3>{{ liveStream.name }}</h3> 
+        </div>
+        <div class="col-sm-1"><img ng-src="{{ imageLinkLS }}" class="img-responsive"/></div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4">
+            <h5>Temperature:</h5>
+            <h5>{{ liveStream.main.temp }} °C</h5>
+        </div>
+        <div class="col-sm-4">
+            <h5>Humidity:</h5>
+            <h5>{{ liveStream.main.humidity }} °C</h5>
+        </div>
+        <div class="col-sm-4">
+            <h5>Wind speed:</h5>
+            <h5>{{ weatherCurrent.wind.speed }} km/h</h5>
+        </div>
+        
+    </div>
 </div>

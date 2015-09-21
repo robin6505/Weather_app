@@ -1,4 +1,18 @@
-<div class="header-content-inner">
-    <h1>Weather Analysis</h1>
-    <p>This section demonstrates <span class="text-danger">weather analysis</span></p>    
+<div class="header-content-inner" style="margin-top: 10px">
+    <div class="row">
+        <h4>Analytics</h4>
+    </div>
+    <div class="btn-group">
+      <button type="button" class="btn btn-default" ng-click="changeInfo()">Temp</button>
+      <button type="button" class="btn btn-default" ng-click="changeInfo()">Humidity</button>
+      <button type="button" class="btn btn-default" ng-click="changeInfo()">Wind</button>
+    </div>
+    <div class="row">
+        <div ng-repeat="stad in analytics">
+            <div class="col-xs-6 col-sm-3 col-md-2">
+                <h4>{{ stad.name }}</h4>
+                <h5>{{ stad.info }}</h5>
+            </div>
+        </div>
+    </div>    
 </div>

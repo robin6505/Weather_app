@@ -1,2 +1,16 @@
- .navbar { border-radius:0; }
+ .navbar { 
+ 	border-radius:0;
+	background-color: rgba(0,0,0,0.5); 
+	border-bottom: 0px; 
+	}
+ 
+ header .header-content .header-content-inner {
+	 background-color: rgba(0,0,0,0.5);
+	 border-radius: 15px;
+    }
+	
+navbar navbar-default {
+	 background-color: rgba(0,0,0,0.5);
+
+}
  

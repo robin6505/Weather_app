@@ -1,4 +1,5 @@
 <div class="header-content-inner">
+<div class="container-fluid"> 
     <div class="row">
     <h3>{{ weatherCurrent.name }}</h3>
     </div>
@@ -15,17 +16,9 @@
             <h5>{{ weatherCurrent.main.temp }} °C</h5>
         </div>
     </div>
-        
+       
     <div class="row">
     <table class="table">
-        <tr>
-            <td>Min temp</td>
-            <td>{{ weatherCurrent.main.temp_min }} °C</td> 
-        </tr>
-        <tr>
-            <td>Max temp</td>
-            <td>{{ weatherCurrent.main.temp_max }} °C</td> 
-        </tr>
         <tr>
             <td>Humidity</td>
             <td>{{ weatherCurrent.main.humidity }} %</td> 
@@ -35,5 +28,6 @@
             <td>{{ weatherCurrent.wind.speed }} km/h</td> 
         </tr>
     </table>
+    </div>
     </div>
 </div>

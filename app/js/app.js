@@ -22,8 +22,8 @@ weatherApp.config(function($stateProvider, $urlRouterProvider) {
                 'currentBox@result': { templateUrl: 'templates/currentWeather.html', controller: 'SimpleCtrl' },
                 'forecastBox@result': { templateUrl: 'templates/forecast.html', controller: 'SimpleCtrl' },
                 'pastBox@result': { templateUrl: 'templates/pastDays.html' },
-                'livestreamBox@result': { templateUrl: 'templates/livestream.html' },
-                'analysisBox@result': { templateUrl: 'templates/weatherAnalysis.html' }                
+                'livestreamBox@result': { templateUrl: 'templates/livestream.html', controller: 'SimpleCtrl' },
+                'analysisBox@result': { templateUrl: 'templates/weatherAnalysis.html', controller: 'SimpleCtrl' }                
             }
         })        
         $urlRouterProvider.otherwise('/main');
