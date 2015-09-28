@@ -15,6 +15,9 @@ import play.api.mvc._
 import play.api.libs.concurrent.Execution.Implicits._
 import java.util.concurrent.TimeoutException
 
+import scala.concurrent.duration._
+import scala.concurrent.Await
+
 
 class Application @Inject() (ws: WSClient) extends Controller {
         
@@ -35,18 +38,37 @@ class Application @Inject() (ws: WSClient) extends Controller {
     
     
     //getWeather function
-    def getWeather(city: String) = Action.async {
+    def getWeather(city: String) : JsValue = {
+        import scala.util.{Success, Failure}
         println(s"Hello, world! $city") 
         val url = (s"http://api.openweathermap.org/data/2.5/weather?q=$city")
         println(url) 
-      val request = WS.url(url).get
- 
-      request map { response => 
-        Ok(response.json)
-      } 
-      
+        val request = WS.url(url).get
+        println(request)
+        
+        Await.ready(request, 5 seconds)
+        var weatherResponse: JsValue = Json.obj()
+        request onComplete {
+          case Success(posts) => {
+              println(posts.body)
+              weatherResponse = Json.toJson(posts.body)
+          }
+          case Failure(t) => println("An error has occured: " + t.getMessage)
+        }
+        
+        //Probleem is nu dat hij returned voordat request onComplete klaar is.
+        println(weatherResponse)
+        return weatherResponse
+
+        
+
     
-  }
+    }
+    
+    def getData(city: String) = Action {
+        val resp = getWeather(city: String)
+        Ok(resp)
+    }
   
 
 

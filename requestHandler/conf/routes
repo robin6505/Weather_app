@@ -5,7 +5,7 @@
 # Home page
 GET     /                           controllers.Application.index
 GET     /places                     controllers.Application.listPlaces
-GET     /getWeather/:city           controllers.Application.getWeather(city: String)
+GET     /getData/:city              controllers.Application.getData(city: String)
 
 
 # Map static resources from the /public folder to the /assets URL path
