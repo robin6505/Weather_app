@@ -46,7 +46,7 @@ class Application @Inject() (ws: WSClient) extends Controller {
         val request = WS.url(url).get
         println(request)
         
-        Await.ready(request, 5 seconds)
+        //Optie1
         var weatherResponse: JsValue = Json.obj()
         request onComplete {
           case Success(posts) => {
@@ -59,6 +59,13 @@ class Application @Inject() (ws: WSClient) extends Controller {
         //Probleem is nu dat hij returned voordat request onComplete klaar is.
         println(weatherResponse)
         return weatherResponse
+        
+        //Optie2 Dit werkt wel met de return door de Await functie, maar is niet mooi
+        //val future = request map {
+        //  response => (response.json)
+        //}
+        //val result = Await.result(future, 2 seconds)
+        //return result
 
         
 
