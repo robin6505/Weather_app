@@ -1,4 +1,4 @@
-name := """backend_weather"""
+name := "requestHandler"
 
 version := "1.0-SNAPSHOT"
 
@@ -20,6 +20,12 @@ resolvers += "scalaz-bintray" at "http://dl.bintray.com/scalaz/releases"
 // other, legacy style, accesses its actions statically.
 routesGenerator := InjectedRoutesGenerator
 
+
+fork in run := true
+
+fork in run := true
+
+fork in run := true
 
 fork in run := true
 

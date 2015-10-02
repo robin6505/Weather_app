@@ -30,26 +30,21 @@ class Application @Inject() (ws: WSClient) extends Controller {
     val db = connection("test")
     val collection = db("places")
     
-    def listDocs(city: String) = {
-        import scala.util.{Failure, Success}
-      // Select only the documents which field 'firstName' equals 'Jack'
-      val query = BSONDocument("places" -> "Zwolle")
-
-    
-      /* Let's run this query then enumerate the response and print a readable
-       * representation of each document in the response */
-      val responseDB = collection.
-        find(query)
+    def storePlace(city: String) = {
+        val cityNoCase = city.toLowerCase();
+        val query = BSONDocument("name" -> cityNoCase)
         
-        val document = BSONDocument(
-            "name" -> city)
-    
-        val future1 : Future[WriteResult] = collection.insert(document)
+        val cursor = collection.find(query).cursor[BSONDocument]
+        val futureList2: Future[List[BSONDocument]] = cursor.collect[List]()
         
-        future1.onComplete {
-            case Failure(e) => throw e
-            case Success(writeResult) => 
-                println(s"Succesfully inserted the document with result: $writeResult")
+        //store place name if not in database
+        futureList2.map { list =>
+            println("ok, got the list: " + list)
+            println("Length of list is: " + list.length)
+            if (list.length == 0) {
+                val document = BSONDocument("name" -> cityNoCase)
+                collection.insert(document)
+            }
         }
     }
     
@@ -69,7 +64,7 @@ class Application @Inject() (ws: WSClient) extends Controller {
     }
     
     def getData(city: String) = Action.async {
-        listDocs(city: String)
+        storePlace(city: String)
         for {
             resp <- getWeather(city: String)
             resp2 <- getForecast(city: String)
