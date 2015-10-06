@@ -32,6 +32,19 @@ import play.modules.reactivemongo.json.collection.{
   JSONCollection, JsCursor
 }, JsCursor._
 
+import scala.concurrent.duration._
+import scala.concurrent.ExecutionContext
+import ExecutionContext.Implicits.global
+
+class Global extends GlobalSettings {
+
+  @Override
+  def onStart(app:Application) {
+      println("khjkjhkjhjk")
+    app.start()
+  }  
+    
+}
 
 class Application @Inject() (val reactiveMongoApi: ReactiveMongoApi) 
     extends Controller with MongoController with ReactiveMongoComponents{
@@ -44,7 +57,8 @@ class Application @Inject() (val reactiveMongoApi: ReactiveMongoApi)
     }
     
     //Nog toevoegen timer interval en tijd etc aan object toevoegen
-    def crawlData() = Action {
+    def crawlData() = {
+        println("Executes function in interval test")
         val driver = new MongoDriver
         val connection = driver.connection(List("localhost"))
         val db = connection("test")
@@ -84,8 +98,12 @@ class Application @Inject() (val reactiveMongoApi: ReactiveMongoApi)
               }
             }
           }
-          
-          Ok("JA DOEI")
+    }
+    
+    def start() = {
+        val system = akka.actor.ActorSystem("system")
+        println("word uitgevoerd")
+        system.scheduler.schedule(0 seconds, 5 seconds)(crawlData)
     }
     
 
