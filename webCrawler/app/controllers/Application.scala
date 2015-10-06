@@ -36,15 +36,6 @@ import scala.concurrent.duration._
 import scala.concurrent.ExecutionContext
 import ExecutionContext.Implicits.global
 
-class Global extends GlobalSettings {
-
-  @Override
-  def onStart(app:Application) {
-      println("khjkjhkjhjk")
-    app.start()
-  }  
-    
-}
 
 class Application @Inject() (val reactiveMongoApi: ReactiveMongoApi) 
     extends Controller with MongoController with ReactiveMongoComponents{
@@ -105,6 +96,7 @@ class Application @Inject() (val reactiveMongoApi: ReactiveMongoApi)
         println("word uitgevoerd")
         system.scheduler.schedule(0 seconds, 5 seconds)(crawlData)
     }
+    start()
     
 
     def index = Action {
