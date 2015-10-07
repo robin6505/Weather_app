@@ -1,0 +1,17 @@
+git pull origin <branch>      -> haalt alles uit <branch>
+git checkout -b <branch>      -> verander tak
+git add . 		      -> voeg bestanden toe aan commit
+git commit -m "<description>" -> maakt commit met beschrijving
+git push origin <branch>      -> push commit
+
+git stash 		      -> slaat mijn wijzigingen lokaal op
+git pull origin <branch>      -> zie boven
+git stash drop 		      -> verwijder stash
+git stash pop                 -> merge stash met nieuwe files 
+
+HTTP_SERVER
+http-server -a 0.0.0.0 -p 8000
+
+
+
+https://scotch.io/tutorials/angular-routing-using-ui-router
