@@ -53,3 +53,9 @@ New client attempting to connect on port: 63682-63675
 This client on port 63682 has uuid 9ca8d7bb-85e2-45e9-a142-979ed9c55526 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
 Connected Clients: activator-13a32bd3-e8cd-48e3-9015-ce9b9a2d7848, play-fork-run-9ca8d7bb-85e2-45e9-a142-979ed9c55526
 Taking next connection to: 63675
+Checking to see if clients are empty...
+No non-daemon clients connected after 3 min. Shutting down.
+Server socket thread exiting.
+0 clients open, will close them...
+All client sockets have been closed.
+Closing the 6764@PC-ROBIN logs at Wed Oct 07 00:55:27 CEST 2015, goodbye.

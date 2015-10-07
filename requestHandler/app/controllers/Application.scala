@@ -49,7 +49,6 @@ class Application @Inject() (ws: WSClient) extends Controller {
     }
     
     
-    
     //getWeather function
     def getWeather(city: String) : Future[JsValue] = {
         val url = (s"http://api.openweathermap.org/data/2.5/weather?q=$city$apiKey")
@@ -64,6 +63,7 @@ class Application @Inject() (ws: WSClient) extends Controller {
     }
     
     def getData(city: String) = Action.async {
+        
         storePlace(city: String)
         for {
             resp <- getWeather(city: String)
@@ -71,7 +71,11 @@ class Application @Inject() (ws: WSClient) extends Controller {
             
         } yield Ok(Json.obj(
             "CURRENTWEATHER" -> resp,
-            "FORECAST" -> resp2))
+            "FORECAST" -> resp2)).withHeaders(
+                ACCESS_CONTROL_ALLOW_ORIGIN -> "*",
+                ACCESS_CONTROL_ALLOW_CREDENTIALS -> "true"
+            )
+            
     }
   
     def index = Action {

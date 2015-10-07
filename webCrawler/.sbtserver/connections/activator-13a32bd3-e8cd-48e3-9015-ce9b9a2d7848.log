@@ -2242,3 +2242,19 @@ Sending msg to client activator-13a32bd3-e8cd-48e3-9015-ce9b9a2d7848: Background
 Sending msg to client activator-13a32bd3-e8cd-48e3-9015-ce9b9a2d7848: BackgroundJobLogEvent(1,LogMessage(info,Executes function in interval test))
 Sending msg to client activator-13a32bd3-e8cd-48e3-9015-ce9b9a2d7848: BackgroundJobLogEvent(1,LogMessage(info,Forked Play process did not exit on its own, terminating it))
 Sending msg to client activator-13a32bd3-e8cd-48e3-9015-ce9b9a2d7848: BackgroundJobFinished(8,1)
+Got request: UnlistenToEvents()
+Reading next message from client.
+Sending msg to client activator-13a32bd3-e8cd-48e3-9015-ce9b9a2d7848: (26,ReceivedResponse())
+Got request: UnlistenToValue(AttributeKey[scala.collection.Seq[java.lang.String]]("discoveredMainClasses") in Scope(Build: file:/C:/Users/Robin/Weather_appBackend/Weather_app/webCrawler/, , Project: ProjectReference(file:/C:/Users/Robin/Weather_appBackend/Weather_app/webCrawler/,root), Config: compile))
+Reading next message from client.
+Got request: UnlistenToValue(AttributeKey[scala.Option[java.lang.String]]("mainClass") in Scope(Build: file:/C:/Users/Robin/Weather_appBackend/Weather_app/webCrawler/, , Project: ProjectReference(file:/C:/Users/Robin/Weather_appBackend/Weather_app/webCrawler/,root), Config: compile))
+Reading next message from client.
+Got request: UnlistenToBuildChange()
+Reading next message from client.
+Client activator-13a32bd3-e8cd-48e3-9015-ce9b9a2d7848 closed, java.net.SocketException: Software caused connection abort: recv failed, shutting down
+Stopping client.
+Client activator-13a32bd3-e8cd-48e3-9015-ce9b9a2d7848 thread exiting.
+Dropping message (27,ReceivedResponse()) to dead client activator-13a32bd3-e8cd-48e3-9015-ce9b9a2d7848
+Dropping message (28,ReceivedResponse()) to dead client activator-13a32bd3-e8cd-48e3-9015-ce9b9a2d7848
+Dropping message (29,ReceivedResponse()) to dead client activator-13a32bd3-e8cd-48e3-9015-ce9b9a2d7848
+Dropping message (0,ReceivedResponse()) to dead client activator-13a32bd3-e8cd-48e3-9015-ce9b9a2d7848
