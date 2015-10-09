@@ -19,8 +19,7 @@ docker run -p 27017:27017 --name mongo_instance_001 -d my/repo
 docker run -d --name db my/repo
 docker run -d -p 27017:27017 --name db my/repo
 on server
-sudo docker run --name db -i -t my_mongodb
-sudo docker run -name db -i -t my_mongodb
+docker run -d -p --name db -i -t my_mongodb
 
 
 Build WebApp in docker
