@@ -26,7 +26,7 @@ class Application @Inject() (ws: WSClient) extends Controller {
     val apiKey = "&APPID=2058452e3cf07873e426f1d723339ec6"
     
     val driver = new MongoDriver
-    val connection = driver.connection(List("172.17.0.3"))
+    val connection = driver.connection(List("172.17.0.13"))
     val db = connection("test")
     val collection = db("places")
     
