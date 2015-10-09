@@ -2,7 +2,7 @@ Discovery url:
 https://discovery.etcd.io/new?size=5
 
 Voor Cluster Robin: Insert in cloud-config.yml  //Gebruiken voor alle clusters.
-https://discovery.etcd.io/95bd1dd7ec1c431242ac1f0935bcb25f
+https://discovery.etcd.io/b18ce8e4cbf0aa694e424b01f459fffe
 
 Personal Acces token:
 c08f02b46bd79ec38f341dfc2ec27354ef1e9b8e87e80b2bc30fb360f02242b4
@@ -12,7 +12,7 @@ name: WeatherApp-"Number"
 Size: 5Dollar
 Region: Amsterdam2
 Release: coreOS Stable
-
+Private Networking: true, enable userdata: true
 
 
 
