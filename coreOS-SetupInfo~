@@ -15,11 +15,18 @@ Release: coreOS Stable
 Private Networking: true, enable userdata: true
 
 Node Names:
-WeatherApp-1 95.85.2.45
+WeatherApp-1 95.85.2.45 //gebruiken als main?
 Weather-2
 WeatherApp-3
 WeatherApp-4
 WeatherApp-5
+
+service files:
+mongodb@.service   //for fleet to set up on all nodes
+vim apache-discovery@.service //to register at etcd
+
+send files into fleetctl
+fleetctl submit mongodb@.service mongodb-discovery@.service
 
 
 

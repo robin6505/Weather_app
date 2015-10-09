@@ -21,7 +21,16 @@ WeatherApp-3
 WeatherApp-4
 WeatherApp-5
 
+service files:
+mongodb@.service   //for fleet to set up on all nodes
+vim apache-discovery@.service //to register at etcd
 
+send files into fleetctl
+fleetctl submit mongodb@.service mongodb-discovery@.service
+
+fleetctl load mongodb@27017.service
+fleetctl load mongodb-discovery@27017.service
+fleetctl start mongodb@27017.service
 
 
 
