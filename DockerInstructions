@@ -1,0 +1,39 @@
+Create play images:
+http://www.poornerd.com/2014/10/10/yes-it-is-now-this-easy-to-dockerize-a-play-framework-application/
+
+In play app folder:
+sbt docker:publishLocal
+docker run -p 9000:9000 requesthandler:1.0-SNAPSHOT
+docker run -p 8080:9000 webcrawler:1.0-SNAPSHOT
+
+sudo docker run -p 9000:9000 --name request_api --link db:db requesthandler:1.0-SNAPSHOT
+sudo docker run -p 8888:8888 --name webcrawler --link db:db webcrawler:1.0-SNAPSHOT
+
+
+Build MongoDB image:
+https://docs.docker.com/examples/mongodb/
+
+Run MongoDB
+docker run -p 27017:27017 --name mongo_instance_001 -d my/repo
+
+docker run -d --name db my/repo
+docker run -d -p 27017:27017 --name db my/repo
+
+
+Build WebApp in docker
+http://rdn-consulting.com/blog/2014/11/29/publishing-a-static-angularjs-application-with-docker/#Creating_an_AngularJS_application
+
+In DockerFile
+# Build myapp server Docker container
+FROM coreos/apache
+MAINTAINER MyName
+COPY app /var/www/
+
+sudo docker build -t dockeruser/myapp .
+
+sudo docker run -d -p 9001:80 --name my-app dockeruser/myapp /usr/sbin/apache2ctl -D FOREGROUND
+
+
+CHECK IP OF CONTAINER:
+docker inspect container_name | grep IPAddress
+

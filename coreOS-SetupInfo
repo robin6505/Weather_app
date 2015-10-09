@@ -1,0 +1,36 @@
+Discovery url:
+https://discovery.etcd.io/new?size=5
+
+Voor Cluster Robin: Insert in cloud-config.yml  //Gebruiken voor alle clusters.
+https://discovery.etcd.io/95bd1dd7ec1c431242ac1f0935bcb25f
+
+Personal Acces token:
+c08f02b46bd79ec38f341dfc2ec27354ef1e9b8e87e80b2bc30fb360f02242b4
+
+Droplet info:
+name: WeatherApp-"Number"
+Size: 5Dollar
+Region: Amsterdam2
+Release: coreOS Stable
+
+
+
+
+
+
+
+
+Voor Cluster Marcel:
+https://discovery.etcd.io/bfdd22e3e7ae7cd81dae1db799827320
+
+in terminal
+export TOKEN=
+
+list Droplets:
+curl -X GET "https://api.digitalocean.com/v2/droplets"     -H "Authorization: Bearer $TOKEN"
+
+Power off droplet:
+curl -X POST -H 'Content-Type: application/json' -H 'Authorization: Bearer b7d03a6947b217efb6f3ec3bd3504582' -d '{"type":"power_off"}' "https://api.digitalocean.com/v2/droplets/DROPLET_ID/actions"
+
+
+
