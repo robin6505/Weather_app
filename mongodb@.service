@@ -11,7 +11,7 @@ EnvironmentFile=/etc/environment
 ExecStartPre=-/usr/bin/docker kill db%i
 ExecStartPre=-/usr/bin/docker rm db%i
 ExecStartPre=/usr/bin/docker pull robin6505/mongodb
-ExecStart=/usr/bin/docker run --name db%i -p ${COREOS_PUBLIC_IPV4}:%i:27017 -i -t robin6505/mongodb
+ExecStart=/usr/bin/docker run --name db%i -p ${COREOS_PUBLIC_IPV4}:%i:27017 -i -t robin6505/mongodb /usr/bin/mongod -d
 ExecStop=/usr/bin/docker stop db%i
 
 [X-Fleet]

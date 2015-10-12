@@ -55,7 +55,7 @@ class Application @Inject() (val reactiveMongoApi: ReactiveMongoApi)
 		println(timestamp)
         println("Executes function in interval test")
         val driver = new MongoDriver
-        val connection = driver.connection(List("172.17.0.3"))
+        val connection = driver.connection(List("95.85.2.45"))
         val db = connection("test")
         
         //First retrieve all the city names stored in the database

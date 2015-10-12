@@ -1,0 +1,104 @@
+INSTRUCTIONS do this on each server:
+export node1=10.129.93.43
+export node2=10.129.95.57
+export node3=10.129.96.64
+export node4=hier private ip van marcel
+export node5=hier private ip van marcel
+
+Get keyfile with:
+//GET FILES FROM ONE SERVER TO OTHER
+sftp core@95.85.2.45
+sftp> ls  
+sftp> get mongodb-keyfile   
+sftp> exit
+
+vervolgens pas permissies aan:
+sudo chmod 600 mongodb-keyfile
+sudo chown 999 mongodb-keyfile
+
+Daarna run dit: verander a;;een de --hostname="WeatherApp-3" naar de goede naam:
+docker run \
+--name db \
+-v /home/core/mongo-files/data:/data/db \
+-v /home/core:/opt/keyfile \
+-p 27017:27017 \
+-d mongo:2.6.5 --smallfiles \
+--keyFile /opt/keyfile/mongodb-keyfile \
+--replSet "rs0"
+
+Nu moet er vanaf node1 de replicas toegevoegd worden.
+
+/--------EINDE INSTRUCTIE------/
+
+docker run --name db \
+-v /home/core/mongo-files/data:/data/db \
+-v /home/core:/opt/keyfile \
+--hostname="node1.example.com" \
+-p 27017:27017 \
+-d mongo:2.6.5 --smallfiles
+
+rs.initiate()
+
+//node 2
+docker run \
+--name db \
+-v /home/core/mongo-files/data:/data/db \
+-v /home/core:/opt/keyfile \
+--hostname="WeatherApp-3" \
+-p 27017:27017 -d mongo:2.6.5 \
+--smallfiles \
+--keyFile /opt/keyfile/mongodb-keyfile \
+--replSet "rs0"
+
+//GET FILES FROM ONE SERVER TO OTHER
+$ sftp core@95.85.2.45
+sftp> ls  
+sftp> get mongodb-keyfile   
+sftp> exit
+
+----From start----
+docker run --name db \
+-v /home/core/mongo-files/data:/data/db \
+-v /home/core/:/opt/keyfile \
+--hostname="WeatherApp-1" \
+-p 27017:27017 \
+-d mongo:2.6.5 --smallfiles
+
+docker run \
+--name db \
+-v /home/core/mongo-files/data:/data/db \
+-v /home/core:/opt/keyfile \
+--hostname="WeatherApp-1" \
+--add-host WeatherApp-1:${node1} \
+--add-host WeatherApp-2:${node2} \
+--add-host WeatherApp-3:${node3} \
+-p 27017:27017 -d mongo:2.6.5 \
+--smallfiles \
+--keyFile /opt/keyfile/mongodb-keyfile \
+--replSet "rs0"
+
+docker run \
+--name db \
+-v /home/core/mongo-files/data:/data/db \
+-v /home/core:/opt/keyfile \
+--hostname="WeatherApp-2" \
+--add-host WeatherApp-1:${node1} \
+--add-host WeatherApp-2:${node2} \
+--add-host WeatherApp-3:${node3} \
+-p 27017:27017 -d mongo:2.6.5 \
+--smallfiles \
+--keyFile /opt/keyfile/mongodb-keyfile \
+--replSet "rs0"
+
+docker run \
+--name db \
+-v /home/core/mongo-files/data:/data/db \
+-v /home/core:/opt/keyfile \
+--hostname="WeatherApp-3" \
+--add-host WeatherApp-1:${node1} \
+--add-host WeatherApp-2:${node2} \
+--add-host WeatherApp-3:${node3} \
+-p 27017:27017 -d mongo:2.6.5 \
+--smallfiles \
+--keyFile /opt/keyfile/mongodb-keyfile \
+--replSet "rs0"

@@ -14,3 +14,6 @@ ExecStartPre=/usr/bin/docker pull robin6505/mongodb
 ExecStart=/usr/bin/docker run --name db%i -p ${COREOS_PUBLIC_IPV4}:%i:27017 -i -t robin6505/mongodb
 ExecStop=/usr/bin/docker stop db%i
 
+[X-Fleet]
+X-Conflicts=mongodb@*.service
+
