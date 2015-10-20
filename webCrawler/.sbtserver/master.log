@@ -1,6 +1,6 @@
-New log file opened at Wed Oct 07 00:51:41 CEST 2015 by 6764@PC-ROBIN
-jvm 6764@PC-ROBIN
-jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.45-b02
+New log file opened at Tue Oct 20 17:22:44 CEST 2015 by 6192@Toshiba-Robin
+jvm 6192@Toshiba-Robin
+jvm vmName=Java HotSpot(TM) Client VM vmVendor=Oracle Corporation vmVersion=25.60-b23
 jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
 jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
 Starting event engine
@@ -27,7 +27,7 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
 [Loading] Done in C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\project, returning: (webcrawler-build)
 Loading project definition from C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\project
-Running task... Cancel: sbt.TaskCancellationStrategy$Null$@699f117c, check cycles: false
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@26bee2, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -67,106 +67,106 @@ Set current project to webCrawler (in build file:/C:/Users/Robin/Weather_appBack
 > iflast shell
 > server-send-ready-for-request
 > server-handle-next-server-request
-> {file:/C:/Users/Robin/Weather_appBackend/Weather_app/webCrawler/}root/compile:mainClass
-Evaluating tasks: compile:mainClass
-Running task... Cancel: sbt.server.ServerTaskCancellation@626c157d, check cycles: false
-Total time: 0 s, completed 7-okt-2015 0:51:44
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/C:/Users/Robin/Weather_appBackend/Weather_app/webCrawler/}root/compile:mainClass
-Evaluating tasks: compile:mainClass
-Running task... Cancel: sbt.server.ServerTaskCancellation@214f94c6, check cycles: false
-Total time: 0 s, completed 7-okt-2015 0:51:44
-> server-post-command-cleanup
-> server-handle-next-server-request
 > {file:/C:/Users/Robin/Weather_appBackend/Weather_app/webCrawler/}root/compile:discoveredMainClasses
 Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@1bd3a99e, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@69f7b2, check cycles: false
+Invalidating C:\Program Files\Java\jre1.8.0_45\lib\rt.jar: class java.lang.Object now provided by C:\Program Files (x86)\Java\jre1.8.0_60\lib\rt.jar
 
 Initial source changes: 
 	removed:Set()
 	added: Set()
-	modified: Set()
+	modified: Set(C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\target\scala-2.11\routes\main\controllers\routes.java, C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\target\scala-2.11\routes\main\router\RoutesPrefix.scala, C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\app\controllers\Application.scala)
 Removed products: Set()
 External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
+Modified binary dependencies: Set(C:\Program Files\Java\jre1.8.0_45\lib\rt.jar)
+Initial directly invalidated sources: Set(C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\target\scala-2.11\routes\main\controllers\routes.java, C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\target\scala-2.11\routes\main\router\RoutesPrefix.scala, C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\app\controllers\Application.scala)
 
 Sources indirectly invalidated by:
 	product: Set()
-	binary dep: Set()
+	binary dep: Set(C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\target\scala-2.11\twirl\main\views\html\index.template.scala, C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\target\scala-2.11\routes\main\controllers\routes.java, C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\target\scala-2.11\twirl\main\views\html\main.template.scala, C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\target\scala-2.11\routes\main\router\RoutesPrefix.scala, C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\app\controllers\Application.scala)
 	external source: Set()
-All initially invalidated sources: Set()
+All initially invalidated sources: Set(C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\target\scala-2.11\twirl\main\views\html\index.template.scala, C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\target\scala-2.11\routes\main\controllers\routes.java, C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\target\scala-2.11\twirl\main\views\html\main.template.scala, C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\target\scala-2.11\routes\main\router\RoutesPrefix.scala, C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\app\controllers\Application.scala)
 
-Total time: 1 s, completed 7-okt-2015 0:51:45
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/C:/Users/Robin/Weather_appBackend/Weather_app/webCrawler/}root/compile:mainClass
-Evaluating tasks: compile:mainClass
-Running task... Cancel: sbt.server.ServerTaskCancellation@7165a16f, check cycles: false
-Total time: 0 s, completed 7-okt-2015 0:51:45
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/C:/Users/Robin/Weather_appBackend/Weather_app/webCrawler/}root/compile:discoveredMainClasses
-Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@efee9fc, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Total time: 0 s, completed 7-okt-2015 0:51:45
-> server-post-command-cleanup
-> server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@15da9f94, check cycles: false
-
-Initial source changes: 
-	removed:Set(C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\app\controllers\Global.scala)
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set(C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\app\controllers\Global.scala)
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set(C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\app\controllers\Global.scala)
-
-Invalidating C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\app\controllers\Global.scala...
-Invalidating (transitively) by inheritance from C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\app\controllers\Global.scala...
-Initial set of included nodes: Set(C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\app\controllers\Global.scala)
-Invalidated by transitive inheritance dependency: Set(C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\app\controllers\Global.scala)
-The C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\app\controllers\Global.scala source file has the following regular definitions changed:
-	notify, wait, $asInstanceOf, httpConfigurationCache, equals, asInstanceOf, synchronized, $isInstanceOf, onLoadConfig, notifyAll, isInstanceOf, onError, doFilter, onHandlerNotFound, ==, clone, onRequestReceived, beforeStart, configuration, onBadRequest, toString, !=, onRequestCompletion, getClass, onStop, ne, onStart, eq, onRouteRequest, ##, finalize, hashCode, AppGlobal.
+Recompiling all 8 sources: invalidated sources (8) exceeded 50.0% of all sources
+Read from stdout: Compiling 7 Scala sources and 1 Java source to C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\target\scala-2.11\classes...
+Compiling 7 Scala sources and 1 Java source to C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\target\scala-2.11\classes...
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Running cached compiler 1c53402, interfacing (CompilerInterface) with Scala compiler version 2.11.6
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	C:\Program Files (x86)\Java\jre1.8.0_60\lib\resources.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\rt.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\sunrsasign.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\jsse.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\jce.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\charsets.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\jfr.jar;C:\Program Files (x86)\Java\jre1.8.0_60\classes;C:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.scala-lang\scala-library\2.11.6\jars\scala-library.jar
+	-classpath
+	C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\target\scala-2.11\classes;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.typesafe.play\twirl-api_2.11\1.1.1\jars\twirl-api_2.11.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.apache.commons\commons-lang3\3.4\jars\commons-lang3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-server_2.11\jars\play-server_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.javassist\javassist\3.19.0-GA\bundles\javassist.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.typesafe\config\1.3.0\bundles\config.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\joda-time\joda-time\2.8.1\jars\joda-time.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.joda\joda-convert\1.7\jars\joda-convert.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.fasterxml.jackson.core\jackson-core\2.5.4\bundles\jackson-core.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.fasterxml.jackson.core\jackson-annotations\2.5.4\bundles\jackson-annotations.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.fasterxml.jackson.core\jackson-databind\2.5.4\bundles\jackson-databind.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.fasterxml.jackson.datatype\jackson-datatype-jdk8\2.5.4\bundles\jackson-datatype-jdk8.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.fasterxml.jackson.datatype\jackson-datatype-jsr310\2.5.4\bundles\jackson-datatype-jsr310.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-netty-utils\jars\play-netty-utils-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.slf4j\slf4j-api\1.7.12\jars\slf4j-api.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.slf4j\jul-to-slf4j\1.7.12\jars\jul-to-slf4j.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.slf4j\jcl-over-slf4j\1.7.12\jars\jcl-over-slf4j.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\ch.qos.logback\logback-core\1.1.3\jars\logback-core.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\ch.qos.logback\logback-classic\1.1.3\jars\logback-classic.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.13.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.13.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\commons-codec\commons-codec\1.10\jars\commons-codec.jar;C:\Users\Robin\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\Robin\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\Robin\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.google.inject\guice\4.0\jars\guice.jar;C:\Users\Robin\WaCC\activator-dist-1.3.6\repository\javax.inject\javax.inject\1\jars\javax.inject.jar;C:\Users\Robin\WaCC\activator-dist-1.3.6\repository\aopalliance\aopalliance\1.0\jars\aopalliance.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.google.inject.extensions\guice-assistedinject\4.0\jars\guice-assistedinject.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-netty-server_2.11\jars\play-netty-server_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\io.netty\netty\bundles\netty-3.10.4.Final.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.typesafe.netty\netty-http-pipelining\1.1.4\jars\netty-http-pipelining.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-jdbc-api_2.11\jars\play-jdbc-api_2.11-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.jolbox\bonecp\0.8.0.RELEASE\bundles\bonecp.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.zaxxer\HikariCP\2.3.7\bundles\HikariCP.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.h2database\h2\1.4.187\jars\h2.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\tyrex\tyrex\1.0.1\jars\tyrex.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\net.sf.ehcache\ehcache-core\2.6.11\jars\ehcache-core.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.google.guava\guava\18.0\bundles\guava.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.ning\async-http-client\1.9.21\jars\async-http-client.jar;C:\Users\Robin\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\Robin\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.apache.httpcomponents\httpcore\4.0.1\jars\httpcore.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.apache.httpcomponents\httpclient\4.0.1\jars\httpclient.jar;C:\Users\Robin\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\play2-reactivemongo_2.11\jars\play2-reactivemongo_2.11-0.11.7.play24.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo_2.11\jars\reactivemongo_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo-bson-macros_2.11\jars\reactivemongo-bson-macros_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-compiler\jars\scala-compiler-2.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.4.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.4.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo-bson_2.11\jars\reactivemongo-bson_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.apache.logging.log4j\log4j-api\jars\log4j-api-2.0.2.jar;C:\Users\Robin\.ivy2\cache\org.apache.logging.log4j\log4j-core\jars\log4j-core-2.0.2.jar;C:\Users\Robin\.ivy2\cache\org.apache.logging.log4j\log4j-to-slf4j\jars\log4j-to-slf4j-2.0.2.jar
+Read from stdout: C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\app\controllers\Application.scala:106: method cursor in trait GenericQueryBuilder is deprecated: Use [[cursor]] function with read preference.
+C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\app\controllers\Application.scala:106: method cursor in trait GenericQueryBuilder is deprecated: Use [[cursor]] function with read preference.
+Read from stdout: 				  cursor[BSONDocument].
+				  cursor[BSONDocument].
+Read from stdout: 				  ^
+				  ^
+Read from stdout: there were two feature warnings; re-run with -feature for details
+there were two feature warnings; re-run with -feature for details
+Read from stdout: two warnings found
+two warnings found
+Scala compilation took 13.636910897 s
+Java compilation took 3.31952821 s
+Java analysis took 1.002687734 s
+Java compile + analysis took 4.362494628 s
+Invalidating C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala...
+Invalidating (transitively) by inheritance from C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala...
+Initial set of included nodes: Set(C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala)
+Invalidated by transitive inheritance dependency: Set(C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala)
+The C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala source file has the following regular definitions changed:
+	crawlData.
 All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\target\scala-2.11\routes\main\controllers\routes.java
+None of the modified names appears in C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\target\scala-2.11\twirl\main\views\html\main.template.scala. This dependency is not being considered for invalidation.
+Invalidating C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala...
+Invalidating (transitively) by inheritance from C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala...
+Initial set of included nodes: Set(C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala)
+Invalidated by transitive inheritance dependency: Set(C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala)
+The C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala source file has the following regular definitions changed:
+	crawlData.
+All member reference dependencies will be considered within this context.
+Name hashing optimization doesn't apply to non-Scala dependency: C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\target\scala-2.11\routes\main\controllers\routes.java
+Invalidating C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\app\controllers\Application.scala...
+Invalidating (transitively) by inheritance from C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\app\controllers\Application.scala...
+Initial set of included nodes: Set(C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\app\controllers\Application.scala)
+Invalidated by transitive inheritance dependency: Set(C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\app\controllers\Application.scala)
+The C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\app\controllers\Application.scala source file has the following regular definitions changed:
+	start, crawlData.
+All member reference dependencies will be considered within this context.
+None of the modified names appears in C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\target\scala-2.11\routes\main\router\Routes.scala. This dependency is not being considered for invalidation.
 New invalidations:
-	Set()
-Initial set of included nodes: Set()
+	Set(C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\target\scala-2.11\routes\main\controllers\routes.java)
+Initial set of included nodes: Set(C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\target\scala-2.11\routes\main\controllers\routes.java)
+Including C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\target\scala-2.11\twirl\main\views\html\main.template.scala by C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\target\scala-2.11\routes\main\controllers\routes.java
+Including C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\target\scala-2.11\twirl\main\views\html\index.template.scala by C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\target\scala-2.11\twirl\main\views\html\main.template.scala
+Including C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\app\controllers\Application.scala by C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\target\scala-2.11\twirl\main\views\html\index.template.scala
+Including C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\target\scala-2.11\routes\main\router\Routes.scala by C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\app\controllers\Application.scala
 Previously invalidated, but (transitively) depend on new invalidations:
-	Set()
+	Set(C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\app\controllers\Application.scala)
 All newly invalidated sources after taking into account (previously) recompiled sources:Set()
-Total time: 0 s, completed 7-okt-2015 0:52:07
+Total time: 21 s, completed 20-okt-2015 17:23:19
 > server-post-command-cleanup
 > server-handle-next-server-request
-> compile
-Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@7688b881, check cycles: false
+> {file:/C:/Users/Robin/Weather_appBackend/Weather_app/webCrawler/}root/compile:mainClass
+Evaluating tasks: compile:mainClass
+Running task... Cancel: sbt.server.ServerTaskCancellation@1f4be33, check cycles: false
+Total time: 0 s, completed 20-okt-2015 17:23:19
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Robin/Weather_appBackend/Weather_app/webCrawler/}root/compile:discoveredMainClasses
+Evaluating tasks: compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@10d3fc1, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -183,63 +183,12 @@ Sources indirectly invalidated by:
 	external source: Set()
 All initially invalidated sources: Set()
 
-Total time: 0 s, completed 7-okt-2015 0:52:10
+Total time: 1 s, completed 20-okt-2015 17:23:20
 > server-post-command-cleanup
 > server-handle-next-server-request
-> backgroundRun
-Evaluating tasks: compile:backgroundRun
-Running task... Cancel: sbt.server.ServerTaskCancellation@3e674c52, check cycles: false
-Total time: 0 s, completed 7-okt-2015 0:52:26
+> {file:/C:/Users/Robin/Weather_appBackend/Weather_app/webCrawler/}root/compile:mainClass
+Evaluating tasks: compile:mainClass
+Running task... Cancel: sbt.server.ServerTaskCancellation@9230a1, check cycles: false
+Total time: 0 s, completed 20-okt-2015 17:23:20
 > server-post-command-cleanup
 > server-handle-next-server-request
-> {file:/C:/Users/Robin/Weather_appBackend/Weather_app/webCrawler/}root/*:playForkConfig
-Evaluating tasks: *:playForkConfig
-Running task... Cancel: sbt.server.ServerTaskCancellation@e262a00, check cycles: false
-Total time: 0 s, completed 7-okt-2015 0:52:27
-> server-post-command-cleanup
-> server-handle-next-server-request
-> root/playForkNotifyStart http://localhost:9000
-Evaluating tasks: *:playForkNotifyStart
-Running task... Cancel: sbt.server.ServerTaskCancellation@697a650c, check cycles: false
-Total time: 0 s, completed 7-okt-2015 0:52:28
-> server-post-command-cleanup
-> server-handle-next-server-request
-> {file:/C:/Users/Robin/Weather_appBackend/Weather_app/webCrawler/}root/*:playForkReload
-Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@1a56efe3, check cycles: false
-
-Initial source changes: 
-	removed:Set()
-	added: Set()
-	modified: Set()
-Removed products: Set()
-External API changes: API Changes: Set()
-Modified binary dependencies: Set()
-Initial directly invalidated sources: Set()
-
-Sources indirectly invalidated by:
-	product: Set()
-	binary dep: Set()
-	external source: Set()
-All initially invalidated sources: Set()
-
-Copy resource mappings: 
-	(C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\conf\application.conf,C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\target\scala-2.11\classes\application.conf)
-	(C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\conf\logback.xml,C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\target\scala-2.11\classes\logback.xml)
-	(C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\conf\routes,C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\target\scala-2.11\classes\routes)
-Total time: 1 s, completed 7-okt-2015 0:52:34
-> server-post-command-cleanup
-> server-handle-next-server-request
-> jobStop 1
-Evaluating tasks: *:jobStop
-Running task... Cancel: sbt.server.ServerTaskCancellation@3aa50191, check cycles: false
-Total time: 0 s, completed 7-okt-2015 0:52:50
-> server-post-command-cleanup
-> server-handle-next-server-request
-Done executing sbt server engine, result Right(Exit(0))
-Closing listening server socket
-Waiting for socket thread
-Waiting for request processor thread
-Waiting for command engine result
-Returning control to sbt launcher with result Exit(0)
-Closing the 6764@PC-ROBIN logs at Wed Oct 07 00:55:27 CEST 2015, goodbye.
