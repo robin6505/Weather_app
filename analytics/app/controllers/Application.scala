@@ -8,7 +8,6 @@ import play.api.Play.current
 import play.api.mvc._
 import play.api.libs.ws._
 
-
 import play.api.libs.concurrent.Execution.Implicits._
 import java.util.concurrent.TimeoutException
 
@@ -16,10 +15,14 @@ import reactivemongo.api._
 import scala.concurrent.ExecutionContext.Implicits.global
 
 import play.api.libs.iteratee.Iteratee
+import reactivemongo.bson._
 import reactivemongo.bson.BSONDocument
 import reactivemongo.api.collections.bson.BSONCollection
 import reactivemongo.api.commands.WriteResult
 
+
+import play.api.mvc.Controller
+import play.modules.reactivemongo._
 import play.modules.reactivemongo.json.BSONFormats._
 
 import play.modules.reactivemongo.json.BSONFormats
@@ -29,26 +32,18 @@ import play.modules.reactivemongo.json.collection.{
   JSONCollection, JsCursor
 }, JsCursor._
 
-class Application @Inject() (ws: WSClient) extends Controller {
+import scala.concurrent.duration._
+import scala.concurrent.ExecutionContext
+import ExecutionContext.Implicits.global
+import java.util.Calendar
+import reactivemongo.core.nodeset.Authenticate
+import reactivemongo.core.commands._
+
+
+class Application @Inject() (val reactiveMongoApi: ReactiveMongoApi) 
+    extends Controller with MongoController with ReactiveMongoComponents{
     
-        
-    val apiKey = "&APPID=2058452e3cf07873e426f1d723339ec6"
-    
-    
-    //getWeather function
-    def getWeather(city: String) : Future[JsValue] = {
-        val url = (s"http://api.openweathermap.org/data/2.5/weather?q=$city$apiKey")
-        val request = WS.url(url).get
-        request map{response => response.json}
-    }
-    
-    def getForecast(city: String) : Future[JsValue] = {
-        val url = (s"http://api.openweathermap.org/data/2.5/forecast/daily?q=$city&cnt=6&units=metric$apiKey")
-        val request = WS.url(url).get
-        request map{response => response.json}
-    }
-    
-    def getData(city: String) = Action.async {
+    def doAnalytics() =  {
         val driver = new MongoDriver
         val connection = driver.connection(List("188.226.144.15"))
         val db = connection("test")
@@ -82,7 +77,15 @@ class Application @Inject() (ws: WSClient) extends Controller {
         
             
     }
-  
+    
+    def start() = {
+        val system = akka.actor.ActorSystem("system")
+        println("word uitgevoerd")
+        system.scheduler.schedule(0 seconds, 15 minutes)(doAnalytics)
+    }
+    start()
+    
+
     def index = Action {
         Ok(views.html.index("Your new application is ready."))
     }
