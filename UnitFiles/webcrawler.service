@@ -1,0 +1,16 @@
+[Unit]
+Description=WebCrawler service
+After=etcd.service
+After=docker.service
+Requires=webcrawler-discovery.service
+
+[Service]
+TimeoutStartSec=0
+ExecStartPre=-/usr/bin/docker kill webcrawler
+ExecStartPre=-/usr/bin/docker rm webcrawler
+ExecStartPre=/usr/bin/docker pull robin6505/webcrawler1
+ExecStart=/usr/bin/docker run -p 8888:8888 --name webcrawler robin6505/webcrawler1 
+ExecStop=/usr/bin/docker stop webcrawler
+
+[X-Fleet]
+X-ConditionMachineID=9dc6606d0f8e4feaaee7bd331e7bfacf

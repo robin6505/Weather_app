@@ -1,0 +1,12 @@
+[Unit]
+Description=Announce mongodb1 service
+BindsTo=mongodb1.service
+
+[Service]
+EnvironmentFile=/custom-env.txt
+ExecStart=/bin/sh -c "while true; do etcdctl set /announce/services/mongo/db1 ${COREOS_PUBLIC_IPV4}:27017 --ttl 60; sleep 45; done"
+ExecStop=/usr/bin/etcdctl rm /announce/services/mongodb1
+
+[X-Fleet]
+X-ConditionMachineOf=mongodb1.service
+

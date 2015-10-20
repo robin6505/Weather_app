@@ -2,8 +2,18 @@ INSTRUCTIONS do this on each server:
 export node1=10.129.93.43
 export node2=10.129.95.57
 export node3=10.129.96.64
-export node4=hier private ip van marcel
-export node5=hier private ip van marcel
+export node4=10.129.58.59
+export node5=10.129.59.66
+
+COREOS_PRIVATE_IPV4=10.129.93.43
+COREOS_PUBLIC_IPV4=95.85.2.45
+
+node1=10.129.93.43
+node2=10.129.95.57
+node3=10.129.96.64
+node4=10.129.58.59
+node5=10.129.59.66
+
 
 Get keyfile with:
 //GET FILES FROM ONE SERVER TO OTHER
@@ -102,3 +112,9 @@ docker run \
 --smallfiles \
 --keyFile /opt/keyfile/mongodb-keyfile \
 --replSet "rs0"
+
+
+
+
+
+fleetctl submit mongodb1.service mongodb2.service mongodb3.service mongodb1-discovery.service mongodb2-discovery.service mongodb3-discovery.service

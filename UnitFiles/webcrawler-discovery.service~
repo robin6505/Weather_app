@@ -1,0 +1,12 @@
+[Unit]
+Description=Announce webcrawler service
+BindsTo=webcrawler.service
+
+[Service]
+EnvironmentFile=/etc/environment
+ExecStart=/bin/sh -c "while true; do etcdctl set /announce/services/webcrawler/webcrawler1 ${COREOS_PUBLIC_IPV4}:%i --ttl 60; sleep 45; done"
+ExecStop=/usr/bin/etcdctl rm /announce/services/webcrawler/webcrawler1
+
+[X-Fleet]
+X-ConditionMachineOf=webcrawler.service
+

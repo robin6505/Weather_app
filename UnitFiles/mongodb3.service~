@@ -1,0 +1,17 @@
+[Unit]
+Description=MongoDB service
+After=etcd.service
+After=docker.service
+Requires=mongodb3-discovery.service
+
+[Service]
+TimeoutStartSec=0
+KillMode=none
+EnvironmentFile=/etc/environment
+ExecStartPre=-/usr/bin/docker kill db
+ExecStartPre=-/usr/bin/docker rm db
+ExecStart=/usr/bin/docker run --name db -v /home/core/mongo-files/data:/data/db -v /home/core:/opt/keyfile --hostname="WeatherApp-3" --add-host WeatherApp-1:${node1} --add-host WeatherApp-2:${node2} --add-host WeatherApp-3:${node3} -p 27017:27017 -d mongo:2.6.5 --smallfiles --keyFile /opt/keyfile/mongodb-keyfile --replSet "rs0"
+ExecStop=/usr/bin/docker stop db
+
+[X-Fleet]
+X-ConditionMachineID=9f7794692df740af954636e2f56367ba

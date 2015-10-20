@@ -20,7 +20,7 @@ docker run -d --name db my/repo
 docker run -d -p 27017:27017 --name db my/repo
 on server
 sudo docker run --name db -i -t my_mongodb
-sudo docker run -name db -i -t my_mongodb
+
 
 
 Build WebApp in docker
@@ -33,10 +33,18 @@ MAINTAINER MyName
 COPY app /var/www/
 
 sudo docker build -t dockeruser/myapp .
+sudo docker build -t robin6505/front-end-single server .  //this is for single node server
 
 sudo docker run -d -p 9001:80 --name my-app dockeruser/myapp /usr/sbin/apache2ctl -D FOREGROUND
 
 
 CHECK IP OF CONTAINER:
 docker inspect container_name | grep IPAddress
+
+
+COMMANDS FOR SINGLE SERVER: DO NOT KILL DATABASE OR YOU HAVE THE CHANGE ADRESSES AGAIN IN PLAY APPS
+sudo docker run --name db -p 27017:27017 -d mongo:2.6.5
+sudo docker run -d -p 8888:8888 --name webcrawler --link db:db robin6505/webcrawler-single
+sudo docker run -d -p 9000:9000 --name request_api --link db:db robin6505/requesthandler-single
+sudo docker run -d -p 80:80 --name front-end robin6505/front-end-single /usr/sbin/apache2ctl -D FOREGROUND
 

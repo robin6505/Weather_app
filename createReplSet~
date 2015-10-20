@@ -2,8 +2,18 @@ INSTRUCTIONS do this on each server:
 export node1=10.129.93.43
 export node2=10.129.95.57
 export node3=10.129.96.64
-export node4=hier private ip van marcel
-export node5=hier private ip van marcel
+export node4=10.129.58.59
+export node5=10.129.59.66
+
+COREOS_PRIVATE_IPV4=10.129.93.43
+COREOS_PUBLIC_IPV4=95.85.2.45
+
+node1=10.129.93.43
+node2=10.129.95.57
+node3=10.129.96.64
+node4=10.129.58.59
+node5=10.129.59.66
+
 
 Get keyfile with:
 //GET FILES FROM ONE SERVER TO OTHER
@@ -101,5 +111,4 @@ docker run \
 -p 27017:27017 -d mongo:2.6.5 \
 --smallfiles \
 --keyFile /opt/keyfile/mongodb-keyfile \
---replSet "rs0"
 --replSet "rs0"
