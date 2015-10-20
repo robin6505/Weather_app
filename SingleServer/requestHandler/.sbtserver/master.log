@@ -1,0 +1,1078 @@
+New log file opened at Wed Oct 07 04:53:10 CEST 2015 by 6364@PC-ROBIN
+jvm 6364@PC-ROBIN
+jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.45-b02
+jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
+jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
+Starting event engine
+Starting sbt command engine
+Waiting for sbt command engine
+Command engine arguments=List()
+Command engine baseDirectory=C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler
+Command engine initial remaining commands List(--initialize, onFailure load-failed, boot, server-send-ready-for-request, server-handle-next-server-request)
+> --initialize
+> initialize
+> onFailure load-failed
+> boot
+> reload
+[Loading] Scanning directory C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\project
+[Loading] Found non-root projects 
+[Loading] Done in C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\project, returning: ()
+deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))))
+  :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.JUnitXmlReportPlugin)
+sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin) not found List(sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin) not found List(sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin) not found List(sbt.plugins.JUnitXmlReportPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin) not found List()
+  :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
+[Loading] Done in C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\project, returning: (requesthandler-build)
+Loading project definition from C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\project
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@3a706a18, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	
+[Loading] Scanning directory C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler
+[Loading] Found root project root w/ remaining 
+deducing auto plugins based on known facts Set(Atom(play.sbt.PlayScala), Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(play.sbt.forkrun.PlayForkRun),Set(Atom(sbt.plugins.BackgroundRunPlugin))), Clause(Atom(play.sbt.forkrun.PlayForkRun),Set(Atom(play.sbt.Play))), Clause(Atom(play.sbt.forkrun.PlayForkRun),Set(Atom(sbt.plugins.SerializersPlugin))), Clause(Atom(play.sbt.Play),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging))), Clause(Atom(play.sbt.Play),Set(Atom(play.sbt.routes.RoutesCompiler))), Clause(Atom(play.sbt.Play),Set(Atom(play.twirl.sbt.SbtTwirl))), Clause(Atom(play.sbt.Play),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))), Clause(Atom(play.sbt.PlayAkkaHttpServer),Set(Atom(play.sbt.Play))), Clause(Atom(play.sbt.PlayJava),Set(Atom(play.sbt.Play))), Clause(Atom(play.sbt.PlayLayoutPlugin),Set(Atom(play.sbt.Play))), Clause(Atom(play.sbt.PlayNettyServer),Set(Atom(play.sbt.Play))), Clause(Atom(play.sbt.PlayScala),Set(Atom(play.sbt.Play))), Clause(Atom(play.sbt.routes.RoutesCompiler),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(play.twirl.sbt.SbtTwirl),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(com.typesafe.sbt.packager.archetypes.AkkaAppPackaging),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging))), Clause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.windows.WindowsPlugin))), Clause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.docker.DockerPlugin))), Clause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.debian.DebianPlugin))), Clause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.rpm.RpmPlugin))), Clause(Atom(com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging))), Clause(Atom(com.typesafe.sbt.packager.archetypes.jar.ClasspathJarPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging))), Clause(Atom(com.typesafe.sbt.packager.archetypes.jar.LauncherJarPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging))), Clause(Atom(com.typesafe.sbt.packager.debian.DebianDeployPlugin),Set(Atom(com.typesafe.sbt.packager.debian.DebianPlugin))), Clause(Atom(com.typesafe.sbt.packager.debian.DebianPlugin),Set(Atom(com.typesafe.sbt.packager.linux.LinuxPlugin))), Clause(Atom(com.typesafe.sbt.packager.debian.JDebPackaging),Set(Atom(com.typesafe.sbt.packager.debian.DebianPlugin))), Clause(Atom(com.typesafe.sbt.packager.docker.DockerPlugin),Set(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin))), Clause(Atom(com.typesafe.sbt.packager.jdkpackager.JDKPackagerDeployPlugin),Set(Atom(com.typesafe.sbt.packager.jdkpackager.JDKPackagerPlugin))), Clause(Atom(com.typesafe.sbt.packager.jdkpackager.JDKPackagerPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging))), Clause(Atom(com.typesafe.sbt.packager.jdkpackager.JDKPackagerPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.jar.ClasspathJarPlugin))), Clause(Atom(com.typesafe.sbt.packager.linux.LinuxPlugin),Set(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin))), Clause(Atom(com.typesafe.sbt.packager.rpm.RpmDeployPlugin),Set(Atom(com.typesafe.sbt.packager.rpm.RpmPlugin))), Clause(Atom(com.typesafe.sbt.packager.rpm.RpmPlugin),Set(Atom(com.typesafe.sbt.packager.linux.LinuxPlugin))), Clause(Atom(com.typesafe.sbt.packager.universal.UniversalDeployPlugin),Set(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin))), Clause(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin),Set(Atom(com.typesafe.sbt.SbtNativePackager))), Clause(Atom(com.typesafe.sbt.packager.windows.WindowsDeployPlugin),Set(Atom(com.typesafe.sbt.packager.windows.WindowsPlugin))), Clause(Atom(com.typesafe.sbt.packager.windows.WindowsPlugin),Set(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin))), Clause(Atom(com.typesafe.sbt.web.SbtWeb),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(com.typesafe.sbt.jse.SbtJsEngine),Set(Atom(com.typesafe.sbt.web.SbtWeb))), Clause(Atom(com.typesafe.sbt.jse.SbtJsTask),Set(Atom(com.typesafe.sbt.jse.SbtJsEngine))), Clause(Atom(sbt.plugins.BackgroundRunPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(com.typesafe.sbt.coffeescript.SbtCoffeeScript),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))), Clause(Atom(com.typesafe.sbt.less.SbtLess),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))), Clause(Atom(com.typesafe.sbt.jshint.SbtJSHint),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))), Clause(Atom(com.typesafe.sbt.rjs.SbtRjs),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))), Clause(Atom(com.typesafe.sbt.digest.SbtDigest),Set(Atom(com.typesafe.sbt.web.SbtWeb))), Clause(Atom(com.typesafe.sbt.mocha.SbtMocha),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(And(Set(Atom(sbt.plugins.BackgroundRunPlugin), Atom(play.sbt.Play), Atom(sbt.plugins.SerializersPlugin))),Set(Atom(play.sbt.forkrun.PlayForkRun))), Clause(Atom(play.sbt.Play),Set(Atom(play.sbt.PlayLayoutPlugin))), Clause(Atom(play.sbt.Play),Set(Atom(play.sbt.PlayNettyServer))), Clause(Atom(com.typesafe.sbt.web.SbtWeb),Set(Atom(com.typesafe.sbt.jse.SbtJsEngine))), Clause(Atom(com.typesafe.sbt.jse.SbtJsEngine),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.BackgroundRunPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.InteractionServicePlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.SendEventServicePlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.SerializersPlugin))), Clause(Atom(com.typesafe.sbt.jse.SbtJsTask),Set(Atom(com.typesafe.sbt.coffeescript.SbtCoffeeScript))), Clause(Atom(com.typesafe.sbt.jse.SbtJsTask),Set(Atom(com.typesafe.sbt.less.SbtLess))), Clause(Atom(com.typesafe.sbt.jse.SbtJsTask),Set(Atom(com.typesafe.sbt.jshint.SbtJSHint))), Clause(Atom(com.typesafe.sbt.jse.SbtJsTask),Set(Atom(com.typesafe.sbt.rjs.SbtRjs))), Clause(Atom(com.typesafe.sbt.web.SbtWeb),Set(Atom(com.typesafe.sbt.digest.SbtDigest))), Clause(Atom(com.typesafe.sbt.jse.SbtJsTask),Set(Atom(com.typesafe.sbt.mocha.SbtMocha)))))
+  :: deduced result: Matched(sbt.plugins.CorePlugin,play.sbt.PlayScala,sbt.plugins.InteractionServicePlugin,sbt.plugins.SendEventServicePlugin,play.sbt.Play,sbt.plugins.SerializersPlugin,sbt.plugins.IvyPlugin,com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging,play.twirl.sbt.SbtTwirl,sbt.plugins.JvmPlugin,play.sbt.PlayNettyServer,play.sbt.PlayLayoutPlugin,play.sbt.routes.RoutesCompiler,com.typesafe.sbt.jse.SbtJsTask,com.typesafe.sbt.jshint.SbtJSHint,com.typesafe.sbt.packager.archetypes.JavaAppPackaging,sbt.plugins.JUnitXmlReportPlugin,com.typesafe.sbt.mocha.SbtMocha,com.typesafe.sbt.less.SbtLess,com.typesafe.sbt.rjs.SbtRjs,com.typesafe.sbt.jse.SbtJsEngine,com.typesafe.sbt.coffeescript.SbtCoffeeScript,sbt.plugins.BackgroundRunPlugin,com.typesafe.sbt.packager.rpm.RpmPlugin,com.typesafe.sbt.packager.windows.WindowsPlugin,com.typesafe.sbt.web.SbtWeb,com.typesafe.sbt.packager.docker.DockerPlugin,play.sbt.forkrun.PlayForkRun,com.typesafe.sbt.packager.debian.DebianPlugin,com.typesafe.sbt.digest.SbtDigest,com.typesafe.sbt.packager.universal.UniversalPlugin,com.typesafe.sbt.packager.linux.LinuxPlugin,com.typesafe.sbt.SbtNativePackager)
+sorting: ns: List(sbt.plugins.CorePlugin, play.sbt.PlayScala, sbt.plugins.InteractionServicePlugin, sbt.plugins.SendEventServicePlugin, play.sbt.Play, sbt.plugins.SerializersPlugin, sbt.plugins.IvyPlugin, com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging, play.twirl.sbt.SbtTwirl, sbt.plugins.JvmPlugin, play.sbt.PlayNettyServer, play.sbt.PlayLayoutPlugin, play.sbt.routes.RoutesCompiler, com.typesafe.sbt.jse.SbtJsTask, com.typesafe.sbt.jshint.SbtJSHint, com.typesafe.sbt.packager.archetypes.JavaAppPackaging, sbt.plugins.JUnitXmlReportPlugin, com.typesafe.sbt.mocha.SbtMocha, com.typesafe.sbt.less.SbtLess, com.typesafe.sbt.rjs.SbtRjs, com.typesafe.sbt.jse.SbtJsEngine, com.typesafe.sbt.coffeescript.SbtCoffeeScript, sbt.plugins.BackgroundRunPlugin, com.typesafe.sbt.packager.rpm.RpmPlugin, com.typesafe.sbt.packager.windows.WindowsPlugin, com.typesafe.sbt.web.SbtWeb, com.typesafe.sbt.packager.docker.DockerPlugin, play.sbt.forkrun.PlayForkRun, com.typesafe.sbt.packager.debian.DebianPlugin, com.typesafe.sbt.digest.SbtDigest, com.typesafe.sbt.packager.universal.UniversalPlugin, com.typesafe.sbt.packager.linux.LinuxPlugin, com.typesafe.sbt.SbtNativePackager)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, com.typesafe.sbt.SbtNativePackager) not found List(play.sbt.PlayScala, sbt.plugins.InteractionServicePlugin, sbt.plugins.SendEventServicePlugin, play.sbt.Play, sbt.plugins.SerializersPlugin, sbt.plugins.IvyPlugin, com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging, play.twirl.sbt.SbtTwirl, sbt.plugins.JvmPlugin, play.sbt.PlayNettyServer, play.sbt.PlayLayoutPlugin, play.sbt.routes.RoutesCompiler, com.typesafe.sbt.jse.SbtJsTask, com.typesafe.sbt.jshint.SbtJSHint, com.typesafe.sbt.packager.archetypes.JavaAppPackaging, sbt.plugins.JUnitXmlReportPlugin, com.typesafe.sbt.mocha.SbtMocha, com.typesafe.sbt.less.SbtLess, com.typesafe.sbt.rjs.SbtRjs, com.typesafe.sbt.jse.SbtJsEngine, com.typesafe.sbt.coffeescript.SbtCoffeeScript, sbt.plugins.BackgroundRunPlugin, com.typesafe.sbt.packager.rpm.RpmPlugin, com.typesafe.sbt.packager.windows.WindowsPlugin, com.typesafe.sbt.web.SbtWeb, com.typesafe.sbt.packager.docker.DockerPlugin, play.sbt.forkrun.PlayForkRun, com.typesafe.sbt.packager.debian.DebianPlugin, com.typesafe.sbt.digest.SbtDigest, com.typesafe.sbt.packager.universal.UniversalPlugin, com.typesafe.sbt.packager.linux.LinuxPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, com.typesafe.sbt.SbtNativePackager, sbt.plugins.InteractionServicePlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.IvyPlugin, com.typesafe.sbt.packager.universal.UniversalPlugin) not found List(play.sbt.PlayScala, play.sbt.Play, com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging, play.twirl.sbt.SbtTwirl, sbt.plugins.JvmPlugin, play.sbt.PlayNettyServer, play.sbt.PlayLayoutPlugin, play.sbt.routes.RoutesCompiler, com.typesafe.sbt.jse.SbtJsTask, com.typesafe.sbt.jshint.SbtJSHint, com.typesafe.sbt.packager.archetypes.JavaAppPackaging, sbt.plugins.JUnitXmlReportPlugin, com.typesafe.sbt.mocha.SbtMocha, com.typesafe.sbt.less.SbtLess, com.typesafe.sbt.rjs.SbtRjs, com.typesafe.sbt.jse.SbtJsEngine, com.typesafe.sbt.coffeescript.SbtCoffeeScript, sbt.plugins.BackgroundRunPlugin, com.typesafe.sbt.packager.rpm.RpmPlugin, com.typesafe.sbt.packager.windows.WindowsPlugin, com.typesafe.sbt.web.SbtWeb, com.typesafe.sbt.packager.docker.DockerPlugin, play.sbt.forkrun.PlayForkRun, com.typesafe.sbt.packager.debian.DebianPlugin, com.typesafe.sbt.digest.SbtDigest, com.typesafe.sbt.packager.linux.LinuxPlugin)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, com.typesafe.sbt.SbtNativePackager, sbt.plugins.InteractionServicePlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.IvyPlugin, com.typesafe.sbt.packager.universal.UniversalPlugin, sbt.plugins.JvmPlugin, com.typesafe.sbt.packager.windows.WindowsPlugin, com.typesafe.sbt.packager.docker.DockerPlugin, com.typesafe.sbt.packager.linux.LinuxPlugin) not found List(play.sbt.PlayScala, play.sbt.Play, com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging, play.twirl.sbt.SbtTwirl, play.sbt.PlayNettyServer, play.sbt.PlayLayoutPlugin, play.sbt.routes.RoutesCompiler, com.typesafe.sbt.jse.SbtJsTask, com.typesafe.sbt.jshint.SbtJSHint, com.typesafe.sbt.packager.archetypes.JavaAppPackaging, sbt.plugins.JUnitXmlReportPlugin, com.typesafe.sbt.mocha.SbtMocha, com.typesafe.sbt.less.SbtLess, com.typesafe.sbt.rjs.SbtRjs, com.typesafe.sbt.jse.SbtJsEngine, com.typesafe.sbt.coffeescript.SbtCoffeeScript, sbt.plugins.BackgroundRunPlugin, com.typesafe.sbt.packager.rpm.RpmPlugin, com.typesafe.sbt.web.SbtWeb, play.sbt.forkrun.PlayForkRun, com.typesafe.sbt.packager.debian.DebianPlugin, com.typesafe.sbt.digest.SbtDigest)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, com.typesafe.sbt.SbtNativePackager, sbt.plugins.InteractionServicePlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.IvyPlugin, com.typesafe.sbt.packager.universal.UniversalPlugin, sbt.plugins.JvmPlugin, com.typesafe.sbt.packager.windows.WindowsPlugin, com.typesafe.sbt.packager.docker.DockerPlugin, com.typesafe.sbt.packager.linux.LinuxPlugin, play.twirl.sbt.SbtTwirl, play.sbt.routes.RoutesCompiler, sbt.plugins.JUnitXmlReportPlugin, sbt.plugins.BackgroundRunPlugin, com.typesafe.sbt.packager.rpm.RpmPlugin, com.typesafe.sbt.web.SbtWeb, com.typesafe.sbt.packager.debian.DebianPlugin) not found List(play.sbt.PlayScala, play.sbt.Play, com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging, play.sbt.PlayNettyServer, play.sbt.PlayLayoutPlugin, com.typesafe.sbt.jse.SbtJsTask, com.typesafe.sbt.jshint.SbtJSHint, com.typesafe.sbt.packager.archetypes.JavaAppPackaging, com.typesafe.sbt.mocha.SbtMocha, com.typesafe.sbt.less.SbtLess, com.typesafe.sbt.rjs.SbtRjs, com.typesafe.sbt.jse.SbtJsEngine, com.typesafe.sbt.coffeescript.SbtCoffeeScript, play.sbt.forkrun.PlayForkRun, com.typesafe.sbt.digest.SbtDigest)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, com.typesafe.sbt.SbtNativePackager, sbt.plugins.InteractionServicePlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.IvyPlugin, com.typesafe.sbt.packager.universal.UniversalPlugin, sbt.plugins.JvmPlugin, com.typesafe.sbt.packager.windows.WindowsPlugin, com.typesafe.sbt.packager.docker.DockerPlugin, com.typesafe.sbt.packager.linux.LinuxPlugin, play.twirl.sbt.SbtTwirl, play.sbt.routes.RoutesCompiler, sbt.plugins.JUnitXmlReportPlugin, sbt.plugins.BackgroundRunPlugin, com.typesafe.sbt.packager.rpm.RpmPlugin, com.typesafe.sbt.web.SbtWeb, com.typesafe.sbt.packager.debian.DebianPlugin, com.typesafe.sbt.packager.archetypes.JavaAppPackaging, com.typesafe.sbt.jse.SbtJsEngine, com.typesafe.sbt.digest.SbtDigest) not found List(play.sbt.PlayScala, play.sbt.Play, com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging, play.sbt.PlayNettyServer, play.sbt.PlayLayoutPlugin, com.typesafe.sbt.jse.SbtJsTask, com.typesafe.sbt.jshint.SbtJSHint, com.typesafe.sbt.mocha.SbtMocha, com.typesafe.sbt.less.SbtLess, com.typesafe.sbt.rjs.SbtRjs, com.typesafe.sbt.coffeescript.SbtCoffeeScript, play.sbt.forkrun.PlayForkRun)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, com.typesafe.sbt.SbtNativePackager, sbt.plugins.InteractionServicePlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.IvyPlugin, com.typesafe.sbt.packager.universal.UniversalPlugin, sbt.plugins.JvmPlugin, com.typesafe.sbt.packager.windows.WindowsPlugin, com.typesafe.sbt.packager.docker.DockerPlugin, com.typesafe.sbt.packager.linux.LinuxPlugin, play.twirl.sbt.SbtTwirl, play.sbt.routes.RoutesCompiler, sbt.plugins.JUnitXmlReportPlugin, sbt.plugins.BackgroundRunPlugin, com.typesafe.sbt.packager.rpm.RpmPlugin, com.typesafe.sbt.web.SbtWeb, com.typesafe.sbt.packager.debian.DebianPlugin, com.typesafe.sbt.packager.archetypes.JavaAppPackaging, com.typesafe.sbt.jse.SbtJsEngine, com.typesafe.sbt.digest.SbtDigest, com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging, com.typesafe.sbt.jse.SbtJsTask) not found List(play.sbt.PlayScala, play.sbt.Play, play.sbt.PlayNettyServer, play.sbt.PlayLayoutPlugin, com.typesafe.sbt.jshint.SbtJSHint, com.typesafe.sbt.mocha.SbtMocha, com.typesafe.sbt.less.SbtLess, com.typesafe.sbt.rjs.SbtRjs, com.typesafe.sbt.coffeescript.SbtCoffeeScript, play.sbt.forkrun.PlayForkRun)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, com.typesafe.sbt.SbtNativePackager, sbt.plugins.InteractionServicePlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.IvyPlugin, com.typesafe.sbt.packager.universal.UniversalPlugin, sbt.plugins.JvmPlugin, com.typesafe.sbt.packager.windows.WindowsPlugin, com.typesafe.sbt.packager.docker.DockerPlugin, com.typesafe.sbt.packager.linux.LinuxPlugin, play.twirl.sbt.SbtTwirl, play.sbt.routes.RoutesCompiler, sbt.plugins.JUnitXmlReportPlugin, sbt.plugins.BackgroundRunPlugin, com.typesafe.sbt.packager.rpm.RpmPlugin, com.typesafe.sbt.web.SbtWeb, com.typesafe.sbt.packager.debian.DebianPlugin, com.typesafe.sbt.packager.archetypes.JavaAppPackaging, com.typesafe.sbt.jse.SbtJsEngine, com.typesafe.sbt.digest.SbtDigest, com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging, com.typesafe.sbt.jse.SbtJsTask, play.sbt.Play, com.typesafe.sbt.jshint.SbtJSHint, com.typesafe.sbt.mocha.SbtMocha, com.typesafe.sbt.less.SbtLess, com.typesafe.sbt.rjs.SbtRjs, com.typesafe.sbt.coffeescript.SbtCoffeeScript) not found List(play.sbt.PlayScala, play.sbt.PlayNettyServer, play.sbt.PlayLayoutPlugin, play.sbt.forkrun.PlayForkRun)
+  :: sorting:: found: List(sbt.plugins.CorePlugin, com.typesafe.sbt.SbtNativePackager, sbt.plugins.InteractionServicePlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.IvyPlugin, com.typesafe.sbt.packager.universal.UniversalPlugin, sbt.plugins.JvmPlugin, com.typesafe.sbt.packager.windows.WindowsPlugin, com.typesafe.sbt.packager.docker.DockerPlugin, com.typesafe.sbt.packager.linux.LinuxPlugin, play.twirl.sbt.SbtTwirl, play.sbt.routes.RoutesCompiler, sbt.plugins.JUnitXmlReportPlugin, sbt.plugins.BackgroundRunPlugin, com.typesafe.sbt.packager.rpm.RpmPlugin, com.typesafe.sbt.web.SbtWeb, com.typesafe.sbt.packager.debian.DebianPlugin, com.typesafe.sbt.packager.archetypes.JavaAppPackaging, com.typesafe.sbt.jse.SbtJsEngine, com.typesafe.sbt.digest.SbtDigest, com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging, com.typesafe.sbt.jse.SbtJsTask, play.sbt.Play, com.typesafe.sbt.jshint.SbtJSHint, com.typesafe.sbt.mocha.SbtMocha, com.typesafe.sbt.less.SbtLess, com.typesafe.sbt.rjs.SbtRjs, com.typesafe.sbt.coffeescript.SbtCoffeeScript, play.sbt.PlayScala, play.sbt.PlayNettyServer, play.sbt.PlayLayoutPlugin, play.sbt.forkrun.PlayForkRun) not found List()
+  :: sorted deduced result: List(sbt.plugins.CorePlugin, com.typesafe.sbt.SbtNativePackager, sbt.plugins.InteractionServicePlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.IvyPlugin, com.typesafe.sbt.packager.universal.UniversalPlugin, sbt.plugins.JvmPlugin, com.typesafe.sbt.packager.windows.WindowsPlugin, com.typesafe.sbt.packager.docker.DockerPlugin, com.typesafe.sbt.packager.linux.LinuxPlugin, play.twirl.sbt.SbtTwirl, play.sbt.routes.RoutesCompiler, sbt.plugins.JUnitXmlReportPlugin, sbt.plugins.BackgroundRunPlugin, com.typesafe.sbt.packager.rpm.RpmPlugin, com.typesafe.sbt.web.SbtWeb, com.typesafe.sbt.packager.debian.DebianPlugin, com.typesafe.sbt.packager.archetypes.JavaAppPackaging, com.typesafe.sbt.jse.SbtJsEngine, com.typesafe.sbt.digest.SbtDigest, com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging, com.typesafe.sbt.jse.SbtJsTask, play.sbt.Play, com.typesafe.sbt.jshint.SbtJSHint, com.typesafe.sbt.mocha.SbtMocha, com.typesafe.sbt.less.SbtLess, com.typesafe.sbt.rjs.SbtRjs, com.typesafe.sbt.coffeescript.SbtCoffeeScript, play.sbt.PlayScala, play.sbt.PlayNettyServer, play.sbt.PlayLayoutPlugin, play.sbt.forkrun.PlayForkRun)
+[Loading] Done in C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler, returning: (root)
+Set current project to requestHandler (in build file:/C:/Users/Robin/Weather_appBackend/Weather_app/requestHandler/)
+Reapplying settings...
+Set current project to requestHandler (in build file:/C:/Users/Robin/Weather_appBackend/Weather_app/requestHandler/)
+> iflast shell
+> server-send-ready-for-request
+> server-handle-next-server-request
+> {file:/C:/Users/Robin/Weather_appBackend/Weather_app/requestHandler/}root/compile:discoveredMainClasses
+Evaluating tasks: compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@56d771dd, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 0 s, completed 7-okt-2015 4:53:13
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Robin/Weather_appBackend/Weather_app/requestHandler/}root/compile:mainClass
+Evaluating tasks: compile:mainClass
+Running task... Cancel: sbt.server.ServerTaskCancellation@45080791, check cycles: false
+Total time: 0 s, completed 7-okt-2015 4:53:13
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Robin/Weather_appBackend/Weather_app/requestHandler/}root/compile:discoveredMainClasses
+Evaluating tasks: compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@63fe01ce, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 0 s, completed 7-okt-2015 4:53:13
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Robin/Weather_appBackend/Weather_app/requestHandler/}root/compile:mainClass
+Evaluating tasks: compile:mainClass
+Running task... Cancel: sbt.server.ServerTaskCancellation@13224566, check cycles: false
+Total time: 0 s, completed 7-okt-2015 4:53:13
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Robin/Weather_appBackend/Weather_app/requestHandler/}root/compile:discoveredMainClasses
+Evaluating tasks: compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@be0f89a, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 0 s, completed 7-okt-2015 4:53:13
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@3c9cdfb1, check cycles: false
+C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\conf\routes:8: Compilation error[Missing parameter in call definition: city]
+
+ ^
+Read from stdout: (compile:playRoutes) @6nl0bjjc8: Compilation error in C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\conf\routes:8
+(compile:playRoutes) @6nl0bjjc8: Compilation error in C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\conf\routes:8
+Total time: 0 s, completed 7-okt-2015 4:57:06
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@5a8a2374, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\router\RoutesPrefix.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\routes.java, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\router\RoutesPrefix.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\routes.java, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\router\RoutesPrefix.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\routes.java, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala)
+
+Recompiling all 8 sources: invalidated sources (6) exceeded 50.0% of all sources
+Read from stdout: Compiling 7 Scala sources and 1 Java source to C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\classes...
+Compiling 7 Scala sources and 1 Java source to C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\classes...
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Running cached compiler 650508cc, interfacing (CompilerInterface) with Scala compiler version 2.11.6
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	C:\Program Files\Java\jre1.8.0_45\lib\resources.jar;C:\Program Files\Java\jre1.8.0_45\lib\rt.jar;C:\Program Files\Java\jre1.8.0_45\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_45\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_45\lib\jce.jar;C:\Program Files\Java\jre1.8.0_45\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_45\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_45\classes;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.6.jar
+	-classpath
+	C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\classes;C:\Users\Robin\.ivy2\cache\com.typesafe.play\twirl-api_2.11\jars\twirl-api_2.11-1.1.1.jar;C:\Users\Robin\.ivy2\cache\org.apache.commons\commons-lang3\jars\commons-lang3-3.4.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-server_2.11\jars\play-server_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.4.3.jar;C:\Users\Robin\.ivy2\cache\org.javassist\javassist\bundles\javassist-3.19.0-GA.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;C:\Users\Robin\.ivy2\cache\com.typesafe\config\bundles\config-1.3.0.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.8.1.jar;C:\Users\Robin\.ivy2\cache\org.joda\joda-convert\jars\joda-convert-1.7.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\bundles\jackson-annotations-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\bundles\jackson-databind-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jdk8\bundles\jackson-datatype-jdk8-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jsr310\bundles\jackson-datatype-jsr310-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-netty-utils\jars\play-netty-utils-2.4.3.jar;C:\Users\Robin\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.12.jar;C:\Users\Robin\.ivy2\cache\org.slf4j\jul-to-slf4j\jars\jul-to-slf4j-1.7.12.jar;C:\Users\Robin\.ivy2\cache\org.slf4j\jcl-over-slf4j\jars\jcl-over-slf4j-1.7.12.jar;C:\Users\Robin\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.1.3.jar;C:\Users\Robin\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.1.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.13.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.13.jar;C:\Users\Robin\.ivy2\cache\commons-codec\commons-codec\jars\commons-codec-1.10.jar;C:\Users\Robin\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\Robin\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\Robin\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\Robin\.ivy2\cache\com.google.inject\guice\jars\guice-4.0.jar;C:\Users\Robin\.ivy2\cache\javax.inject\javax.inject\jars\javax.inject-1.jar;C:\Users\Robin\.ivy2\cache\aopalliance\aopalliance\jars\aopalliance-1.0.jar;C:\Users\Robin\.ivy2\cache\com.google.inject.extensions\guice-assistedinject\jars\guice-assistedinject-4.0.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-netty-server_2.11\jars\play-netty-server_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\io.netty\netty\bundles\netty-3.10.4.Final.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.netty\netty-http-pipelining\jars\netty-http-pipelining-1.1.4.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-jdbc-api_2.11\jars\play-jdbc-api_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.jolbox\bonecp\bundles\bonecp-0.8.0.RELEASE.jar;C:\Users\Robin\.ivy2\cache\com.zaxxer\HikariCP\bundles\HikariCP-2.3.7.jar;C:\Users\Robin\.ivy2\cache\com.h2database\h2\jars\h2-1.4.187.jar;C:\Users\Robin\.ivy2\cache\tyrex\tyrex\jars\tyrex-1.0.1.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\net.sf.ehcache\ehcache-core\jars\ehcache-core-2.6.11.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.google.guava\guava\bundles\guava-18.0.jar;C:\Users\Robin\.ivy2\cache\com.ning\async-http-client\jars\async-http-client-1.9.21.jar;C:\Users\Robin\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\Robin\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;C:\Users\Robin\.ivy2\cache\org.apache.httpcomponents\httpcore\jars\httpcore-4.0.1.jar;C:\Users\Robin\.ivy2\cache\org.apache.httpcomponents\httpclient\jars\httpclient-4.0.1.jar;C:\Users\Robin\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo_2.11\jars\reactivemongo_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo-bson-macros_2.11\jars\reactivemongo-bson-macros_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-compiler\jars\scala-compiler-2.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.4.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.4.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo-bson_2.11\jars\reactivemongo-bson_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.apache.logging.log4j\log4j-api\jars\log4j-api-2.0.2.jar;C:\Users\Robin\.ivy2\cache\org.apache.logging.log4j\log4j-core\jars\log4j-core-2.0.2.jar
+Read from stdout: C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala:52: not found: value response
+C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala:52: not found: value response
+Read from stdout: response().setHeader("Access-Control-Allow-Origin", "*");       // Need to add the correct domain in here!!
+        response().setHeader("Access-Control-Allow-Origin", "*");       // Need to add the correct domain in here!!
+Read from stdout: ^
+        ^
+Read from stdout: C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala:53: not found: value response
+C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala:53: not found: value response
+Read from stdout: response().setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");         // Ensure this header is also allowed!  
+        response().setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");         // Ensure this header is also allowed!  
+Read from stdout: ^
+        ^
+Read from stdout: C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala:54: not found: value ok
+C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala:54: not found: value ok
+Read from stdout: ok();
+        ok();
+Read from stdout: ^
+        ^
+Read from stdout: three errors found
+three errors found
+Compilation failed (CompilerInterface)
+Read from stdout: (compile:compileIncremental) Compilation failed
+(compile:compileIncremental) Compilation failed
+Total time: 2 s, completed 7-okt-2015 4:58:15
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@5d49ba5, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\router\RoutesPrefix.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\routes.java, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\router\RoutesPrefix.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\routes.java, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\router\RoutesPrefix.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\routes.java, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala)
+
+Recompiling all 8 sources: invalidated sources (6) exceeded 50.0% of all sources
+Read from stdout: Compiling 7 Scala sources and 1 Java source to C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\classes...
+Compiling 7 Scala sources and 1 Java source to C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\classes...
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Running cached compiler 4a298dcf, interfacing (CompilerInterface) with Scala compiler version 2.11.6
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	C:\Program Files\Java\jre1.8.0_45\lib\resources.jar;C:\Program Files\Java\jre1.8.0_45\lib\rt.jar;C:\Program Files\Java\jre1.8.0_45\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_45\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_45\lib\jce.jar;C:\Program Files\Java\jre1.8.0_45\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_45\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_45\classes;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.6.jar
+	-classpath
+	C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\classes;C:\Users\Robin\.ivy2\cache\com.typesafe.play\twirl-api_2.11\jars\twirl-api_2.11-1.1.1.jar;C:\Users\Robin\.ivy2\cache\org.apache.commons\commons-lang3\jars\commons-lang3-3.4.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-server_2.11\jars\play-server_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.4.3.jar;C:\Users\Robin\.ivy2\cache\org.javassist\javassist\bundles\javassist-3.19.0-GA.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;C:\Users\Robin\.ivy2\cache\com.typesafe\config\bundles\config-1.3.0.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.8.1.jar;C:\Users\Robin\.ivy2\cache\org.joda\joda-convert\jars\joda-convert-1.7.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\bundles\jackson-annotations-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\bundles\jackson-databind-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jdk8\bundles\jackson-datatype-jdk8-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jsr310\bundles\jackson-datatype-jsr310-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-netty-utils\jars\play-netty-utils-2.4.3.jar;C:\Users\Robin\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.12.jar;C:\Users\Robin\.ivy2\cache\org.slf4j\jul-to-slf4j\jars\jul-to-slf4j-1.7.12.jar;C:\Users\Robin\.ivy2\cache\org.slf4j\jcl-over-slf4j\jars\jcl-over-slf4j-1.7.12.jar;C:\Users\Robin\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.1.3.jar;C:\Users\Robin\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.1.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.13.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.13.jar;C:\Users\Robin\.ivy2\cache\commons-codec\commons-codec\jars\commons-codec-1.10.jar;C:\Users\Robin\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\Robin\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\Robin\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\Robin\.ivy2\cache\com.google.inject\guice\jars\guice-4.0.jar;C:\Users\Robin\.ivy2\cache\javax.inject\javax.inject\jars\javax.inject-1.jar;C:\Users\Robin\.ivy2\cache\aopalliance\aopalliance\jars\aopalliance-1.0.jar;C:\Users\Robin\.ivy2\cache\com.google.inject.extensions\guice-assistedinject\jars\guice-assistedinject-4.0.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-netty-server_2.11\jars\play-netty-server_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\io.netty\netty\bundles\netty-3.10.4.Final.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.netty\netty-http-pipelining\jars\netty-http-pipelining-1.1.4.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-jdbc-api_2.11\jars\play-jdbc-api_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.jolbox\bonecp\bundles\bonecp-0.8.0.RELEASE.jar;C:\Users\Robin\.ivy2\cache\com.zaxxer\HikariCP\bundles\HikariCP-2.3.7.jar;C:\Users\Robin\.ivy2\cache\com.h2database\h2\jars\h2-1.4.187.jar;C:\Users\Robin\.ivy2\cache\tyrex\tyrex\jars\tyrex-1.0.1.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\net.sf.ehcache\ehcache-core\jars\ehcache-core-2.6.11.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.google.guava\guava\bundles\guava-18.0.jar;C:\Users\Robin\.ivy2\cache\com.ning\async-http-client\jars\async-http-client-1.9.21.jar;C:\Users\Robin\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\Robin\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;C:\Users\Robin\.ivy2\cache\org.apache.httpcomponents\httpcore\jars\httpcore-4.0.1.jar;C:\Users\Robin\.ivy2\cache\org.apache.httpcomponents\httpclient\jars\httpclient-4.0.1.jar;C:\Users\Robin\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo_2.11\jars\reactivemongo_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo-bson-macros_2.11\jars\reactivemongo-bson-macros_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-compiler\jars\scala-compiler-2.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.4.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.4.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo-bson_2.11\jars\reactivemongo-bson_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.apache.logging.log4j\log4j-api\jars\log4j-api-2.0.2.jar;C:\Users\Robin\.ivy2\cache\org.apache.logging.log4j\log4j-core\jars\log4j-core-2.0.2.jar
+Read from stdout: C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala:52: not found: value response
+C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala:52: not found: value response
+Read from stdout: response().setHeader("Access-Control-Allow-Origin", "*");       // Need to add the correct domain in here!!
+        response().setHeader("Access-Control-Allow-Origin", "*");       // Need to add the correct domain in here!!
+Read from stdout: ^
+        ^
+Read from stdout: C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala:53: not found: value response
+C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala:53: not found: value response
+Read from stdout: response().setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");         // Ensure this header is also allowed!  
+        response().setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");         // Ensure this header is also allowed!  
+Read from stdout: ^
+        ^
+Read from stdout: C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala:54: not found: value ok
+C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala:54: not found: value ok
+Read from stdout: ok();
+        ok();
+Read from stdout: ^
+        ^
+Read from stdout: three errors found
+three errors found
+Compilation failed (CompilerInterface)
+Read from stdout: (compile:compileIncremental) Compilation failed
+(compile:compileIncremental) Compilation failed
+Total time: 1 s, completed 7-okt-2015 4:58:27
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@697f7f1c, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\router\RoutesPrefix.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\routes.java, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\router\RoutesPrefix.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\routes.java, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\router\RoutesPrefix.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\routes.java, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala)
+
+Recompiling all 8 sources: invalidated sources (6) exceeded 50.0% of all sources
+Read from stdout: Compiling 7 Scala sources and 1 Java source to C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\classes...
+Compiling 7 Scala sources and 1 Java source to C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\classes...
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Running cached compiler 7bb8a007, interfacing (CompilerInterface) with Scala compiler version 2.11.6
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	C:\Program Files\Java\jre1.8.0_45\lib\resources.jar;C:\Program Files\Java\jre1.8.0_45\lib\rt.jar;C:\Program Files\Java\jre1.8.0_45\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_45\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_45\lib\jce.jar;C:\Program Files\Java\jre1.8.0_45\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_45\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_45\classes;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.6.jar
+	-classpath
+	C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\classes;C:\Users\Robin\.ivy2\cache\com.typesafe.play\twirl-api_2.11\jars\twirl-api_2.11-1.1.1.jar;C:\Users\Robin\.ivy2\cache\org.apache.commons\commons-lang3\jars\commons-lang3-3.4.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-server_2.11\jars\play-server_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.4.3.jar;C:\Users\Robin\.ivy2\cache\org.javassist\javassist\bundles\javassist-3.19.0-GA.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;C:\Users\Robin\.ivy2\cache\com.typesafe\config\bundles\config-1.3.0.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.8.1.jar;C:\Users\Robin\.ivy2\cache\org.joda\joda-convert\jars\joda-convert-1.7.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\bundles\jackson-annotations-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\bundles\jackson-databind-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jdk8\bundles\jackson-datatype-jdk8-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jsr310\bundles\jackson-datatype-jsr310-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-netty-utils\jars\play-netty-utils-2.4.3.jar;C:\Users\Robin\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.12.jar;C:\Users\Robin\.ivy2\cache\org.slf4j\jul-to-slf4j\jars\jul-to-slf4j-1.7.12.jar;C:\Users\Robin\.ivy2\cache\org.slf4j\jcl-over-slf4j\jars\jcl-over-slf4j-1.7.12.jar;C:\Users\Robin\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.1.3.jar;C:\Users\Robin\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.1.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.13.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.13.jar;C:\Users\Robin\.ivy2\cache\commons-codec\commons-codec\jars\commons-codec-1.10.jar;C:\Users\Robin\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\Robin\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\Robin\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\Robin\.ivy2\cache\com.google.inject\guice\jars\guice-4.0.jar;C:\Users\Robin\.ivy2\cache\javax.inject\javax.inject\jars\javax.inject-1.jar;C:\Users\Robin\.ivy2\cache\aopalliance\aopalliance\jars\aopalliance-1.0.jar;C:\Users\Robin\.ivy2\cache\com.google.inject.extensions\guice-assistedinject\jars\guice-assistedinject-4.0.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-netty-server_2.11\jars\play-netty-server_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\io.netty\netty\bundles\netty-3.10.4.Final.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.netty\netty-http-pipelining\jars\netty-http-pipelining-1.1.4.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-jdbc-api_2.11\jars\play-jdbc-api_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.jolbox\bonecp\bundles\bonecp-0.8.0.RELEASE.jar;C:\Users\Robin\.ivy2\cache\com.zaxxer\HikariCP\bundles\HikariCP-2.3.7.jar;C:\Users\Robin\.ivy2\cache\com.h2database\h2\jars\h2-1.4.187.jar;C:\Users\Robin\.ivy2\cache\tyrex\tyrex\jars\tyrex-1.0.1.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\net.sf.ehcache\ehcache-core\jars\ehcache-core-2.6.11.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.google.guava\guava\bundles\guava-18.0.jar;C:\Users\Robin\.ivy2\cache\com.ning\async-http-client\jars\async-http-client-1.9.21.jar;C:\Users\Robin\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\Robin\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;C:\Users\Robin\.ivy2\cache\org.apache.httpcomponents\httpcore\jars\httpcore-4.0.1.jar;C:\Users\Robin\.ivy2\cache\org.apache.httpcomponents\httpclient\jars\httpclient-4.0.1.jar;C:\Users\Robin\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo_2.11\jars\reactivemongo_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo-bson-macros_2.11\jars\reactivemongo-bson-macros_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-compiler\jars\scala-compiler-2.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.4.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.4.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo-bson_2.11\jars\reactivemongo-bson_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.apache.logging.log4j\log4j-api\jars\log4j-api-2.0.2.jar;C:\Users\Robin\.ivy2\cache\org.apache.logging.log4j\log4j-core\jars\log4j-core-2.0.2.jar
+Read from stdout: C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala:52: not found: value response
+C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala:52: not found: value response
+Read from stdout: response().setHeader("Access-Control-Allow-Origin", "*");       // Need to add the correct domain in here!!
+        response().setHeader("Access-Control-Allow-Origin", "*");       // Need to add the correct domain in here!!
+Read from stdout: ^
+        ^
+Read from stdout: C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala:53: not found: value response
+C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala:53: not found: value response
+Read from stdout: response().setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");         // Ensure this header is also allowed!  
+        response().setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");         // Ensure this header is also allowed!  
+Read from stdout: ^
+        ^
+Read from stdout: C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala:54: not found: value ok
+C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala:54: not found: value ok
+Read from stdout: ok();
+        ok();
+Read from stdout: ^
+        ^
+Read from stdout: three errors found
+three errors found
+Compilation failed (CompilerInterface)
+Read from stdout: (compile:compileIncremental) Compilation failed
+(compile:compileIncremental) Compilation failed
+Total time: 1 s, completed 7-okt-2015 4:58:56
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@1de519b7, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\router\RoutesPrefix.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\routes.java, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\router\RoutesPrefix.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\routes.java, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\router\RoutesPrefix.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\routes.java, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala)
+
+Recompiling all 8 sources: invalidated sources (6) exceeded 50.0% of all sources
+Read from stdout: Compiling 7 Scala sources and 1 Java source to C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\classes...
+Compiling 7 Scala sources and 1 Java source to C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\classes...
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Running cached compiler 44fb199f, interfacing (CompilerInterface) with Scala compiler version 2.11.6
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	C:\Program Files\Java\jre1.8.0_45\lib\resources.jar;C:\Program Files\Java\jre1.8.0_45\lib\rt.jar;C:\Program Files\Java\jre1.8.0_45\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_45\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_45\lib\jce.jar;C:\Program Files\Java\jre1.8.0_45\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_45\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_45\classes;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.6.jar
+	-classpath
+	C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\classes;C:\Users\Robin\.ivy2\cache\com.typesafe.play\twirl-api_2.11\jars\twirl-api_2.11-1.1.1.jar;C:\Users\Robin\.ivy2\cache\org.apache.commons\commons-lang3\jars\commons-lang3-3.4.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-server_2.11\jars\play-server_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.4.3.jar;C:\Users\Robin\.ivy2\cache\org.javassist\javassist\bundles\javassist-3.19.0-GA.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;C:\Users\Robin\.ivy2\cache\com.typesafe\config\bundles\config-1.3.0.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.8.1.jar;C:\Users\Robin\.ivy2\cache\org.joda\joda-convert\jars\joda-convert-1.7.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\bundles\jackson-annotations-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\bundles\jackson-databind-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jdk8\bundles\jackson-datatype-jdk8-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jsr310\bundles\jackson-datatype-jsr310-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-netty-utils\jars\play-netty-utils-2.4.3.jar;C:\Users\Robin\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.12.jar;C:\Users\Robin\.ivy2\cache\org.slf4j\jul-to-slf4j\jars\jul-to-slf4j-1.7.12.jar;C:\Users\Robin\.ivy2\cache\org.slf4j\jcl-over-slf4j\jars\jcl-over-slf4j-1.7.12.jar;C:\Users\Robin\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.1.3.jar;C:\Users\Robin\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.1.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.13.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.13.jar;C:\Users\Robin\.ivy2\cache\commons-codec\commons-codec\jars\commons-codec-1.10.jar;C:\Users\Robin\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\Robin\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\Robin\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\Robin\.ivy2\cache\com.google.inject\guice\jars\guice-4.0.jar;C:\Users\Robin\.ivy2\cache\javax.inject\javax.inject\jars\javax.inject-1.jar;C:\Users\Robin\.ivy2\cache\aopalliance\aopalliance\jars\aopalliance-1.0.jar;C:\Users\Robin\.ivy2\cache\com.google.inject.extensions\guice-assistedinject\jars\guice-assistedinject-4.0.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-netty-server_2.11\jars\play-netty-server_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\io.netty\netty\bundles\netty-3.10.4.Final.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.netty\netty-http-pipelining\jars\netty-http-pipelining-1.1.4.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-jdbc-api_2.11\jars\play-jdbc-api_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.jolbox\bonecp\bundles\bonecp-0.8.0.RELEASE.jar;C:\Users\Robin\.ivy2\cache\com.zaxxer\HikariCP\bundles\HikariCP-2.3.7.jar;C:\Users\Robin\.ivy2\cache\com.h2database\h2\jars\h2-1.4.187.jar;C:\Users\Robin\.ivy2\cache\tyrex\tyrex\jars\tyrex-1.0.1.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\net.sf.ehcache\ehcache-core\jars\ehcache-core-2.6.11.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.google.guava\guava\bundles\guava-18.0.jar;C:\Users\Robin\.ivy2\cache\com.ning\async-http-client\jars\async-http-client-1.9.21.jar;C:\Users\Robin\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\Robin\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;C:\Users\Robin\.ivy2\cache\org.apache.httpcomponents\httpcore\jars\httpcore-4.0.1.jar;C:\Users\Robin\.ivy2\cache\org.apache.httpcomponents\httpclient\jars\httpclient-4.0.1.jar;C:\Users\Robin\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo_2.11\jars\reactivemongo_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo-bson-macros_2.11\jars\reactivemongo-bson-macros_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-compiler\jars\scala-compiler-2.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.4.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.4.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo-bson_2.11\jars\reactivemongo-bson_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.apache.logging.log4j\log4j-api\jars\log4j-api-2.0.2.jar;C:\Users\Robin\.ivy2\cache\org.apache.logging.log4j\log4j-core\jars\log4j-core-2.0.2.jar
+Read from stdout: C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala:52: not found: value response
+C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala:52: not found: value response
+Read from stdout: response().setHeader("Access-Control-Allow-Origin", "http://localhost:9001/*");       // Need to add the correct domain in here!!
+        response().setHeader("Access-Control-Allow-Origin", "http://localhost:9001/*");       // Need to add the correct domain in here!!
+Read from stdout: ^
+        ^
+Read from stdout: C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala:53: not found: value response
+C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala:53: not found: value response
+Read from stdout: response().setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");         // Ensure this header is also allowed!  
+        response().setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");         // Ensure this header is also allowed!  
+Read from stdout: ^
+        ^
+Read from stdout: C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala:54: not found: value ok
+C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala:54: not found: value ok
+Read from stdout: ok();
+        ok();
+Read from stdout: ^
+        ^
+Read from stdout: three errors found
+three errors found
+Compilation failed (CompilerInterface)
+Read from stdout: (compile:compileIncremental) Compilation failed
+(compile:compileIncremental) Compilation failed
+Total time: 1 s, completed 7-okt-2015 4:59:25
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@7e90655f, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\router\RoutesPrefix.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\routes.java, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\router\RoutesPrefix.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\routes.java, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\router\RoutesPrefix.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\routes.java, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala)
+
+Recompiling all 8 sources: invalidated sources (6) exceeded 50.0% of all sources
+Read from stdout: Compiling 7 Scala sources and 1 Java source to C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\classes...
+Compiling 7 Scala sources and 1 Java source to C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\classes...
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Running cached compiler 5a092b14, interfacing (CompilerInterface) with Scala compiler version 2.11.6
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	C:\Program Files\Java\jre1.8.0_45\lib\resources.jar;C:\Program Files\Java\jre1.8.0_45\lib\rt.jar;C:\Program Files\Java\jre1.8.0_45\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_45\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_45\lib\jce.jar;C:\Program Files\Java\jre1.8.0_45\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_45\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_45\classes;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.6.jar
+	-classpath
+	C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\classes;C:\Users\Robin\.ivy2\cache\com.typesafe.play\twirl-api_2.11\jars\twirl-api_2.11-1.1.1.jar;C:\Users\Robin\.ivy2\cache\org.apache.commons\commons-lang3\jars\commons-lang3-3.4.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-server_2.11\jars\play-server_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.4.3.jar;C:\Users\Robin\.ivy2\cache\org.javassist\javassist\bundles\javassist-3.19.0-GA.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;C:\Users\Robin\.ivy2\cache\com.typesafe\config\bundles\config-1.3.0.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.8.1.jar;C:\Users\Robin\.ivy2\cache\org.joda\joda-convert\jars\joda-convert-1.7.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\bundles\jackson-annotations-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\bundles\jackson-databind-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jdk8\bundles\jackson-datatype-jdk8-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jsr310\bundles\jackson-datatype-jsr310-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-netty-utils\jars\play-netty-utils-2.4.3.jar;C:\Users\Robin\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.12.jar;C:\Users\Robin\.ivy2\cache\org.slf4j\jul-to-slf4j\jars\jul-to-slf4j-1.7.12.jar;C:\Users\Robin\.ivy2\cache\org.slf4j\jcl-over-slf4j\jars\jcl-over-slf4j-1.7.12.jar;C:\Users\Robin\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.1.3.jar;C:\Users\Robin\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.1.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.13.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.13.jar;C:\Users\Robin\.ivy2\cache\commons-codec\commons-codec\jars\commons-codec-1.10.jar;C:\Users\Robin\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\Robin\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\Robin\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\Robin\.ivy2\cache\com.google.inject\guice\jars\guice-4.0.jar;C:\Users\Robin\.ivy2\cache\javax.inject\javax.inject\jars\javax.inject-1.jar;C:\Users\Robin\.ivy2\cache\aopalliance\aopalliance\jars\aopalliance-1.0.jar;C:\Users\Robin\.ivy2\cache\com.google.inject.extensions\guice-assistedinject\jars\guice-assistedinject-4.0.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-netty-server_2.11\jars\play-netty-server_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\io.netty\netty\bundles\netty-3.10.4.Final.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.netty\netty-http-pipelining\jars\netty-http-pipelining-1.1.4.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-jdbc-api_2.11\jars\play-jdbc-api_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.jolbox\bonecp\bundles\bonecp-0.8.0.RELEASE.jar;C:\Users\Robin\.ivy2\cache\com.zaxxer\HikariCP\bundles\HikariCP-2.3.7.jar;C:\Users\Robin\.ivy2\cache\com.h2database\h2\jars\h2-1.4.187.jar;C:\Users\Robin\.ivy2\cache\tyrex\tyrex\jars\tyrex-1.0.1.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\net.sf.ehcache\ehcache-core\jars\ehcache-core-2.6.11.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.google.guava\guava\bundles\guava-18.0.jar;C:\Users\Robin\.ivy2\cache\com.ning\async-http-client\jars\async-http-client-1.9.21.jar;C:\Users\Robin\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\Robin\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;C:\Users\Robin\.ivy2\cache\org.apache.httpcomponents\httpcore\jars\httpcore-4.0.1.jar;C:\Users\Robin\.ivy2\cache\org.apache.httpcomponents\httpclient\jars\httpclient-4.0.1.jar;C:\Users\Robin\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo_2.11\jars\reactivemongo_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo-bson-macros_2.11\jars\reactivemongo-bson-macros_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-compiler\jars\scala-compiler-2.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.4.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.4.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo-bson_2.11\jars\reactivemongo-bson_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.apache.logging.log4j\log4j-api\jars\log4j-api-2.0.2.jar;C:\Users\Robin\.ivy2\cache\org.apache.logging.log4j\log4j-core\jars\log4j-core-2.0.2.jar
+Read from stdout: C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala:53: not found: value response
+C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala:53: not found: value response
+Read from stdout: response().setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");         // Ensure this header is also allowed!  
+        response().setHeader("Access-Control-Allow-Headers", "Origin, X-Requested-With, Content-Type, Accept");         // Ensure this header is also allowed!  
+Read from stdout: ^
+        ^
+Read from stdout: C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala:54: not found: value ok
+C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala:54: not found: value ok
+Read from stdout: ok();
+        ok();
+Read from stdout: ^
+        ^
+Read from stdout: C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala:72: not found: value response
+C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala:72: not found: value response
+Read from stdout: response().setHeader("Access-Control-Allow-Origin", "http://localhost:9001/*");
+        response().setHeader("Access-Control-Allow-Origin", "http://localhost:9001/*");
+Read from stdout: ^
+        ^
+Read from stdout: three errors found
+three errors found
+Compilation failed (CompilerInterface)
+Read from stdout: (compile:compileIncremental) Compilation failed
+(compile:compileIncremental) Compilation failed
+Total time: 1 s, completed 7-okt-2015 5:01:56
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@3578892b, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\router\RoutesPrefix.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\routes.java, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\router\RoutesPrefix.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\routes.java, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\router\RoutesPrefix.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\routes.java, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala)
+
+Recompiling all 8 sources: invalidated sources (6) exceeded 50.0% of all sources
+Read from stdout: Compiling 7 Scala sources and 1 Java source to C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\classes...
+Compiling 7 Scala sources and 1 Java source to C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\classes...
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Running cached compiler 3047212a, interfacing (CompilerInterface) with Scala compiler version 2.11.6
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	C:\Program Files\Java\jre1.8.0_45\lib\resources.jar;C:\Program Files\Java\jre1.8.0_45\lib\rt.jar;C:\Program Files\Java\jre1.8.0_45\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_45\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_45\lib\jce.jar;C:\Program Files\Java\jre1.8.0_45\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_45\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_45\classes;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.6.jar
+	-classpath
+	C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\classes;C:\Users\Robin\.ivy2\cache\com.typesafe.play\twirl-api_2.11\jars\twirl-api_2.11-1.1.1.jar;C:\Users\Robin\.ivy2\cache\org.apache.commons\commons-lang3\jars\commons-lang3-3.4.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-server_2.11\jars\play-server_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.4.3.jar;C:\Users\Robin\.ivy2\cache\org.javassist\javassist\bundles\javassist-3.19.0-GA.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;C:\Users\Robin\.ivy2\cache\com.typesafe\config\bundles\config-1.3.0.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.8.1.jar;C:\Users\Robin\.ivy2\cache\org.joda\joda-convert\jars\joda-convert-1.7.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\bundles\jackson-annotations-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\bundles\jackson-databind-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jdk8\bundles\jackson-datatype-jdk8-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jsr310\bundles\jackson-datatype-jsr310-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-netty-utils\jars\play-netty-utils-2.4.3.jar;C:\Users\Robin\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.12.jar;C:\Users\Robin\.ivy2\cache\org.slf4j\jul-to-slf4j\jars\jul-to-slf4j-1.7.12.jar;C:\Users\Robin\.ivy2\cache\org.slf4j\jcl-over-slf4j\jars\jcl-over-slf4j-1.7.12.jar;C:\Users\Robin\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.1.3.jar;C:\Users\Robin\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.1.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.13.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.13.jar;C:\Users\Robin\.ivy2\cache\commons-codec\commons-codec\jars\commons-codec-1.10.jar;C:\Users\Robin\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\Robin\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\Robin\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\Robin\.ivy2\cache\com.google.inject\guice\jars\guice-4.0.jar;C:\Users\Robin\.ivy2\cache\javax.inject\javax.inject\jars\javax.inject-1.jar;C:\Users\Robin\.ivy2\cache\aopalliance\aopalliance\jars\aopalliance-1.0.jar;C:\Users\Robin\.ivy2\cache\com.google.inject.extensions\guice-assistedinject\jars\guice-assistedinject-4.0.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-netty-server_2.11\jars\play-netty-server_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\io.netty\netty\bundles\netty-3.10.4.Final.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.netty\netty-http-pipelining\jars\netty-http-pipelining-1.1.4.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-jdbc-api_2.11\jars\play-jdbc-api_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.jolbox\bonecp\bundles\bonecp-0.8.0.RELEASE.jar;C:\Users\Robin\.ivy2\cache\com.zaxxer\HikariCP\bundles\HikariCP-2.3.7.jar;C:\Users\Robin\.ivy2\cache\com.h2database\h2\jars\h2-1.4.187.jar;C:\Users\Robin\.ivy2\cache\tyrex\tyrex\jars\tyrex-1.0.1.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\net.sf.ehcache\ehcache-core\jars\ehcache-core-2.6.11.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.google.guava\guava\bundles\guava-18.0.jar;C:\Users\Robin\.ivy2\cache\com.ning\async-http-client\jars\async-http-client-1.9.21.jar;C:\Users\Robin\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\Robin\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;C:\Users\Robin\.ivy2\cache\org.apache.httpcomponents\httpcore\jars\httpcore-4.0.1.jar;C:\Users\Robin\.ivy2\cache\org.apache.httpcomponents\httpclient\jars\httpclient-4.0.1.jar;C:\Users\Robin\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo_2.11\jars\reactivemongo_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo-bson-macros_2.11\jars\reactivemongo-bson-macros_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-compiler\jars\scala-compiler-2.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.4.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.4.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo-bson_2.11\jars\reactivemongo-bson_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.apache.logging.log4j\log4j-api\jars\log4j-api-2.0.2.jar;C:\Users\Robin\.ivy2\cache\org.apache.logging.log4j\log4j-core\jars\log4j-core-2.0.2.jar
+Read from stdout: C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala:66: not found: value response
+C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala:66: not found: value response
+Read from stdout: response().setHeader("Access-Control-Allow-Origin", "http://localhost:9001/*");
+        response().setHeader("Access-Control-Allow-Origin", "http://localhost:9001/*");
+Read from stdout: ^
+        ^
+Read from stdout: one error found
+one error found
+Compilation failed (CompilerInterface)
+Read from stdout: (compile:compileIncremental) Compilation failed
+(compile:compileIncremental) Compilation failed
+Total time: 1 s, completed 7-okt-2015 5:02:10
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@5b76bfb2, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\router\RoutesPrefix.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\routes.java, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\router\RoutesPrefix.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\routes.java, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\router\RoutesPrefix.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\routes.java, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala)
+
+Recompiling all 8 sources: invalidated sources (6) exceeded 50.0% of all sources
+Read from stdout: Compiling 7 Scala sources and 1 Java source to C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\classes...
+Compiling 7 Scala sources and 1 Java source to C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\classes...
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Running cached compiler 36c5e75, interfacing (CompilerInterface) with Scala compiler version 2.11.6
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	C:\Program Files\Java\jre1.8.0_45\lib\resources.jar;C:\Program Files\Java\jre1.8.0_45\lib\rt.jar;C:\Program Files\Java\jre1.8.0_45\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_45\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_45\lib\jce.jar;C:\Program Files\Java\jre1.8.0_45\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_45\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_45\classes;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.6.jar
+	-classpath
+	C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\classes;C:\Users\Robin\.ivy2\cache\com.typesafe.play\twirl-api_2.11\jars\twirl-api_2.11-1.1.1.jar;C:\Users\Robin\.ivy2\cache\org.apache.commons\commons-lang3\jars\commons-lang3-3.4.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-server_2.11\jars\play-server_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.4.3.jar;C:\Users\Robin\.ivy2\cache\org.javassist\javassist\bundles\javassist-3.19.0-GA.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;C:\Users\Robin\.ivy2\cache\com.typesafe\config\bundles\config-1.3.0.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.8.1.jar;C:\Users\Robin\.ivy2\cache\org.joda\joda-convert\jars\joda-convert-1.7.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\bundles\jackson-annotations-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\bundles\jackson-databind-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jdk8\bundles\jackson-datatype-jdk8-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jsr310\bundles\jackson-datatype-jsr310-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-netty-utils\jars\play-netty-utils-2.4.3.jar;C:\Users\Robin\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.12.jar;C:\Users\Robin\.ivy2\cache\org.slf4j\jul-to-slf4j\jars\jul-to-slf4j-1.7.12.jar;C:\Users\Robin\.ivy2\cache\org.slf4j\jcl-over-slf4j\jars\jcl-over-slf4j-1.7.12.jar;C:\Users\Robin\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.1.3.jar;C:\Users\Robin\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.1.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.13.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.13.jar;C:\Users\Robin\.ivy2\cache\commons-codec\commons-codec\jars\commons-codec-1.10.jar;C:\Users\Robin\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\Robin\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\Robin\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\Robin\.ivy2\cache\com.google.inject\guice\jars\guice-4.0.jar;C:\Users\Robin\.ivy2\cache\javax.inject\javax.inject\jars\javax.inject-1.jar;C:\Users\Robin\.ivy2\cache\aopalliance\aopalliance\jars\aopalliance-1.0.jar;C:\Users\Robin\.ivy2\cache\com.google.inject.extensions\guice-assistedinject\jars\guice-assistedinject-4.0.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-netty-server_2.11\jars\play-netty-server_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\io.netty\netty\bundles\netty-3.10.4.Final.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.netty\netty-http-pipelining\jars\netty-http-pipelining-1.1.4.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-jdbc-api_2.11\jars\play-jdbc-api_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.jolbox\bonecp\bundles\bonecp-0.8.0.RELEASE.jar;C:\Users\Robin\.ivy2\cache\com.zaxxer\HikariCP\bundles\HikariCP-2.3.7.jar;C:\Users\Robin\.ivy2\cache\com.h2database\h2\jars\h2-1.4.187.jar;C:\Users\Robin\.ivy2\cache\tyrex\tyrex\jars\tyrex-1.0.1.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\net.sf.ehcache\ehcache-core\jars\ehcache-core-2.6.11.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.google.guava\guava\bundles\guava-18.0.jar;C:\Users\Robin\.ivy2\cache\com.ning\async-http-client\jars\async-http-client-1.9.21.jar;C:\Users\Robin\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\Robin\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;C:\Users\Robin\.ivy2\cache\org.apache.httpcomponents\httpcore\jars\httpcore-4.0.1.jar;C:\Users\Robin\.ivy2\cache\org.apache.httpcomponents\httpclient\jars\httpclient-4.0.1.jar;C:\Users\Robin\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo_2.11\jars\reactivemongo_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo-bson-macros_2.11\jars\reactivemongo-bson-macros_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-compiler\jars\scala-compiler-2.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.4.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.4.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo-bson_2.11\jars\reactivemongo-bson_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.apache.logging.log4j\log4j-api\jars\log4j-api-2.0.2.jar;C:\Users\Robin\.ivy2\cache\org.apache.logging.log4j\log4j-core\jars\log4j-core-2.0.2.jar
+Read from stdout: C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala:66: not found: value response
+C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala:66: not found: value response
+Read from stdout: response().setHeader("Access-Control-Allow-Origin", "http://localhost:9001/*");
+        response().setHeader("Access-Control-Allow-Origin", "http://localhost:9001/*");
+Read from stdout: ^
+        ^
+Read from stdout: one error found
+one error found
+Compilation failed (CompilerInterface)
+Read from stdout: (compile:compileIncremental) Compilation failed
+(compile:compileIncremental) Compilation failed
+Total time: 1 s, completed 7-okt-2015 5:02:15
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@2085857c, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\router\RoutesPrefix.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\routes.java, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\router\RoutesPrefix.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\routes.java, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\router\RoutesPrefix.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\routes.java, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala)
+
+Recompiling all 8 sources: invalidated sources (6) exceeded 50.0% of all sources
+Read from stdout: Compiling 7 Scala sources and 1 Java source to C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\classes...
+Compiling 7 Scala sources and 1 Java source to C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\classes...
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Running cached compiler 19183718, interfacing (CompilerInterface) with Scala compiler version 2.11.6
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	C:\Program Files\Java\jre1.8.0_45\lib\resources.jar;C:\Program Files\Java\jre1.8.0_45\lib\rt.jar;C:\Program Files\Java\jre1.8.0_45\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_45\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_45\lib\jce.jar;C:\Program Files\Java\jre1.8.0_45\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_45\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_45\classes;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.6.jar
+	-classpath
+	C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\classes;C:\Users\Robin\.ivy2\cache\com.typesafe.play\twirl-api_2.11\jars\twirl-api_2.11-1.1.1.jar;C:\Users\Robin\.ivy2\cache\org.apache.commons\commons-lang3\jars\commons-lang3-3.4.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-server_2.11\jars\play-server_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.4.3.jar;C:\Users\Robin\.ivy2\cache\org.javassist\javassist\bundles\javassist-3.19.0-GA.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;C:\Users\Robin\.ivy2\cache\com.typesafe\config\bundles\config-1.3.0.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.8.1.jar;C:\Users\Robin\.ivy2\cache\org.joda\joda-convert\jars\joda-convert-1.7.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\bundles\jackson-annotations-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\bundles\jackson-databind-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jdk8\bundles\jackson-datatype-jdk8-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jsr310\bundles\jackson-datatype-jsr310-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-netty-utils\jars\play-netty-utils-2.4.3.jar;C:\Users\Robin\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.12.jar;C:\Users\Robin\.ivy2\cache\org.slf4j\jul-to-slf4j\jars\jul-to-slf4j-1.7.12.jar;C:\Users\Robin\.ivy2\cache\org.slf4j\jcl-over-slf4j\jars\jcl-over-slf4j-1.7.12.jar;C:\Users\Robin\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.1.3.jar;C:\Users\Robin\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.1.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.13.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.13.jar;C:\Users\Robin\.ivy2\cache\commons-codec\commons-codec\jars\commons-codec-1.10.jar;C:\Users\Robin\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\Robin\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\Robin\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\Robin\.ivy2\cache\com.google.inject\guice\jars\guice-4.0.jar;C:\Users\Robin\.ivy2\cache\javax.inject\javax.inject\jars\javax.inject-1.jar;C:\Users\Robin\.ivy2\cache\aopalliance\aopalliance\jars\aopalliance-1.0.jar;C:\Users\Robin\.ivy2\cache\com.google.inject.extensions\guice-assistedinject\jars\guice-assistedinject-4.0.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-netty-server_2.11\jars\play-netty-server_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\io.netty\netty\bundles\netty-3.10.4.Final.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.netty\netty-http-pipelining\jars\netty-http-pipelining-1.1.4.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-jdbc-api_2.11\jars\play-jdbc-api_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.jolbox\bonecp\bundles\bonecp-0.8.0.RELEASE.jar;C:\Users\Robin\.ivy2\cache\com.zaxxer\HikariCP\bundles\HikariCP-2.3.7.jar;C:\Users\Robin\.ivy2\cache\com.h2database\h2\jars\h2-1.4.187.jar;C:\Users\Robin\.ivy2\cache\tyrex\tyrex\jars\tyrex-1.0.1.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\net.sf.ehcache\ehcache-core\jars\ehcache-core-2.6.11.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.google.guava\guava\bundles\guava-18.0.jar;C:\Users\Robin\.ivy2\cache\com.ning\async-http-client\jars\async-http-client-1.9.21.jar;C:\Users\Robin\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\Robin\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;C:\Users\Robin\.ivy2\cache\org.apache.httpcomponents\httpcore\jars\httpcore-4.0.1.jar;C:\Users\Robin\.ivy2\cache\org.apache.httpcomponents\httpclient\jars\httpclient-4.0.1.jar;C:\Users\Robin\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo_2.11\jars\reactivemongo_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo-bson-macros_2.11\jars\reactivemongo-bson-macros_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-compiler\jars\scala-compiler-2.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.4.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.4.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo-bson_2.11\jars\reactivemongo-bson_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.apache.logging.log4j\log4j-api\jars\log4j-api-2.0.2.jar;C:\Users\Robin\.ivy2\cache\org.apache.logging.log4j\log4j-core\jars\log4j-core-2.0.2.jar
+Read from stdout: C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala:77: ';' expected but ')' found.
+C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala:77: ';' expected but ')' found.
+Read from stdout: ))
+            ))
+Read from stdout: ^
+             ^
+Read from stdout: one error found
+one error found
+Compilation failed (CompilerInterface)
+Read from stdout: (compile:compileIncremental) Compilation failed
+(compile:compileIncremental) Compilation failed
+Total time: 0 s, completed 7-okt-2015 5:04:49
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@5ac39c3e, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\router\RoutesPrefix.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\routes.java, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\router\RoutesPrefix.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\routes.java, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\router\RoutesPrefix.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\routes.java, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala)
+
+Recompiling all 8 sources: invalidated sources (6) exceeded 50.0% of all sources
+Read from stdout: Compiling 7 Scala sources and 1 Java source to C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\classes...
+Compiling 7 Scala sources and 1 Java source to C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\classes...
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Running cached compiler 193e77df, interfacing (CompilerInterface) with Scala compiler version 2.11.6
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	C:\Program Files\Java\jre1.8.0_45\lib\resources.jar;C:\Program Files\Java\jre1.8.0_45\lib\rt.jar;C:\Program Files\Java\jre1.8.0_45\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_45\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_45\lib\jce.jar;C:\Program Files\Java\jre1.8.0_45\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_45\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_45\classes;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.6.jar
+	-classpath
+	C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\classes;C:\Users\Robin\.ivy2\cache\com.typesafe.play\twirl-api_2.11\jars\twirl-api_2.11-1.1.1.jar;C:\Users\Robin\.ivy2\cache\org.apache.commons\commons-lang3\jars\commons-lang3-3.4.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-server_2.11\jars\play-server_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.4.3.jar;C:\Users\Robin\.ivy2\cache\org.javassist\javassist\bundles\javassist-3.19.0-GA.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;C:\Users\Robin\.ivy2\cache\com.typesafe\config\bundles\config-1.3.0.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.8.1.jar;C:\Users\Robin\.ivy2\cache\org.joda\joda-convert\jars\joda-convert-1.7.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\bundles\jackson-annotations-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\bundles\jackson-databind-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jdk8\bundles\jackson-datatype-jdk8-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jsr310\bundles\jackson-datatype-jsr310-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-netty-utils\jars\play-netty-utils-2.4.3.jar;C:\Users\Robin\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.12.jar;C:\Users\Robin\.ivy2\cache\org.slf4j\jul-to-slf4j\jars\jul-to-slf4j-1.7.12.jar;C:\Users\Robin\.ivy2\cache\org.slf4j\jcl-over-slf4j\jars\jcl-over-slf4j-1.7.12.jar;C:\Users\Robin\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.1.3.jar;C:\Users\Robin\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.1.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.13.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.13.jar;C:\Users\Robin\.ivy2\cache\commons-codec\commons-codec\jars\commons-codec-1.10.jar;C:\Users\Robin\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\Robin\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\Robin\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\Robin\.ivy2\cache\com.google.inject\guice\jars\guice-4.0.jar;C:\Users\Robin\.ivy2\cache\javax.inject\javax.inject\jars\javax.inject-1.jar;C:\Users\Robin\.ivy2\cache\aopalliance\aopalliance\jars\aopalliance-1.0.jar;C:\Users\Robin\.ivy2\cache\com.google.inject.extensions\guice-assistedinject\jars\guice-assistedinject-4.0.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-netty-server_2.11\jars\play-netty-server_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\io.netty\netty\bundles\netty-3.10.4.Final.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.netty\netty-http-pipelining\jars\netty-http-pipelining-1.1.4.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-jdbc-api_2.11\jars\play-jdbc-api_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.jolbox\bonecp\bundles\bonecp-0.8.0.RELEASE.jar;C:\Users\Robin\.ivy2\cache\com.zaxxer\HikariCP\bundles\HikariCP-2.3.7.jar;C:\Users\Robin\.ivy2\cache\com.h2database\h2\jars\h2-1.4.187.jar;C:\Users\Robin\.ivy2\cache\tyrex\tyrex\jars\tyrex-1.0.1.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\net.sf.ehcache\ehcache-core\jars\ehcache-core-2.6.11.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.google.guava\guava\bundles\guava-18.0.jar;C:\Users\Robin\.ivy2\cache\com.ning\async-http-client\jars\async-http-client-1.9.21.jar;C:\Users\Robin\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\Robin\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;C:\Users\Robin\.ivy2\cache\org.apache.httpcomponents\httpcore\jars\httpcore-4.0.1.jar;C:\Users\Robin\.ivy2\cache\org.apache.httpcomponents\httpclient\jars\httpclient-4.0.1.jar;C:\Users\Robin\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo_2.11\jars\reactivemongo_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo-bson-macros_2.11\jars\reactivemongo-bson-macros_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-compiler\jars\scala-compiler-2.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.4.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.4.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo-bson_2.11\jars\reactivemongo-bson_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.apache.logging.log4j\log4j-api\jars\log4j-api-2.0.2.jar;C:\Users\Robin\.ivy2\cache\org.apache.logging.log4j\log4j-core\jars\log4j-core-2.0.2.jar
+Read from stdout: C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala:77: ';' expected but ')' found.
+C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala:77: ';' expected but ')' found.
+Read from stdout: ))
+            ))
+Read from stdout: ^
+             ^
+Read from stdout: one error found
+one error found
+Compilation failed (CompilerInterface)
+Read from stdout: (compile:compileIncremental) Compilation failed
+(compile:compileIncremental) Compilation failed
+Total time: 0 s, completed 7-okt-2015 5:05:13
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@4beeaf42, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\router\RoutesPrefix.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\routes.java, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\router\RoutesPrefix.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\routes.java, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\router\RoutesPrefix.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\routes.java, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\router\Routes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\ReverseRoutes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\routes\main\controllers\javascript\JavaScriptReverseRoutes.scala, C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala)
+
+Recompiling all 8 sources: invalidated sources (6) exceeded 50.0% of all sources
+Read from stdout: Compiling 7 Scala sources and 1 Java source to C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\classes...
+Compiling 7 Scala sources and 1 Java source to C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\classes...
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Running cached compiler 583d45bf, interfacing (CompilerInterface) with Scala compiler version 2.11.6
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	C:\Program Files\Java\jre1.8.0_45\lib\resources.jar;C:\Program Files\Java\jre1.8.0_45\lib\rt.jar;C:\Program Files\Java\jre1.8.0_45\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_45\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_45\lib\jce.jar;C:\Program Files\Java\jre1.8.0_45\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_45\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_45\classes;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.6.jar
+	-classpath
+	C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\classes;C:\Users\Robin\.ivy2\cache\com.typesafe.play\twirl-api_2.11\jars\twirl-api_2.11-1.1.1.jar;C:\Users\Robin\.ivy2\cache\org.apache.commons\commons-lang3\jars\commons-lang3-3.4.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-server_2.11\jars\play-server_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.4.3.jar;C:\Users\Robin\.ivy2\cache\org.javassist\javassist\bundles\javassist-3.19.0-GA.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;C:\Users\Robin\.ivy2\cache\com.typesafe\config\bundles\config-1.3.0.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.8.1.jar;C:\Users\Robin\.ivy2\cache\org.joda\joda-convert\jars\joda-convert-1.7.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\bundles\jackson-annotations-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\bundles\jackson-databind-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jdk8\bundles\jackson-datatype-jdk8-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jsr310\bundles\jackson-datatype-jsr310-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-netty-utils\jars\play-netty-utils-2.4.3.jar;C:\Users\Robin\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.12.jar;C:\Users\Robin\.ivy2\cache\org.slf4j\jul-to-slf4j\jars\jul-to-slf4j-1.7.12.jar;C:\Users\Robin\.ivy2\cache\org.slf4j\jcl-over-slf4j\jars\jcl-over-slf4j-1.7.12.jar;C:\Users\Robin\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.1.3.jar;C:\Users\Robin\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.1.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.13.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.13.jar;C:\Users\Robin\.ivy2\cache\commons-codec\commons-codec\jars\commons-codec-1.10.jar;C:\Users\Robin\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\Robin\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\Robin\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\Robin\.ivy2\cache\com.google.inject\guice\jars\guice-4.0.jar;C:\Users\Robin\.ivy2\cache\javax.inject\javax.inject\jars\javax.inject-1.jar;C:\Users\Robin\.ivy2\cache\aopalliance\aopalliance\jars\aopalliance-1.0.jar;C:\Users\Robin\.ivy2\cache\com.google.inject.extensions\guice-assistedinject\jars\guice-assistedinject-4.0.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-netty-server_2.11\jars\play-netty-server_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\io.netty\netty\bundles\netty-3.10.4.Final.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.netty\netty-http-pipelining\jars\netty-http-pipelining-1.1.4.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-jdbc-api_2.11\jars\play-jdbc-api_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.jolbox\bonecp\bundles\bonecp-0.8.0.RELEASE.jar;C:\Users\Robin\.ivy2\cache\com.zaxxer\HikariCP\bundles\HikariCP-2.3.7.jar;C:\Users\Robin\.ivy2\cache\com.h2database\h2\jars\h2-1.4.187.jar;C:\Users\Robin\.ivy2\cache\tyrex\tyrex\jars\tyrex-1.0.1.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\net.sf.ehcache\ehcache-core\jars\ehcache-core-2.6.11.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.google.guava\guava\bundles\guava-18.0.jar;C:\Users\Robin\.ivy2\cache\com.ning\async-http-client\jars\async-http-client-1.9.21.jar;C:\Users\Robin\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\Robin\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;C:\Users\Robin\.ivy2\cache\org.apache.httpcomponents\httpcore\jars\httpcore-4.0.1.jar;C:\Users\Robin\.ivy2\cache\org.apache.httpcomponents\httpclient\jars\httpclient-4.0.1.jar;C:\Users\Robin\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo_2.11\jars\reactivemongo_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo-bson-macros_2.11\jars\reactivemongo-bson-macros_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-compiler\jars\scala-compiler-2.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.4.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.4.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo-bson_2.11\jars\reactivemongo-bson_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.apache.logging.log4j\log4j-api\jars\log4j-api-2.0.2.jar;C:\Users\Robin\.ivy2\cache\org.apache.logging.log4j\log4j-core\jars\log4j-core-2.0.2.jar
+Read from stdout: C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala:37: method cursor in trait GenericQueryBuilder is deprecated: Use [[cursor]] function with read preference.
+C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala:37: method cursor in trait GenericQueryBuilder is deprecated: Use [[cursor]] function with read preference.
+Read from stdout: val cursor = collection.find(query).cursor[BSONDocument]
+        val cursor = collection.find(query).cursor[BSONDocument]
+Read from stdout: ^
+                                            ^
+Read from stdout: one warning found
+one warning found
+Scala compilation took 1.905842871 s
+Java compilation took 0.60674197 s
+Java analysis took 0.029380887 s
+Java compile + analysis took 0.644767983 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 3 s, completed 7-okt-2015 5:05:40
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@6ef38233, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala)
+
+Read from stdout: Compiling 1 Scala source to C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\classes...
+Compiling 1 Scala source to C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\classes...
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Running cached compiler 6ccb14c9, interfacing (CompilerInterface) with Scala compiler version 2.11.6
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	C:\Program Files\Java\jre1.8.0_45\lib\resources.jar;C:\Program Files\Java\jre1.8.0_45\lib\rt.jar;C:\Program Files\Java\jre1.8.0_45\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_45\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_45\lib\jce.jar;C:\Program Files\Java\jre1.8.0_45\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_45\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_45\classes;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.6.jar
+	-classpath
+	C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\classes;C:\Users\Robin\.ivy2\cache\com.typesafe.play\twirl-api_2.11\jars\twirl-api_2.11-1.1.1.jar;C:\Users\Robin\.ivy2\cache\org.apache.commons\commons-lang3\jars\commons-lang3-3.4.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-server_2.11\jars\play-server_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.4.3.jar;C:\Users\Robin\.ivy2\cache\org.javassist\javassist\bundles\javassist-3.19.0-GA.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;C:\Users\Robin\.ivy2\cache\com.typesafe\config\bundles\config-1.3.0.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.8.1.jar;C:\Users\Robin\.ivy2\cache\org.joda\joda-convert\jars\joda-convert-1.7.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\bundles\jackson-annotations-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\bundles\jackson-databind-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jdk8\bundles\jackson-datatype-jdk8-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jsr310\bundles\jackson-datatype-jsr310-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-netty-utils\jars\play-netty-utils-2.4.3.jar;C:\Users\Robin\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.12.jar;C:\Users\Robin\.ivy2\cache\org.slf4j\jul-to-slf4j\jars\jul-to-slf4j-1.7.12.jar;C:\Users\Robin\.ivy2\cache\org.slf4j\jcl-over-slf4j\jars\jcl-over-slf4j-1.7.12.jar;C:\Users\Robin\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.1.3.jar;C:\Users\Robin\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.1.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.13.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.13.jar;C:\Users\Robin\.ivy2\cache\commons-codec\commons-codec\jars\commons-codec-1.10.jar;C:\Users\Robin\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\Robin\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\Robin\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\Robin\.ivy2\cache\com.google.inject\guice\jars\guice-4.0.jar;C:\Users\Robin\.ivy2\cache\javax.inject\javax.inject\jars\javax.inject-1.jar;C:\Users\Robin\.ivy2\cache\aopalliance\aopalliance\jars\aopalliance-1.0.jar;C:\Users\Robin\.ivy2\cache\com.google.inject.extensions\guice-assistedinject\jars\guice-assistedinject-4.0.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-netty-server_2.11\jars\play-netty-server_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\io.netty\netty\bundles\netty-3.10.4.Final.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.netty\netty-http-pipelining\jars\netty-http-pipelining-1.1.4.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-jdbc-api_2.11\jars\play-jdbc-api_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.jolbox\bonecp\bundles\bonecp-0.8.0.RELEASE.jar;C:\Users\Robin\.ivy2\cache\com.zaxxer\HikariCP\bundles\HikariCP-2.3.7.jar;C:\Users\Robin\.ivy2\cache\com.h2database\h2\jars\h2-1.4.187.jar;C:\Users\Robin\.ivy2\cache\tyrex\tyrex\jars\tyrex-1.0.1.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\net.sf.ehcache\ehcache-core\jars\ehcache-core-2.6.11.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.google.guava\guava\bundles\guava-18.0.jar;C:\Users\Robin\.ivy2\cache\com.ning\async-http-client\jars\async-http-client-1.9.21.jar;C:\Users\Robin\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\Robin\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;C:\Users\Robin\.ivy2\cache\org.apache.httpcomponents\httpcore\jars\httpcore-4.0.1.jar;C:\Users\Robin\.ivy2\cache\org.apache.httpcomponents\httpclient\jars\httpclient-4.0.1.jar;C:\Users\Robin\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo_2.11\jars\reactivemongo_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo-bson-macros_2.11\jars\reactivemongo-bson-macros_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-compiler\jars\scala-compiler-2.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.4.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.4.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo-bson_2.11\jars\reactivemongo-bson_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.apache.logging.log4j\log4j-api\jars\log4j-api-2.0.2.jar;C:\Users\Robin\.ivy2\cache\org.apache.logging.log4j\log4j-core\jars\log4j-core-2.0.2.jar
+Read from stdout: C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala:78: ')' expected but '}' found.
+C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala:78: ')' expected but '}' found.
+Read from stdout: }
+    }
+Read from stdout: ^
+    ^
+Read from stdout: one error found
+one error found
+Compilation failed (CompilerInterface)
+Read from stdout: (compile:compileIncremental) Compilation failed
+(compile:compileIncremental) Compilation failed
+Total time: 0 s, completed 7-okt-2015 5:06:22
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@370501c6, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala)
+
+Read from stdout: Compiling 1 Scala source to C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\classes...
+Compiling 1 Scala source to C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\classes...
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Running cached compiler 66055655, interfacing (CompilerInterface) with Scala compiler version 2.11.6
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	C:\Program Files\Java\jre1.8.0_45\lib\resources.jar;C:\Program Files\Java\jre1.8.0_45\lib\rt.jar;C:\Program Files\Java\jre1.8.0_45\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_45\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_45\lib\jce.jar;C:\Program Files\Java\jre1.8.0_45\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_45\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_45\classes;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.6.jar
+	-classpath
+	C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\classes;C:\Users\Robin\.ivy2\cache\com.typesafe.play\twirl-api_2.11\jars\twirl-api_2.11-1.1.1.jar;C:\Users\Robin\.ivy2\cache\org.apache.commons\commons-lang3\jars\commons-lang3-3.4.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-server_2.11\jars\play-server_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.4.3.jar;C:\Users\Robin\.ivy2\cache\org.javassist\javassist\bundles\javassist-3.19.0-GA.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;C:\Users\Robin\.ivy2\cache\com.typesafe\config\bundles\config-1.3.0.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.8.1.jar;C:\Users\Robin\.ivy2\cache\org.joda\joda-convert\jars\joda-convert-1.7.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\bundles\jackson-annotations-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\bundles\jackson-databind-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jdk8\bundles\jackson-datatype-jdk8-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jsr310\bundles\jackson-datatype-jsr310-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-netty-utils\jars\play-netty-utils-2.4.3.jar;C:\Users\Robin\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.12.jar;C:\Users\Robin\.ivy2\cache\org.slf4j\jul-to-slf4j\jars\jul-to-slf4j-1.7.12.jar;C:\Users\Robin\.ivy2\cache\org.slf4j\jcl-over-slf4j\jars\jcl-over-slf4j-1.7.12.jar;C:\Users\Robin\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.1.3.jar;C:\Users\Robin\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.1.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.13.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.13.jar;C:\Users\Robin\.ivy2\cache\commons-codec\commons-codec\jars\commons-codec-1.10.jar;C:\Users\Robin\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\Robin\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\Robin\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\Robin\.ivy2\cache\com.google.inject\guice\jars\guice-4.0.jar;C:\Users\Robin\.ivy2\cache\javax.inject\javax.inject\jars\javax.inject-1.jar;C:\Users\Robin\.ivy2\cache\aopalliance\aopalliance\jars\aopalliance-1.0.jar;C:\Users\Robin\.ivy2\cache\com.google.inject.extensions\guice-assistedinject\jars\guice-assistedinject-4.0.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-netty-server_2.11\jars\play-netty-server_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\io.netty\netty\bundles\netty-3.10.4.Final.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.netty\netty-http-pipelining\jars\netty-http-pipelining-1.1.4.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-jdbc-api_2.11\jars\play-jdbc-api_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.jolbox\bonecp\bundles\bonecp-0.8.0.RELEASE.jar;C:\Users\Robin\.ivy2\cache\com.zaxxer\HikariCP\bundles\HikariCP-2.3.7.jar;C:\Users\Robin\.ivy2\cache\com.h2database\h2\jars\h2-1.4.187.jar;C:\Users\Robin\.ivy2\cache\tyrex\tyrex\jars\tyrex-1.0.1.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\net.sf.ehcache\ehcache-core\jars\ehcache-core-2.6.11.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.google.guava\guava\bundles\guava-18.0.jar;C:\Users\Robin\.ivy2\cache\com.ning\async-http-client\jars\async-http-client-1.9.21.jar;C:\Users\Robin\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\Robin\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;C:\Users\Robin\.ivy2\cache\org.apache.httpcomponents\httpcore\jars\httpcore-4.0.1.jar;C:\Users\Robin\.ivy2\cache\org.apache.httpcomponents\httpclient\jars\httpclient-4.0.1.jar;C:\Users\Robin\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo_2.11\jars\reactivemongo_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo-bson-macros_2.11\jars\reactivemongo-bson-macros_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-compiler\jars\scala-compiler-2.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.4.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.4.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo-bson_2.11\jars\reactivemongo-bson_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.apache.logging.log4j\log4j-api\jars\log4j-api-2.0.2.jar;C:\Users\Robin\.ivy2\cache\org.apache.logging.log4j\log4j-core\jars\log4j-core-2.0.2.jar
+Read from stdout: C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala:73: value withHeaders is not a member of play.api.libs.json.JsObject
+Read from stdout: possible cause: maybe a semicolon is missing before `value withHeaders'?
+C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala:73: value withHeaders is not a member of play.api.libs.json.JsObject
+possible cause: maybe a semicolon is missing before `value withHeaders'?
+Read from stdout: "FORECAST" -> resp2).withHeaders(
+            "FORECAST" -> resp2).withHeaders(
+Read from stdout: ^
+                                 ^
+Read from stdout: C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala:74: not found: value origin
+C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala:74: not found: value origin
+Read from stdout: ACCESS_CONTROL_ALLOW_ORIGIN -> origin,
+                ACCESS_CONTROL_ALLOW_ORIGIN -> origin,
+Read from stdout: ^
+                                               ^
+Read from stdout: two errors found
+two errors found
+Compilation failed (CompilerInterface)
+Read from stdout: (compile:compileIncremental) Compilation failed
+(compile:compileIncremental) Compilation failed
+Total time: 0 s, completed 7-okt-2015 5:06:31
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@52bc41ef, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala)
+
+Read from stdout: Compiling 1 Scala source to C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\classes...
+Compiling 1 Scala source to C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\classes...
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Running cached compiler 4a0d38fd, interfacing (CompilerInterface) with Scala compiler version 2.11.6
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	C:\Program Files\Java\jre1.8.0_45\lib\resources.jar;C:\Program Files\Java\jre1.8.0_45\lib\rt.jar;C:\Program Files\Java\jre1.8.0_45\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_45\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_45\lib\jce.jar;C:\Program Files\Java\jre1.8.0_45\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_45\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_45\classes;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.6.jar
+	-classpath
+	C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\classes;C:\Users\Robin\.ivy2\cache\com.typesafe.play\twirl-api_2.11\jars\twirl-api_2.11-1.1.1.jar;C:\Users\Robin\.ivy2\cache\org.apache.commons\commons-lang3\jars\commons-lang3-3.4.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-server_2.11\jars\play-server_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.4.3.jar;C:\Users\Robin\.ivy2\cache\org.javassist\javassist\bundles\javassist-3.19.0-GA.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;C:\Users\Robin\.ivy2\cache\com.typesafe\config\bundles\config-1.3.0.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.8.1.jar;C:\Users\Robin\.ivy2\cache\org.joda\joda-convert\jars\joda-convert-1.7.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\bundles\jackson-annotations-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\bundles\jackson-databind-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jdk8\bundles\jackson-datatype-jdk8-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jsr310\bundles\jackson-datatype-jsr310-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-netty-utils\jars\play-netty-utils-2.4.3.jar;C:\Users\Robin\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.12.jar;C:\Users\Robin\.ivy2\cache\org.slf4j\jul-to-slf4j\jars\jul-to-slf4j-1.7.12.jar;C:\Users\Robin\.ivy2\cache\org.slf4j\jcl-over-slf4j\jars\jcl-over-slf4j-1.7.12.jar;C:\Users\Robin\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.1.3.jar;C:\Users\Robin\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.1.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.13.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.13.jar;C:\Users\Robin\.ivy2\cache\commons-codec\commons-codec\jars\commons-codec-1.10.jar;C:\Users\Robin\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\Robin\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\Robin\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\Robin\.ivy2\cache\com.google.inject\guice\jars\guice-4.0.jar;C:\Users\Robin\.ivy2\cache\javax.inject\javax.inject\jars\javax.inject-1.jar;C:\Users\Robin\.ivy2\cache\aopalliance\aopalliance\jars\aopalliance-1.0.jar;C:\Users\Robin\.ivy2\cache\com.google.inject.extensions\guice-assistedinject\jars\guice-assistedinject-4.0.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-netty-server_2.11\jars\play-netty-server_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\io.netty\netty\bundles\netty-3.10.4.Final.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.netty\netty-http-pipelining\jars\netty-http-pipelining-1.1.4.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-jdbc-api_2.11\jars\play-jdbc-api_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.jolbox\bonecp\bundles\bonecp-0.8.0.RELEASE.jar;C:\Users\Robin\.ivy2\cache\com.zaxxer\HikariCP\bundles\HikariCP-2.3.7.jar;C:\Users\Robin\.ivy2\cache\com.h2database\h2\jars\h2-1.4.187.jar;C:\Users\Robin\.ivy2\cache\tyrex\tyrex\jars\tyrex-1.0.1.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\net.sf.ehcache\ehcache-core\jars\ehcache-core-2.6.11.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.google.guava\guava\bundles\guava-18.0.jar;C:\Users\Robin\.ivy2\cache\com.ning\async-http-client\jars\async-http-client-1.9.21.jar;C:\Users\Robin\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\Robin\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;C:\Users\Robin\.ivy2\cache\org.apache.httpcomponents\httpcore\jars\httpcore-4.0.1.jar;C:\Users\Robin\.ivy2\cache\org.apache.httpcomponents\httpclient\jars\httpclient-4.0.1.jar;C:\Users\Robin\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo_2.11\jars\reactivemongo_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo-bson-macros_2.11\jars\reactivemongo-bson-macros_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-compiler\jars\scala-compiler-2.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.4.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.4.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo-bson_2.11\jars\reactivemongo-bson_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.apache.logging.log4j\log4j-api\jars\log4j-api-2.0.2.jar;C:\Users\Robin\.ivy2\cache\org.apache.logging.log4j\log4j-core\jars\log4j-core-2.0.2.jar
+Read from stdout: C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala:66: not found: value request
+C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala:66: not found: value request
+Read from stdout: val origin = request.headers.get(ORIGIN).getOrElse("*")
+        val origin = request.headers.get(ORIGIN).getOrElse("*")
+Read from stdout: ^
+                     ^
+Read from stdout: C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala:74: value withHeaders is not a member of play.api.libs.json.JsObject
+Read from stdout: possible cause: maybe a semicolon is missing before `value withHeaders'?
+C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala:74: value withHeaders is not a member of play.api.libs.json.JsObject
+possible cause: maybe a semicolon is missing before `value withHeaders'?
+Read from stdout: "FORECAST" -> resp2).withHeaders(
+            "FORECAST" -> resp2).withHeaders(
+Read from stdout: ^
+                                 ^
+Read from stdout: two errors found
+two errors found
+Compilation failed (CompilerInterface)
+Read from stdout: (compile:compileIncremental) Compilation failed
+(compile:compileIncremental) Compilation failed
+Total time: 0 s, completed 7-okt-2015 5:07:04
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@837e09a, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala)
+
+Read from stdout: Compiling 1 Scala source to C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\classes...
+Compiling 1 Scala source to C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\classes...
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Running cached compiler 68b5c8c5, interfacing (CompilerInterface) with Scala compiler version 2.11.6
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	C:\Program Files\Java\jre1.8.0_45\lib\resources.jar;C:\Program Files\Java\jre1.8.0_45\lib\rt.jar;C:\Program Files\Java\jre1.8.0_45\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_45\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_45\lib\jce.jar;C:\Program Files\Java\jre1.8.0_45\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_45\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_45\classes;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.6.jar
+	-classpath
+	C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\classes;C:\Users\Robin\.ivy2\cache\com.typesafe.play\twirl-api_2.11\jars\twirl-api_2.11-1.1.1.jar;C:\Users\Robin\.ivy2\cache\org.apache.commons\commons-lang3\jars\commons-lang3-3.4.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-server_2.11\jars\play-server_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.4.3.jar;C:\Users\Robin\.ivy2\cache\org.javassist\javassist\bundles\javassist-3.19.0-GA.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;C:\Users\Robin\.ivy2\cache\com.typesafe\config\bundles\config-1.3.0.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.8.1.jar;C:\Users\Robin\.ivy2\cache\org.joda\joda-convert\jars\joda-convert-1.7.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\bundles\jackson-annotations-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\bundles\jackson-databind-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jdk8\bundles\jackson-datatype-jdk8-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jsr310\bundles\jackson-datatype-jsr310-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-netty-utils\jars\play-netty-utils-2.4.3.jar;C:\Users\Robin\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.12.jar;C:\Users\Robin\.ivy2\cache\org.slf4j\jul-to-slf4j\jars\jul-to-slf4j-1.7.12.jar;C:\Users\Robin\.ivy2\cache\org.slf4j\jcl-over-slf4j\jars\jcl-over-slf4j-1.7.12.jar;C:\Users\Robin\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.1.3.jar;C:\Users\Robin\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.1.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.13.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.13.jar;C:\Users\Robin\.ivy2\cache\commons-codec\commons-codec\jars\commons-codec-1.10.jar;C:\Users\Robin\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\Robin\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\Robin\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\Robin\.ivy2\cache\com.google.inject\guice\jars\guice-4.0.jar;C:\Users\Robin\.ivy2\cache\javax.inject\javax.inject\jars\javax.inject-1.jar;C:\Users\Robin\.ivy2\cache\aopalliance\aopalliance\jars\aopalliance-1.0.jar;C:\Users\Robin\.ivy2\cache\com.google.inject.extensions\guice-assistedinject\jars\guice-assistedinject-4.0.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-netty-server_2.11\jars\play-netty-server_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\io.netty\netty\bundles\netty-3.10.4.Final.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.netty\netty-http-pipelining\jars\netty-http-pipelining-1.1.4.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-jdbc-api_2.11\jars\play-jdbc-api_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.jolbox\bonecp\bundles\bonecp-0.8.0.RELEASE.jar;C:\Users\Robin\.ivy2\cache\com.zaxxer\HikariCP\bundles\HikariCP-2.3.7.jar;C:\Users\Robin\.ivy2\cache\com.h2database\h2\jars\h2-1.4.187.jar;C:\Users\Robin\.ivy2\cache\tyrex\tyrex\jars\tyrex-1.0.1.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\net.sf.ehcache\ehcache-core\jars\ehcache-core-2.6.11.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.google.guava\guava\bundles\guava-18.0.jar;C:\Users\Robin\.ivy2\cache\com.ning\async-http-client\jars\async-http-client-1.9.21.jar;C:\Users\Robin\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\Robin\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;C:\Users\Robin\.ivy2\cache\org.apache.httpcomponents\httpcore\jars\httpcore-4.0.1.jar;C:\Users\Robin\.ivy2\cache\org.apache.httpcomponents\httpclient\jars\httpclient-4.0.1.jar;C:\Users\Robin\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo_2.11\jars\reactivemongo_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo-bson-macros_2.11\jars\reactivemongo-bson-macros_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-compiler\jars\scala-compiler-2.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.4.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.4.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo-bson_2.11\jars\reactivemongo-bson_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.apache.logging.log4j\log4j-api\jars\log4j-api-2.0.2.jar;C:\Users\Robin\.ivy2\cache\org.apache.logging.log4j\log4j-core\jars\log4j-core-2.0.2.jar
+Read from stdout: C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala:66: not found: value request
+C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala:66: not found: value request
+Read from stdout: val origin = request.headers.get(ORIGIN).getOrElse("*")
+        val origin = request.headers.get(ORIGIN).getOrElse("*")
+Read from stdout: ^
+                     ^
+Read from stdout: one error found
+one error found
+Compilation failed (CompilerInterface)
+Read from stdout: (compile:compileIncremental) Compilation failed
+(compile:compileIncremental) Compilation failed
+Total time: 0 s, completed 7-okt-2015 5:07:47
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@2b0e1d02, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala)
+
+Read from stdout: Compiling 1 Scala source to C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\classes...
+Compiling 1 Scala source to C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\classes...
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Running cached compiler 45b218f9, interfacing (CompilerInterface) with Scala compiler version 2.11.6
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	C:\Program Files\Java\jre1.8.0_45\lib\resources.jar;C:\Program Files\Java\jre1.8.0_45\lib\rt.jar;C:\Program Files\Java\jre1.8.0_45\lib\sunrsasign.jar;C:\Program Files\Java\jre1.8.0_45\lib\jsse.jar;C:\Program Files\Java\jre1.8.0_45\lib\jce.jar;C:\Program Files\Java\jre1.8.0_45\lib\charsets.jar;C:\Program Files\Java\jre1.8.0_45\lib\jfr.jar;C:\Program Files\Java\jre1.8.0_45\classes;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-library\jars\scala-library-2.11.6.jar
+	-classpath
+	C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\classes;C:\Users\Robin\.ivy2\cache\com.typesafe.play\twirl-api_2.11\jars\twirl-api_2.11-1.1.1.jar;C:\Users\Robin\.ivy2\cache\org.apache.commons\commons-lang3\jars\commons-lang3-3.4.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-server_2.11\jars\play-server_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.4.3.jar;C:\Users\Robin\.ivy2\cache\org.javassist\javassist\bundles\javassist-3.19.0-GA.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;C:\Users\Robin\.ivy2\cache\com.typesafe\config\bundles\config-1.3.0.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\joda-time\joda-time\jars\joda-time-2.8.1.jar;C:\Users\Robin\.ivy2\cache\org.joda\joda-convert\jars\joda-convert-1.7.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.core\jackson-core\bundles\jackson-core-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.core\jackson-annotations\bundles\jackson-annotations-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.core\jackson-databind\bundles\jackson-databind-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jdk8\bundles\jackson-datatype-jdk8-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.fasterxml.jackson.datatype\jackson-datatype-jsr310\bundles\jackson-datatype-jsr310-2.5.4.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-netty-utils\jars\play-netty-utils-2.4.3.jar;C:\Users\Robin\.ivy2\cache\org.slf4j\slf4j-api\jars\slf4j-api-1.7.12.jar;C:\Users\Robin\.ivy2\cache\org.slf4j\jul-to-slf4j\jars\jul-to-slf4j-1.7.12.jar;C:\Users\Robin\.ivy2\cache\org.slf4j\jcl-over-slf4j\jars\jcl-over-slf4j-1.7.12.jar;C:\Users\Robin\.ivy2\cache\ch.qos.logback\logback-core\jars\logback-core-1.1.3.jar;C:\Users\Robin\.ivy2\cache\ch.qos.logback\logback-classic\jars\logback-classic-1.1.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.13.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.13.jar;C:\Users\Robin\.ivy2\cache\commons-codec\commons-codec\jars\commons-codec-1.10.jar;C:\Users\Robin\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\Robin\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\Robin\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\Robin\.ivy2\cache\com.google.inject\guice\jars\guice-4.0.jar;C:\Users\Robin\.ivy2\cache\javax.inject\javax.inject\jars\javax.inject-1.jar;C:\Users\Robin\.ivy2\cache\aopalliance\aopalliance\jars\aopalliance-1.0.jar;C:\Users\Robin\.ivy2\cache\com.google.inject.extensions\guice-assistedinject\jars\guice-assistedinject-4.0.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-netty-server_2.11\jars\play-netty-server_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\io.netty\netty\bundles\netty-3.10.4.Final.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.netty\netty-http-pipelining\jars\netty-http-pipelining-1.1.4.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-jdbc-api_2.11\jars\play-jdbc-api_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.jolbox\bonecp\bundles\bonecp-0.8.0.RELEASE.jar;C:\Users\Robin\.ivy2\cache\com.zaxxer\HikariCP\bundles\HikariCP-2.3.7.jar;C:\Users\Robin\.ivy2\cache\com.h2database\h2\jars\h2-1.4.187.jar;C:\Users\Robin\.ivy2\cache\tyrex\tyrex\jars\tyrex-1.0.1.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\net.sf.ehcache\ehcache-core\jars\ehcache-core-2.6.11.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.google.guava\guava\bundles\guava-18.0.jar;C:\Users\Robin\.ivy2\cache\com.ning\async-http-client\jars\async-http-client-1.9.21.jar;C:\Users\Robin\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\Robin\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;C:\Users\Robin\.ivy2\cache\org.apache.httpcomponents\httpcore\jars\httpcore-4.0.1.jar;C:\Users\Robin\.ivy2\cache\org.apache.httpcomponents\httpclient\jars\httpclient-4.0.1.jar;C:\Users\Robin\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo_2.11\jars\reactivemongo_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo-bson-macros_2.11\jars\reactivemongo-bson-macros_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-compiler\jars\scala-compiler-2.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.4.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.4.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo-bson_2.11\jars\reactivemongo-bson_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.apache.logging.log4j\log4j-api\jars\log4j-api-2.0.2.jar;C:\Users\Robin\.ivy2\cache\org.apache.logging.log4j\log4j-core\jars\log4j-core-2.0.2.jar
+Read from stdout: C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala:37: method cursor in trait GenericQueryBuilder is deprecated: Use [[cursor]] function with read preference.
+C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\app\controllers\Application.scala:37: method cursor in trait GenericQueryBuilder is deprecated: Use [[cursor]] function with read preference.
+Read from stdout: val cursor = collection.find(query).cursor[BSONDocument]
+        val cursor = collection.find(query).cursor[BSONDocument]
+Read from stdout: ^
+                                            ^
+Read from stdout: one warning found
+one warning found
+Scala compilation took 0.725456941 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 1 s, completed 7-okt-2015 5:08:46
+> server-post-command-cleanup
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@38ea780e, check cycles: false
+Total time: 0 s, completed 7-okt-2015 5:08:56
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Robin/Weather_appBackend/Weather_app/requestHandler/}root/*:playForkConfig
+Evaluating tasks: *:playForkConfig
+Running task... Cancel: sbt.server.ServerTaskCancellation@a93ce6b, check cycles: false
+Total time: 0 s, completed 7-okt-2015 5:08:57
+> server-post-command-cleanup
+> server-handle-next-server-request
+> root/playForkNotifyStart http://localhost:9000
+Evaluating tasks: *:playForkNotifyStart
+Running task... Cancel: sbt.server.ServerTaskCancellation@27385037, check cycles: false
+Total time: 0 s, completed 7-okt-2015 5:08:58
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Robin/Weather_appBackend/Weather_app/requestHandler/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@681ffe2e, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\conf\application.conf,C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\classes\application.conf)
+	(C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\conf\logback.xml,C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\conf\routes,C:\Users\Robin\Weather_appBackend\Weather_app\requestHandler\target\scala-2.11\classes\routes)
+Total time: 2 s, completed 7-okt-2015 5:09:05
+> server-post-command-cleanup
+> server-handle-next-server-request

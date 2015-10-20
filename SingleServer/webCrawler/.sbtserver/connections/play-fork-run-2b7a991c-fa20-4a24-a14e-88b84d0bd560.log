@@ -1,0 +1,5 @@
+New log file opened at Fri Oct 02 17:17:15 CEST 2015 by 7552@Toshiba-Robin
+Sending msg to client play-fork-run-2b7a991c-fa20-4a24-a14e-88b84d0bd560: DetachedLogEvent(LogMessage(debug,sbt server socket logs are in: C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\.sbtserver\connections\master.log))
+Sending msg to client play-fork-run-2b7a991c-fa20-4a24-a14e-88b84d0bd560: DetachedLogEvent(LogMessage(debug,sbt general server logs are in: C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\.sbtserver\master.log))
+Sending msg to client play-fork-run-2b7a991c-fa20-4a24-a14e-88b84d0bd560: DetachedLogEvent(LogMessage(debug,sbt client logs are in: C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\.sbtserver\connections\play-fork-run-2b7a991c-fa20-4a24-a14e-88b84d0bd560.log))
+Reading next message from client.
