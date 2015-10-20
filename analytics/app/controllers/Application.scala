@@ -52,23 +52,58 @@ class Application @Inject() (val reactiveMongoApi: ReactiveMongoApi)
 		//Used to store analytical data
 		val collectionStore: JSONCollection = db("analytics")
 		
-		val map = """ 
+		/*val map = """ 
 		function() {
                        emit(this.CONDITION.name, this.CONDITION.main.temp);
                    };
+		"""*/
+		val map = """ 
+		function() {
+		               var key = this.CONDITION.name;
+		               var value = {
+                                         count: 1,
+                                         temp: this.CONDITION.main.temp
+                                       };
+                                       
+                       emit(key, value);
+                   };
 		"""
 		
-		val reduce = """ 
+		
+		/*val reduce = """ 
 		    function(keyName, valuesTemp) {
                           return Array.sum(valuesTemp);
                       };
 		
+		"""*/
+		val reduce = """ 
+		    function(keyName, countObjVals) {
+                     reducedVal = { count: 0, temp: 0 };
+
+                     for (var idx = 0; idx < countObjVals.length; idx++) {
+                         reducedVal.count += countObjVals[idx].count;
+                         reducedVal.temp += countObjVals[idx].temp;
+                     }
+
+                     return reducedVal;
+                  };
+		
 		"""
+		val finalize = """
+		    function (key, reducedVal) {
+
+                       reducedVal.avg = reducedVal.temp/reducedVal.count;
+
+                       return reducedVal;
+
+                    };
+            """
 		
 		val mapReduceCommand = BSONDocument(
             "mapreduce" -> "measurements",
             "map" -> BSONString(map),
             "reduce" -> BSONString(reduce),
+            "finalize" -> BSONString(finalize),
             "out" -> BSONDocument("replace" -> "analytics")
         )
         
