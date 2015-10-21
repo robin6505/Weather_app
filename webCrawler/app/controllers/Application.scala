@@ -54,7 +54,7 @@ class Application @Inject() (val reactiveMongoApi: ReactiveMongoApi)
 		println("Executes function in interval test")
 		
 		//First get available mongo instances
-		val url = (s"http://127.0.0.1:4001/v2/keys/announce/services/mongo")
+		val url = (s"http://95.85.2.45:4001/v2/keys/announce/services/mongo")
         val request = WS.url(url).get
         request map{response => 
             println(response.json) //when mongo is retrieved do below

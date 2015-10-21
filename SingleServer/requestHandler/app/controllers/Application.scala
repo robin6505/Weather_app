@@ -19,12 +19,14 @@ import play.api.libs.iteratee.Iteratee
 import reactivemongo.bson.BSONDocument
 import reactivemongo.api.collections.bson.BSONCollection
 import reactivemongo.api.commands.WriteResult
+import reactivemongo.api.collections._
 
 
 import play.api.libs.iteratee._
 import play.api.libs.concurrent.Execution.Implicits.defaultContext
 import play.api.libs.iteratee.{Concurrent, Enumerator, Iteratee}
 import play.api.libs.concurrent.Promise
+import reactivemongo.api.{QueryOpts, DB}
 
 class Application @Inject() (ws: WSClient) extends Controller {
     
@@ -86,6 +88,27 @@ class Application @Inject() (ws: WSClient) extends Controller {
             //analyticData = BSONFormats.BSONDocumentFormat.writes(list).as[JsValue]
         }
     }
+    def retrieveStreamData() = {
+        val query = BSONDocument()
+        val numbPlaces = collection.count()
+        val futureCount: Future[Int] = numbPlaces
+        
+        //Get random city from database collection places
+        futureCount.map { limit =>
+            println("Number of entries in places collection: " + limit)
+            val r = scala.util.Random
+            val randNumb = r.nextInt(limit-1)
+            val randCity = collection.find(BSONDocument()).options(QueryOpts(skipN = randNumb)).one[BSONDocument]
+            val futureRandCity: Future[Option[BSONDocument]] = randCity
+            
+            futureRandCity.map {city =>
+                println(city)
+            
+            }
+            
+        }   
+        
+    }
     
     
     //getWeather function
@@ -102,6 +125,7 @@ class Application @Inject() (ws: WSClient) extends Controller {
     }
     
     def getData(city: String) = Action.async {
+        retrieveStreamData()
         retrieveAnalytics() 
         storePlace(city: String)
         for {

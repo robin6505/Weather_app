@@ -1,7 +1,56 @@
-New log file opened at Tue Oct 20 17:22:44 CEST 2015 by 6192@Toshiba-Robin
-Taking next connection to: 50032
-New client attempting to connect on port: 50033-50032
-  Address = /145.97.174.196:50032
-This client on port 50033 has uuid b13301d2-040e-4660-b4a9-94a0cb74812e configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
-Connected Clients: activator-b13301d2-040e-4660-b4a9-94a0cb74812e
-Taking next connection to: 50032
+New log file opened at Wed Oct 21 11:36:23 CEST 2015 by 5672@Toshiba-Robin
+Taking next connection to: 49831
+New client attempting to connect on port: 49832-49831
+  Address = /145.97.174.35:49831
+This client on port 49832 has uuid 12027f2d-ce76-482b-bd42-b29e0414f83d configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-12027f2d-ce76-482b-bd42-b29e0414f83d
+Taking next connection to: 49831
+New client attempting to connect on port: 49837-49831
+  Address = /145.97.174.35:49831
+Handshake exception on socket: 49837
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.net.SocketException: Software caused connection abort: recv failed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.fill(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at java.io.DataInputStream.readInt(Unknown Source)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 49831
+New client attempting to connect on port: 49838-49831
+  Address = /145.97.174.35:49831
+This client on port 49838 has uuid 0fbcd202-c7cf-4ddd-9fd9-ddb61e03a90d configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: activator-12027f2d-ce76-482b-bd42-b29e0414f83d, play-fork-run-0fbcd202-c7cf-4ddd-9fd9-ddb61e03a90d
+Taking next connection to: 49831
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 49831
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 49831
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 49831
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 49831
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 49831
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 49831
+Checking to see if clients are empty...
+No non-daemon clients connected after 3 min. Shutting down.
+1 daemon clients are connected.
+Server socket thread exiting.
+1 clients open, will close them...
+All client sockets have been closed.
+Closing the 5672@Toshiba-Robin logs at Wed Oct 21 11:58:11 CEST 2015, goodbye.

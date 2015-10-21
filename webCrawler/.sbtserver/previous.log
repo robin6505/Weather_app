@@ -1,5 +1,5 @@
-New log file opened at Tue Oct 20 17:22:18 CEST 2015 by 3848@Toshiba-Robin
-jvm 3848@Toshiba-Robin
+New log file opened at Wed Oct 21 11:36:01 CEST 2015 by 6904@Toshiba-Robin
+jvm 6904@Toshiba-Robin
 jvm vmName=Java HotSpot(TM) Client VM vmVendor=Oracle Corporation vmVersion=25.60-b23
 jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
 jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
@@ -27,7 +27,7 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
 [Loading] Done in C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\project, returning: (webcrawler-build)
 Loading project definition from C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\project
-Running task... Cancel: sbt.TaskCancellationStrategy$Null$@28e4c0, check cycles: false
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@48bf6, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -73,4 +73,4 @@ Waiting for socket thread
 Waiting for request processor thread
 Waiting for command engine result
 Returning control to sbt launcher with result Exit(0)
-Closing the 3848@Toshiba-Robin logs at Tue Oct 20 17:22:34 CEST 2015, goodbye.
+Closing the 6904@Toshiba-Robin logs at Wed Oct 21 11:36:13 CEST 2015, goodbye.
