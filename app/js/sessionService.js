@@ -3,6 +3,7 @@ angular.module('weatherApp')
 .service('SessionService', function($q, $http) {
     var weatherCurrent;
     var weatherForecast;
+    var analytics;
     var liveStream;
     var city;
     var apiKey = "&APPID=2058452e3cf07873e426f1d723339ec6";
@@ -22,12 +23,13 @@ angular.module('weatherApp')
     
     var getWeather = function() {
         return $q(function(resolve, reject) { //$q is needed else controller continues before data is properly set in weatherCurrent
-            var link = "http://188.226.144.15:9000/getData/" + city;
+            var link = "http://localhost:9000/getData/" + city;
             $http.get(link).
                 then(function(response) {
                     weatherCurrent = response.data.CURRENTWEATHER;
                     weatherForecast = response.data.FORECAST;
-                    //console.log(weatherCurrent); //debug log
+                    analytics = response.data.ANALYTICS;
+                    console.log("SESSION SERVICE ANALYTICS: " + analytics); //debug log
                     resolve('get weather succes');
                 }, function(response) {
                     reject('error');
@@ -65,6 +67,7 @@ angular.module('weatherApp')
         getLiveStream: getLiveStream,
 		weatherCurrent: function() {return weatherCurrent;},
         weatherForecast: function() {return weatherForecast;},
+        analytics: function() {return analytics;},
         liveStream: function() {return liveStream;}
     }
     

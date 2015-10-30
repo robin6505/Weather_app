@@ -9,42 +9,8 @@ angular.module('weatherApp')
     $scope.nextDays = [];
     $scope.liveStream;
     $scope.imageLinkLS;
-    $scope.analytics = [{}, {}, {}, {}, {}];
-    
-    //dummydata analysis
-    $scope.analysisData = [
-        {
-            name: "London",
-            temp: 24,
-            humidity: 67,
-            wind: 5
-        },
-        {
-            name: "Amsterdam",
-            temp: 18,
-            humidity: 91,
-            wind: 11
-        },
-        {
-            name: "New York",
-            temp: 26,
-            humidity: 88,
-            wind: 4
-        },
-        {
-            name: "Staphorst",
-            temp: 12,
-            humidity: 78,
-            wind: 1
-        },
-        {
-            name: "Melbourne",
-            temp: 32,
-            humidity: 50,
-            wind: 2
-        }
-    ];
-    
+    $scope.analytics = [[], [], [],[]];
+        
     //Create days of coming week
     for (j = 1; j < 7; j++) { 
         var nextD = new Date();    
@@ -68,6 +34,21 @@ angular.module('weatherApp')
             $scope.imageLinkF.push('http://openweathermap.org/img/w/' + $scope.forecast['list'][i]['weather'][0].icon + ".png");
         }
         
+        //Get analytics
+        var analyticData = SessionService.analytics();
+        //Divide in four temperature groups
+        console.log("DIT IS ANALYTIC DATA:" +analyticData)
+        for (i = 0; i<analyticData.length; i++) {
+            if (analyticData[i].value.tempGroup < 0) {
+                $scope.analytics[0].push(analyticData[i]._id)
+            } else if (analyticData[i].value.tempGroup < 3) {
+                $scope.analytics[analyticData[i].value.tempGroup].push(analyticData[i]._id)
+            } else {
+                $scope.analytics[3].push(analyticData[i]._id)
+            }
+        }
+        console.log($scope.analytics)
+        
     }, function(err) {
         console.log('Geen info opgehaald');
     });
@@ -83,27 +64,19 @@ angular.module('weatherApp')
     //});
     
     var getLiveStream = function() {
-        SessionService.getLiveStream().then(function() {
-            $scope.liveStream = SessionService.liveStream();
+        ws = new WebSocket('ws://localhost:9000/stream')
+        ws.onmessage = function( message ) { 
+            console.log( message );
+            $scope.liveStream = JSON.parse(message.data);
             console.log($scope.liveStream);
-            //create imagelink for weather
             $scope.imageLinkLS = 'http://openweathermap.org/img/w/' + $scope.liveStream['weather'][0].icon + ".png";
-        }, function(err) {
-            console.log('Geen info opgehaald');
-        }) 
+            }
+            console.log($scope.liveStream);
+            //livestream does not come out of the onmessage stream
+        
+            //create imagelink for weather
+            //
+         
     };
     getLiveStream();
-    $interval(getLiveStream, 5000);
-    
-    $scope.changeInfo = function(dat) {
-        console.log("IK BEN HIER" + dat);
-        for (i=0; i<$scope.analysisData.length; i++) {
-            $scope.analytics[i].name = $scope.analysisData[i].name;
-            $scope.analytics[i].info = $scope.analysisData[i][dat];
-        }
-    }
-    $scope.changeInfo('temp');
-    
-    
-    
 })
