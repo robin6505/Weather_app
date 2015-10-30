@@ -53,25 +53,34 @@ angular.module('weatherApp')
     }
     
     
-    //Gets current Weather
+    //Gets Weather Data
     SessionService.getWeather().then(function() {
+		//Get current Weather
         $scope.weatherCurrent = SessionService.weatherCurrent();
         console.log($scope.weatherCurrent);
-        //create imagelink for weather
+        //create imagelink for current weather
         $scope.imageLink = 'http://openweathermap.org/img/w/' + $scope.weatherCurrent['weather'][0].icon + ".png";
+        
+        //Get Forecast
+        $scope.forecast = SessionService.weatherForecast();
+        //Create imagelink for forecasts
+        for (i = 0; i < $scope.forecast.list.length; i++) {
+            $scope.imageLinkF.push('http://openweathermap.org/img/w/' + $scope.forecast['list'][i]['weather'][0].icon + ".png");
+        }
+        
     }, function(err) {
         console.log('Geen info opgehaald');
     });
     
-    SessionService.getForecast().then(function() {
-        $scope.forecast = SessionService.weatherForecast();
+    //SessionService.getForecast().then(function() {
+      //  $scope.forecast = SessionService.weatherForecast();
         //create imagelink for weatherForecast
-        for (i = 0; i < $scope.forecast.list.length; i++) {
-            $scope.imageLinkF.push('http://openweathermap.org/img/w/' + $scope.forecast['list'][i]['weather'][0].icon + ".png");
-        }
-    }, function(err) {
-        console.log('Geen info opgehaald');
-    });
+        //for (i = 0; i < $scope.forecast.list.length; i++) {
+         //   $scope.imageLinkF.push('http://openweathermap.org/img/w/' + $scope.forecast['list'][i]['weather'][0].icon + ".png");
+        //}
+   // }, function(err) {
+     //   console.log('Geen info opgehaald');
+    //});
     
     var getLiveStream = function() {
         SessionService.getLiveStream().then(function() {
@@ -85,27 +94,7 @@ angular.module('weatherApp')
     };
     getLiveStream();
     $interval(getLiveStream, 5000);
-    // $interval(function(){
-       // SessionService.getLiveStream().then(function() {
-            // $scope.liveStream = SessionService.liveStream();
-            // console.log($scope.liveStream);
-            //create imagelink for weather
-            // $scope.imageLinkLS = 'http://openweathermap.org/img/w/' + $scope.liveStream['weather'][0].icon + ".png";
-        // }, function(err) {
-            // console.log('Geen info opgehaald');
-        // }) 
-    // }, 5000);
     
-    // function getLiveStream() {
-        // SessionService.getLiveStream().then(function() {
-            // $scope.liveStream = SessionService.liveStream();
-            // console.log($scope.liveStream);
-           // create imagelink for weather
-            // $scope.imageLinkLS = 'http://openweathermap.org/img/w/' + $scope.liveStream['weather'][0].icon + ".png";
-        // }, function(err) {
-            // console.log('Geen info opgehaald');
-        // })
-    // }
     $scope.changeInfo = function(dat) {
         console.log("IK BEN HIER" + dat);
         for (i=0; i<$scope.analysisData.length; i++) {

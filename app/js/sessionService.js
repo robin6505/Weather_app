@@ -22,10 +22,11 @@ angular.module('weatherApp')
     
     var getWeather = function() {
         return $q(function(resolve, reject) { //$q is needed else controller continues before data is properly set in weatherCurrent
-            var link = "http://localhost:9000/getData/" + city;
+            var link = "http://188.226.144.15:9000/getData/" + city;
             $http.get(link).
                 then(function(response) {
                     weatherCurrent = response.data.CURRENTWEATHER;
+                    weatherForecast = response.data.FORECAST;
                     //console.log(weatherCurrent); //debug log
                     resolve('get weather succes');
                 }, function(response) {
@@ -35,21 +36,6 @@ angular.module('weatherApp')
         
     }
     
-    var getForecast = function() {
-        return $q(function(resolve, reject) { //$q is needed else controller continues before data is properly set in weatherCurrent
-            var link = "http://localhost:9000/getData/" + city;
-            $http.get(link).
-                then(function(response) {
-                    weatherForecast = response.data.FORECAST;
-                    
-                    //console.log(weatherCurrent); //debug log
-                    resolve('get forecast succes');
-                }, function(response) {
-                    reject('error');
-                });
-        })
-        
-    }
     
     var getLiveStream = function() {
         return $q(function(resolve, reject) { //$q is needed else controller continues before data is properly set in weatherCurrent
@@ -76,7 +62,6 @@ angular.module('weatherApp')
     return {
         saveLocation: saveLocation,
         getWeather: getWeather,
-        getForecast: getForecast,
         getLiveStream: getLiveStream,
 		weatherCurrent: function() {return weatherCurrent;},
         weatherForecast: function() {return weatherForecast;},
