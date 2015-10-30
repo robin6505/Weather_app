@@ -1,42 +1,13 @@
 package controllers
 
-import play.api._
-import play.api.libs.json._
 import javax.inject.Inject
-import scala.concurrent.Future
-import play.api.Play.current
 import play.api.mvc._
-import play.api.libs.ws._
-
-import play.api.libs.concurrent.Execution.Implicits._
-import java.util.concurrent.TimeoutException
-
 import reactivemongo.api._
-import scala.concurrent.ExecutionContext.Implicits.global
-
-import play.api.libs.iteratee.Iteratee
 import reactivemongo.bson._
-import reactivemongo.bson.BSONDocument
-import reactivemongo.api.collections.bson.BSONCollection
-import reactivemongo.api.commands.WriteResult
-
-
-import play.api.mvc.Controller
 import play.modules.reactivemongo._
-import play.modules.reactivemongo.json.BSONFormats._
-
-import play.modules.reactivemongo.json.BSONFormats
-
-import play.modules.reactivemongo.json._
-import play.modules.reactivemongo.json.collection.{
-  JSONCollection, JsCursor
-}, JsCursor._
-
 import scala.concurrent.duration._
 import scala.concurrent.ExecutionContext
 import ExecutionContext.Implicits.global
-import java.util.Calendar
-import reactivemongo.core.nodeset.Authenticate
 import reactivemongo.core.commands._
 
 
@@ -48,57 +19,48 @@ class Application @Inject() (val reactiveMongoApi: ReactiveMongoApi)
         val connection = driver.connection(List("188.226.144.15"))
         val db = connection("test")
         val collectionGet = db("measurements")
-			
-		//Used to store analytical data
-		val collectionStore: JSONCollection = db("analytics")
 		
-		/*val map = """ 
-		function() {
-                       emit(this.CONDITION.name, this.CONDITION.main.temp);
-                   };
-		"""*/
+		//For each city get temp and keep track of how many records are there for each city
 		val map = """ 
-		function() {
-		               var key = this.CONDITION.name;
-		               var value = {
-                                         count: 1,
-                                         temp: this.CONDITION.main.temp
-                                       };
-                                       
-                       emit(key, value);
-                   };
+    		function() {
+                var key = this.CONDITION.name;
+                var value = {
+                    count: 1,
+                    temp: this.CONDITION.main.temp
+                };
+                               
+                emit(key, value);
+            };
 		"""
 		
-		
-		/*val reduce = """ 
-		    function(keyName, valuesTemp) {
-                          return Array.sum(valuesTemp);
-                      };
-		
-		"""*/
+		//Sum temps of all records for each city
 		val reduce = """ 
-		    function(keyName, countObjVals) {
-                     reducedVal = { count: 0, temp: 0 };
-
-                     for (var idx = 0; idx < countObjVals.length; idx++) {
-                         reducedVal.count += countObjVals[idx].count;
-                         reducedVal.temp += countObjVals[idx].temp;
-                     }
-
-                     return reducedVal;
-                  };
+            function(keyName, countObjVals) {
+                reducedVal = { count: 0, temp: 0 };
+                
+                for (var idx = 0; idx < countObjVals.length; idx++) {
+                    reducedVal.count += countObjVals[idx].count;
+                    reducedVal.temp += countObjVals[idx].temp;
+                }
+                
+                return reducedVal;
+            };
 		
 		"""
+		
+		//Calculate average temp over whole recorded history for each city
+		//and assign the city to a temperature group
 		val finalize = """
 		    function (key, reducedVal) {
 
-                       reducedVal.avg = reducedVal.temp/reducedVal.count;
-
-                       return reducedVal;
-
-                    };
-            """
-		
+                reducedVal.avg = reducedVal.temp/reducedVal.count;
+                reducedVal.tempGroup = parseInt(reducedVal.avg/10);
+                
+                return reducedVal;
+                
+            };
+        """
+		//Create the command and put the data in the analytics collection
 		val mapReduceCommand = BSONDocument(
             "mapreduce" -> "measurements",
             "map" -> BSONString(map),
@@ -107,16 +69,16 @@ class Application @Inject() (val reactiveMongoApi: ReactiveMongoApi)
             "out" -> BSONDocument("replace" -> "analytics")
         )
         
+        //execute the command
         val result = db.command(RawCommand(mapReduceCommand))
         
-        
-            
     }
     
+    //Calculates analytics every hour
     def start() = {
         val system = akka.actor.ActorSystem("system")
         println("word uitgevoerd")
-        system.scheduler.schedule(0 seconds, 15 minutes)(doAnalytics)
+        system.scheduler.schedule(0 seconds, 1 hours)(doAnalytics)
     }
     start()
     

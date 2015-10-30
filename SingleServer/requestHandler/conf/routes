@@ -5,8 +5,7 @@
 # Home page
 GET     /                           controllers.Application.index
 GET     /getData/:city              controllers.Application.getData(city: String)
-GET     /connect                    controllers.Application.socket1
-GET     /time                       controllers.Application.wsTime
+GET     /stream                       controllers.Application.wsStream
 
 
 

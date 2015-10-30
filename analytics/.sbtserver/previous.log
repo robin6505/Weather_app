@@ -1,5 +1,5 @@
-New log file opened at Tue Oct 20 22:21:35 CEST 2015 by 3908@PC-ROBIN
-jvm 3908@PC-ROBIN
+New log file opened at Tue Oct 20 22:21:45 CEST 2015 by 14044@PC-ROBIN
+jvm 14044@PC-ROBIN
 jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.45-b02
 jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
 jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
@@ -27,7 +27,7 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
 [Loading] Done in C:\Users\Robin\Weather_appBackend\Weather_app\analytics\project, returning: (analytics-build)
 Loading project definition from C:\Users\Robin\Weather_appBackend\Weather_app\analytics\project
-Running task... Cancel: sbt.TaskCancellationStrategy$Null$@2e33c827, check cycles: false
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@6cd2f738, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -67,10 +67,65 @@ Set current project to analytics (in build file:/C:/Users/Robin/Weather_appBacke
 > iflast shell
 > server-send-ready-for-request
 > server-handle-next-server-request
-Done executing sbt server engine, result Right(Exit(0))
-Closing listening server socket
-Waiting for socket thread
-Waiting for request processor thread
-Waiting for command engine result
-Returning control to sbt launcher with result Exit(0)
-Closing the 3908@PC-ROBIN logs at Tue Oct 20 22:21:39 CEST 2015, goodbye.
+> {file:/C:/Users/Robin/Weather_appBackend/Weather_app/analytics/}root/compile:mainClass
+Evaluating tasks: compile:mainClass
+Running task... Cancel: sbt.server.ServerTaskCancellation@7609b156, check cycles: false
+Total time: 0 s, completed 20-okt-2015 22:21:48
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Robin/Weather_appBackend/Weather_app/analytics/}root/compile:mainClass
+Evaluating tasks: compile:mainClass
+Running task... Cancel: sbt.server.ServerTaskCancellation@3def0a1e, check cycles: false
+Total time: 0 s, completed 20-okt-2015 22:21:48
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Robin/Weather_appBackend/Weather_app/analytics/}root/compile:discoveredMainClasses
+Evaluating tasks: compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@3ae30a10, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 1 s, completed 20-okt-2015 22:21:49
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Robin/Weather_appBackend/Weather_app/analytics/}root/compile:mainClass
+Evaluating tasks: compile:mainClass
+Running task... Cancel: sbt.server.ServerTaskCancellation@556645be, check cycles: false
+Total time: 0 s, completed 20-okt-2015 22:21:49
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Robin/Weather_appBackend/Weather_app/analytics/}root/compile:discoveredMainClasses
+Evaluating tasks: compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@49006adf, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 0 s, completed 20-okt-2015 22:21:49
+> server-post-command-cleanup
+> server-handle-next-server-request

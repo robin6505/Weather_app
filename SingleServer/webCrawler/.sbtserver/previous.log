@@ -1,22 +1,22 @@
-New log file opened at Wed Oct 07 00:51:32 CEST 2015 by 5008@PC-ROBIN
-jvm 5008@PC-ROBIN
-jvm vmName=Java HotSpot(TM) 64-Bit Server VM vmVendor=Oracle Corporation vmVersion=25.45-b02
+New log file opened at Fri Oct 30 15:57:18 CET 2015 by 6276@Toshiba-Robin
+jvm 6276@Toshiba-Robin
+jvm vmName=Java HotSpot(TM) Client VM vmVendor=Oracle Corporation vmVersion=25.60-b23
 jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
 jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
 Starting event engine
 Starting sbt command engine
 Waiting for sbt command engine
 Command engine arguments=List()
-Command engine baseDirectory=C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler
+Command engine baseDirectory=C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler
 Command engine initial remaining commands List(--initialize, onFailure load-failed, boot, server-send-ready-for-request, server-handle-next-server-request)
 > --initialize
 > initialize
 > onFailure load-failed
 > boot
 > reload
-[Loading] Scanning directory C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\project
+[Loading] Scanning directory C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\project
 [Loading] Found non-root projects 
-[Loading] Done in C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\project, returning: ()
+[Loading] Done in C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\project, returning: ()
 deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))))
   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.JUnitXmlReportPlugin)
 sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
@@ -25,9 +25,9 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin) not found List(sbt.plugins.JUnitXmlReportPlugin)
   :: sorting:: found: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin) not found List()
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
-[Loading] Done in C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\project, returning: (webcrawler-build)
-Loading project definition from C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler\project
-Running task... Cancel: sbt.TaskCancellationStrategy$Null$@2b88e592, check cycles: false
+[Loading] Done in C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\project, returning: (webcrawler-build)
+Loading project definition from C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\project
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@e4fbb7, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -46,7 +46,7 @@ All initially invalidated sources: Set()
 
 Copy resource mappings: 
 	
-[Loading] Scanning directory C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler
+[Loading] Scanning directory C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler
 [Loading] Found root project root w/ remaining 
 deducing auto plugins based on known facts Set(Atom(play.sbt.PlayScala), Atom(sbt.plugins.CorePlugin)) and clauses Clauses(List(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(play.sbt.forkrun.PlayForkRun),Set(Atom(sbt.plugins.BackgroundRunPlugin))), Clause(Atom(play.sbt.forkrun.PlayForkRun),Set(Atom(play.sbt.Play))), Clause(Atom(play.sbt.forkrun.PlayForkRun),Set(Atom(sbt.plugins.SerializersPlugin))), Clause(Atom(play.sbt.Play),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging))), Clause(Atom(play.sbt.Play),Set(Atom(play.sbt.routes.RoutesCompiler))), Clause(Atom(play.sbt.Play),Set(Atom(play.twirl.sbt.SbtTwirl))), Clause(Atom(play.sbt.Play),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))), Clause(Atom(play.sbt.PlayAkkaHttpServer),Set(Atom(play.sbt.Play))), Clause(Atom(play.sbt.PlayJava),Set(Atom(play.sbt.Play))), Clause(Atom(play.sbt.PlayLayoutPlugin),Set(Atom(play.sbt.Play))), Clause(Atom(play.sbt.PlayNettyServer),Set(Atom(play.sbt.Play))), Clause(Atom(play.sbt.PlayScala),Set(Atom(play.sbt.Play))), Clause(Atom(play.sbt.routes.RoutesCompiler),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(play.twirl.sbt.SbtTwirl),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(com.typesafe.sbt.packager.archetypes.AkkaAppPackaging),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging))), Clause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.windows.WindowsPlugin))), Clause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.docker.DockerPlugin))), Clause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.debian.DebianPlugin))), Clause(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging),Set(Atom(com.typesafe.sbt.packager.rpm.RpmPlugin))), Clause(Atom(com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging))), Clause(Atom(com.typesafe.sbt.packager.archetypes.jar.ClasspathJarPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging))), Clause(Atom(com.typesafe.sbt.packager.archetypes.jar.LauncherJarPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging))), Clause(Atom(com.typesafe.sbt.packager.debian.DebianDeployPlugin),Set(Atom(com.typesafe.sbt.packager.debian.DebianPlugin))), Clause(Atom(com.typesafe.sbt.packager.debian.DebianPlugin),Set(Atom(com.typesafe.sbt.packager.linux.LinuxPlugin))), Clause(Atom(com.typesafe.sbt.packager.debian.JDebPackaging),Set(Atom(com.typesafe.sbt.packager.debian.DebianPlugin))), Clause(Atom(com.typesafe.sbt.packager.docker.DockerPlugin),Set(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin))), Clause(Atom(com.typesafe.sbt.packager.jdkpackager.JDKPackagerDeployPlugin),Set(Atom(com.typesafe.sbt.packager.jdkpackager.JDKPackagerPlugin))), Clause(Atom(com.typesafe.sbt.packager.jdkpackager.JDKPackagerPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.JavaAppPackaging))), Clause(Atom(com.typesafe.sbt.packager.jdkpackager.JDKPackagerPlugin),Set(Atom(com.typesafe.sbt.packager.archetypes.jar.ClasspathJarPlugin))), Clause(Atom(com.typesafe.sbt.packager.linux.LinuxPlugin),Set(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin))), Clause(Atom(com.typesafe.sbt.packager.rpm.RpmDeployPlugin),Set(Atom(com.typesafe.sbt.packager.rpm.RpmPlugin))), Clause(Atom(com.typesafe.sbt.packager.rpm.RpmPlugin),Set(Atom(com.typesafe.sbt.packager.linux.LinuxPlugin))), Clause(Atom(com.typesafe.sbt.packager.universal.UniversalDeployPlugin),Set(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin))), Clause(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin),Set(Atom(com.typesafe.sbt.SbtNativePackager))), Clause(Atom(com.typesafe.sbt.packager.windows.WindowsDeployPlugin),Set(Atom(com.typesafe.sbt.packager.windows.WindowsPlugin))), Clause(Atom(com.typesafe.sbt.packager.windows.WindowsPlugin),Set(Atom(com.typesafe.sbt.packager.universal.UniversalPlugin))), Clause(Atom(com.typesafe.sbt.web.SbtWeb),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(com.typesafe.sbt.jse.SbtJsEngine),Set(Atom(com.typesafe.sbt.web.SbtWeb))), Clause(Atom(com.typesafe.sbt.jse.SbtJsTask),Set(Atom(com.typesafe.sbt.jse.SbtJsEngine))), Clause(Atom(sbt.plugins.BackgroundRunPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(com.typesafe.sbt.coffeescript.SbtCoffeeScript),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))), Clause(Atom(com.typesafe.sbt.less.SbtLess),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))), Clause(Atom(com.typesafe.sbt.jshint.SbtJSHint),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))), Clause(Atom(com.typesafe.sbt.rjs.SbtRjs),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))), Clause(Atom(com.typesafe.sbt.digest.SbtDigest),Set(Atom(com.typesafe.sbt.web.SbtWeb))), Clause(Atom(com.typesafe.sbt.mocha.SbtMocha),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin))), Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin))), Clause(And(Set(Atom(sbt.plugins.BackgroundRunPlugin), Atom(play.sbt.Play), Atom(sbt.plugins.SerializersPlugin))),Set(Atom(play.sbt.forkrun.PlayForkRun))), Clause(Atom(play.sbt.Play),Set(Atom(play.sbt.PlayLayoutPlugin))), Clause(Atom(play.sbt.Play),Set(Atom(play.sbt.PlayNettyServer))), Clause(Atom(com.typesafe.sbt.web.SbtWeb),Set(Atom(com.typesafe.sbt.jse.SbtJsEngine))), Clause(Atom(com.typesafe.sbt.jse.SbtJsEngine),Set(Atom(com.typesafe.sbt.jse.SbtJsTask))), Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.BackgroundRunPlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.InteractionServicePlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.SendEventServicePlugin))), Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.SerializersPlugin))), Clause(Atom(com.typesafe.sbt.jse.SbtJsTask),Set(Atom(com.typesafe.sbt.coffeescript.SbtCoffeeScript))), Clause(Atom(com.typesafe.sbt.jse.SbtJsTask),Set(Atom(com.typesafe.sbt.less.SbtLess))), Clause(Atom(com.typesafe.sbt.jse.SbtJsTask),Set(Atom(com.typesafe.sbt.jshint.SbtJSHint))), Clause(Atom(com.typesafe.sbt.jse.SbtJsTask),Set(Atom(com.typesafe.sbt.rjs.SbtRjs))), Clause(Atom(com.typesafe.sbt.web.SbtWeb),Set(Atom(com.typesafe.sbt.digest.SbtDigest))), Clause(Atom(com.typesafe.sbt.jse.SbtJsTask),Set(Atom(com.typesafe.sbt.mocha.SbtMocha)))))
   :: deduced result: Matched(sbt.plugins.CorePlugin,play.sbt.PlayScala,sbt.plugins.InteractionServicePlugin,sbt.plugins.SendEventServicePlugin,play.sbt.Play,sbt.plugins.SerializersPlugin,sbt.plugins.IvyPlugin,com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging,play.twirl.sbt.SbtTwirl,sbt.plugins.JvmPlugin,play.sbt.PlayNettyServer,play.sbt.PlayLayoutPlugin,play.sbt.routes.RoutesCompiler,com.typesafe.sbt.jse.SbtJsTask,com.typesafe.sbt.jshint.SbtJSHint,com.typesafe.sbt.packager.archetypes.JavaAppPackaging,sbt.plugins.JUnitXmlReportPlugin,com.typesafe.sbt.mocha.SbtMocha,com.typesafe.sbt.less.SbtLess,com.typesafe.sbt.rjs.SbtRjs,com.typesafe.sbt.jse.SbtJsEngine,com.typesafe.sbt.coffeescript.SbtCoffeeScript,sbt.plugins.BackgroundRunPlugin,com.typesafe.sbt.packager.rpm.RpmPlugin,com.typesafe.sbt.packager.windows.WindowsPlugin,com.typesafe.sbt.web.SbtWeb,com.typesafe.sbt.packager.docker.DockerPlugin,play.sbt.forkrun.PlayForkRun,com.typesafe.sbt.packager.debian.DebianPlugin,com.typesafe.sbt.digest.SbtDigest,com.typesafe.sbt.packager.universal.UniversalPlugin,com.typesafe.sbt.packager.linux.LinuxPlugin,com.typesafe.sbt.SbtNativePackager)
@@ -60,12 +60,840 @@ sorting: ns: List(sbt.plugins.CorePlugin, play.sbt.PlayScala, sbt.plugins.Intera
   :: sorting:: found: List(sbt.plugins.CorePlugin, com.typesafe.sbt.SbtNativePackager, sbt.plugins.InteractionServicePlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.IvyPlugin, com.typesafe.sbt.packager.universal.UniversalPlugin, sbt.plugins.JvmPlugin, com.typesafe.sbt.packager.windows.WindowsPlugin, com.typesafe.sbt.packager.docker.DockerPlugin, com.typesafe.sbt.packager.linux.LinuxPlugin, play.twirl.sbt.SbtTwirl, play.sbt.routes.RoutesCompiler, sbt.plugins.JUnitXmlReportPlugin, sbt.plugins.BackgroundRunPlugin, com.typesafe.sbt.packager.rpm.RpmPlugin, com.typesafe.sbt.web.SbtWeb, com.typesafe.sbt.packager.debian.DebianPlugin, com.typesafe.sbt.packager.archetypes.JavaAppPackaging, com.typesafe.sbt.jse.SbtJsEngine, com.typesafe.sbt.digest.SbtDigest, com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging, com.typesafe.sbt.jse.SbtJsTask, play.sbt.Play, com.typesafe.sbt.jshint.SbtJSHint, com.typesafe.sbt.mocha.SbtMocha, com.typesafe.sbt.less.SbtLess, com.typesafe.sbt.rjs.SbtRjs, com.typesafe.sbt.coffeescript.SbtCoffeeScript) not found List(play.sbt.PlayScala, play.sbt.PlayNettyServer, play.sbt.PlayLayoutPlugin, play.sbt.forkrun.PlayForkRun)
   :: sorting:: found: List(sbt.plugins.CorePlugin, com.typesafe.sbt.SbtNativePackager, sbt.plugins.InteractionServicePlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.IvyPlugin, com.typesafe.sbt.packager.universal.UniversalPlugin, sbt.plugins.JvmPlugin, com.typesafe.sbt.packager.windows.WindowsPlugin, com.typesafe.sbt.packager.docker.DockerPlugin, com.typesafe.sbt.packager.linux.LinuxPlugin, play.twirl.sbt.SbtTwirl, play.sbt.routes.RoutesCompiler, sbt.plugins.JUnitXmlReportPlugin, sbt.plugins.BackgroundRunPlugin, com.typesafe.sbt.packager.rpm.RpmPlugin, com.typesafe.sbt.web.SbtWeb, com.typesafe.sbt.packager.debian.DebianPlugin, com.typesafe.sbt.packager.archetypes.JavaAppPackaging, com.typesafe.sbt.jse.SbtJsEngine, com.typesafe.sbt.digest.SbtDigest, com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging, com.typesafe.sbt.jse.SbtJsTask, play.sbt.Play, com.typesafe.sbt.jshint.SbtJSHint, com.typesafe.sbt.mocha.SbtMocha, com.typesafe.sbt.less.SbtLess, com.typesafe.sbt.rjs.SbtRjs, com.typesafe.sbt.coffeescript.SbtCoffeeScript, play.sbt.PlayScala, play.sbt.PlayNettyServer, play.sbt.PlayLayoutPlugin, play.sbt.forkrun.PlayForkRun) not found List()
   :: sorted deduced result: List(sbt.plugins.CorePlugin, com.typesafe.sbt.SbtNativePackager, sbt.plugins.InteractionServicePlugin, sbt.plugins.SendEventServicePlugin, sbt.plugins.SerializersPlugin, sbt.plugins.IvyPlugin, com.typesafe.sbt.packager.universal.UniversalPlugin, sbt.plugins.JvmPlugin, com.typesafe.sbt.packager.windows.WindowsPlugin, com.typesafe.sbt.packager.docker.DockerPlugin, com.typesafe.sbt.packager.linux.LinuxPlugin, play.twirl.sbt.SbtTwirl, play.sbt.routes.RoutesCompiler, sbt.plugins.JUnitXmlReportPlugin, sbt.plugins.BackgroundRunPlugin, com.typesafe.sbt.packager.rpm.RpmPlugin, com.typesafe.sbt.web.SbtWeb, com.typesafe.sbt.packager.debian.DebianPlugin, com.typesafe.sbt.packager.archetypes.JavaAppPackaging, com.typesafe.sbt.jse.SbtJsEngine, com.typesafe.sbt.digest.SbtDigest, com.typesafe.sbt.packager.archetypes.JavaServerAppPackaging, com.typesafe.sbt.jse.SbtJsTask, play.sbt.Play, com.typesafe.sbt.jshint.SbtJSHint, com.typesafe.sbt.mocha.SbtMocha, com.typesafe.sbt.less.SbtLess, com.typesafe.sbt.rjs.SbtRjs, com.typesafe.sbt.coffeescript.SbtCoffeeScript, play.sbt.PlayScala, play.sbt.PlayNettyServer, play.sbt.PlayLayoutPlugin, play.sbt.forkrun.PlayForkRun)
-[Loading] Done in C:\Users\Robin\Weather_appBackend\Weather_app\webCrawler, returning: (root)
-Set current project to webCrawler (in build file:/C:/Users/Robin/Weather_appBackend/Weather_app/webCrawler/)
+[Loading] Done in C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler, returning: (root)
+Set current project to webCrawler (in build file:/C:/Users/Robin/Weather_appBackend/Weather_app/SingleServer/webCrawler/)
 Reapplying settings...
-Set current project to webCrawler (in build file:/C:/Users/Robin/Weather_appBackend/Weather_app/webCrawler/)
+Set current project to webCrawler (in build file:/C:/Users/Robin/Weather_appBackend/Weather_app/SingleServer/webCrawler/)
 > iflast shell
 > server-send-ready-for-request
+> server-handle-next-server-request
+> {file:/C:/Users/Robin/Weather_appBackend/Weather_app/SingleServer/webCrawler/}root/compile:discoveredMainClasses
+Evaluating tasks: compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@1d9af07, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 2 s, completed 30-okt-2015 15:57:29
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Robin/Weather_appBackend/Weather_app/SingleServer/webCrawler/}root/compile:mainClass
+Evaluating tasks: compile:mainClass
+Running task... Cancel: sbt.server.ServerTaskCancellation@1332b15, check cycles: false
+Total time: 0 s, completed 30-okt-2015 15:57:29
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Robin/Weather_appBackend/Weather_app/SingleServer/webCrawler/}root/compile:discoveredMainClasses
+Evaluating tasks: compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@1ae67d0, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 1 s, completed 30-okt-2015 15:57:30
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Robin/Weather_appBackend/Weather_app/SingleServer/webCrawler/}root/compile:mainClass
+Evaluating tasks: compile:mainClass
+Running task... Cancel: sbt.server.ServerTaskCancellation@84b010, check cycles: false
+Total time: 0 s, completed 30-okt-2015 15:57:31
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@1478611, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\app\controllers\Application.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\app\controllers\Application.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\app\controllers\Application.scala)
+
+Read from stdout: Compiling 1 Scala source to C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\target\scala-2.11\classes...
+Compiling 1 Scala source to C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\target\scala-2.11\classes...
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Running cached compiler 5801e5, interfacing (CompilerInterface) with Scala compiler version 2.11.6
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	C:\Program Files (x86)\Java\jre1.8.0_60\lib\resources.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\rt.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\sunrsasign.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\jsse.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\jce.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\charsets.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\jfr.jar;C:\Program Files (x86)\Java\jre1.8.0_60\classes;C:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.scala-lang\scala-library\2.11.6\jars\scala-library.jar
+	-classpath
+	C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\target\scala-2.11\classes;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.typesafe.play\twirl-api_2.11\1.1.1\jars\twirl-api_2.11.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.apache.commons\commons-lang3\3.4\jars\commons-lang3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-server_2.11\jars\play-server_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.javassist\javassist\3.19.0-GA\bundles\javassist.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.typesafe\config\1.3.0\bundles\config.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\joda-time\joda-time\2.8.1\jars\joda-time.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.joda\joda-convert\1.7\jars\joda-convert.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.fasterxml.jackson.core\jackson-core\2.5.4\bundles\jackson-core.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.fasterxml.jackson.core\jackson-annotations\2.5.4\bundles\jackson-annotations.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.fasterxml.jackson.core\jackson-databind\2.5.4\bundles\jackson-databind.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.fasterxml.jackson.datatype\jackson-datatype-jdk8\2.5.4\bundles\jackson-datatype-jdk8.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.fasterxml.jackson.datatype\jackson-datatype-jsr310\2.5.4\bundles\jackson-datatype-jsr310.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-netty-utils\jars\play-netty-utils-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.slf4j\slf4j-api\1.7.12\jars\slf4j-api.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.slf4j\jul-to-slf4j\1.7.12\jars\jul-to-slf4j.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.slf4j\jcl-over-slf4j\1.7.12\jars\jcl-over-slf4j.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\ch.qos.logback\logback-core\1.1.3\jars\logback-core.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\ch.qos.logback\logback-classic\1.1.3\jars\logback-classic.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.13.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.13.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\commons-codec\commons-codec\1.10\jars\commons-codec.jar;C:\Users\Robin\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\Robin\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\Robin\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.google.inject\guice\4.0\jars\guice.jar;C:\Users\Robin\WaCC\activator-dist-1.3.6\repository\javax.inject\javax.inject\1\jars\javax.inject.jar;C:\Users\Robin\WaCC\activator-dist-1.3.6\repository\aopalliance\aopalliance\1.0\jars\aopalliance.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.google.inject.extensions\guice-assistedinject\4.0\jars\guice-assistedinject.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-netty-server_2.11\jars\play-netty-server_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\io.netty\netty\bundles\netty-3.10.4.Final.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.typesafe.netty\netty-http-pipelining\1.1.4\jars\netty-http-pipelining.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-jdbc-api_2.11\jars\play-jdbc-api_2.11-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.jolbox\bonecp\0.8.0.RELEASE\bundles\bonecp.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.zaxxer\HikariCP\2.3.7\bundles\HikariCP.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.h2database\h2\1.4.187\jars\h2.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\tyrex\tyrex\1.0.1\jars\tyrex.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\net.sf.ehcache\ehcache-core\2.6.11\jars\ehcache-core.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.google.guava\guava\18.0\bundles\guava.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.ning\async-http-client\1.9.21\jars\async-http-client.jar;C:\Users\Robin\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\Robin\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.apache.httpcomponents\httpcore\4.0.1\jars\httpcore.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.apache.httpcomponents\httpclient\4.0.1\jars\httpclient.jar;C:\Users\Robin\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\play2-reactivemongo_2.11\jars\play2-reactivemongo_2.11-0.11.7.play24.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo_2.11\jars\reactivemongo_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo-bson-macros_2.11\jars\reactivemongo-bson-macros_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-compiler\jars\scala-compiler-2.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.4.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.4.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo-bson_2.11\jars\reactivemongo-bson_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.apache.logging.log4j\log4j-api\jars\log4j-api-2.0.2.jar;C:\Users\Robin\.ivy2\cache\org.apache.logging.log4j\log4j-core\jars\log4j-core-2.0.2.jar;C:\Users\Robin\.ivy2\cache\org.apache.logging.log4j\log4j-to-slf4j\jars\log4j-to-slf4j-2.0.2.jar
+Read from stdout: C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\app\controllers\Application.scala:77: method cursor in trait GenericQueryBuilder is deprecated: Use [[cursor]] function with read preference.
+C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\app\controllers\Application.scala:77: method cursor in trait GenericQueryBuilder is deprecated: Use [[cursor]] function with read preference.
+Read from stdout: cursor[BSONDocument].
+              cursor[BSONDocument].
+Read from stdout: ^
+              ^
+Read from stdout: there were two feature warnings; re-run with -feature for details
+there were two feature warnings; re-run with -feature for details
+Read from stdout: two warnings found
+two warnings found
+Scala compilation took 8.154400679 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 9 s, completed 30-okt-2015 15:58:01
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@560d1b, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\app\controllers\Application.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\app\controllers\Application.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\app\controllers\Application.scala)
+
+Read from stdout: Compiling 1 Scala source to C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\target\scala-2.11\classes...
+Compiling 1 Scala source to C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\target\scala-2.11\classes...
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Running cached compiler 1d83925, interfacing (CompilerInterface) with Scala compiler version 2.11.6
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	C:\Program Files (x86)\Java\jre1.8.0_60\lib\resources.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\rt.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\sunrsasign.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\jsse.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\jce.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\charsets.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\jfr.jar;C:\Program Files (x86)\Java\jre1.8.0_60\classes;C:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.scala-lang\scala-library\2.11.6\jars\scala-library.jar
+	-classpath
+	C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\target\scala-2.11\classes;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.typesafe.play\twirl-api_2.11\1.1.1\jars\twirl-api_2.11.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.apache.commons\commons-lang3\3.4\jars\commons-lang3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-server_2.11\jars\play-server_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.javassist\javassist\3.19.0-GA\bundles\javassist.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.typesafe\config\1.3.0\bundles\config.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\joda-time\joda-time\2.8.1\jars\joda-time.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.joda\joda-convert\1.7\jars\joda-convert.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.fasterxml.jackson.core\jackson-core\2.5.4\bundles\jackson-core.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.fasterxml.jackson.core\jackson-annotations\2.5.4\bundles\jackson-annotations.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.fasterxml.jackson.core\jackson-databind\2.5.4\bundles\jackson-databind.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.fasterxml.jackson.datatype\jackson-datatype-jdk8\2.5.4\bundles\jackson-datatype-jdk8.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.fasterxml.jackson.datatype\jackson-datatype-jsr310\2.5.4\bundles\jackson-datatype-jsr310.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-netty-utils\jars\play-netty-utils-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.slf4j\slf4j-api\1.7.12\jars\slf4j-api.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.slf4j\jul-to-slf4j\1.7.12\jars\jul-to-slf4j.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.slf4j\jcl-over-slf4j\1.7.12\jars\jcl-over-slf4j.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\ch.qos.logback\logback-core\1.1.3\jars\logback-core.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\ch.qos.logback\logback-classic\1.1.3\jars\logback-classic.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.13.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.13.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\commons-codec\commons-codec\1.10\jars\commons-codec.jar;C:\Users\Robin\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\Robin\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\Robin\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.google.inject\guice\4.0\jars\guice.jar;C:\Users\Robin\WaCC\activator-dist-1.3.6\repository\javax.inject\javax.inject\1\jars\javax.inject.jar;C:\Users\Robin\WaCC\activator-dist-1.3.6\repository\aopalliance\aopalliance\1.0\jars\aopalliance.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.google.inject.extensions\guice-assistedinject\4.0\jars\guice-assistedinject.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-netty-server_2.11\jars\play-netty-server_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\io.netty\netty\bundles\netty-3.10.4.Final.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.typesafe.netty\netty-http-pipelining\1.1.4\jars\netty-http-pipelining.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-jdbc-api_2.11\jars\play-jdbc-api_2.11-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.jolbox\bonecp\0.8.0.RELEASE\bundles\bonecp.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.zaxxer\HikariCP\2.3.7\bundles\HikariCP.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.h2database\h2\1.4.187\jars\h2.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\tyrex\tyrex\1.0.1\jars\tyrex.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\net.sf.ehcache\ehcache-core\2.6.11\jars\ehcache-core.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.google.guava\guava\18.0\bundles\guava.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.ning\async-http-client\1.9.21\jars\async-http-client.jar;C:\Users\Robin\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\Robin\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.apache.httpcomponents\httpcore\4.0.1\jars\httpcore.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.apache.httpcomponents\httpclient\4.0.1\jars\httpclient.jar;C:\Users\Robin\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\play2-reactivemongo_2.11\jars\play2-reactivemongo_2.11-0.11.7.play24.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo_2.11\jars\reactivemongo_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo-bson-macros_2.11\jars\reactivemongo-bson-macros_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-compiler\jars\scala-compiler-2.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.4.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.4.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo-bson_2.11\jars\reactivemongo-bson_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.apache.logging.log4j\log4j-api\jars\log4j-api-2.0.2.jar;C:\Users\Robin\.ivy2\cache\org.apache.logging.log4j\log4j-core\jars\log4j-core-2.0.2.jar;C:\Users\Robin\.ivy2\cache\org.apache.logging.log4j\log4j-to-slf4j\jars\log4j-to-slf4j-2.0.2.jar
+Read from stdout: C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\app\controllers\Application.scala:78: method cursor in trait GenericQueryBuilder is deprecated: Use [[cursor]] function with read preference.
+C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\app\controllers\Application.scala:78: method cursor in trait GenericQueryBuilder is deprecated: Use [[cursor]] function with read preference.
+Read from stdout: cursor[BSONDocument].
+            cursor[BSONDocument].
+Read from stdout: ^
+            ^
+Read from stdout: there were two feature warnings; re-run with -feature for details
+there were two feature warnings; re-run with -feature for details
+Read from stdout: two warnings found
+two warnings found
+Scala compilation took 3.339828853 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 4 s, completed 30-okt-2015 16:04:56
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@9e65da, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\app\controllers\Application.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\app\controllers\Application.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\app\controllers\Application.scala)
+
+Read from stdout: Compiling 1 Scala source to C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\target\scala-2.11\classes...
+Compiling 1 Scala source to C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\target\scala-2.11\classes...
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Running cached compiler ca78b7, interfacing (CompilerInterface) with Scala compiler version 2.11.6
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	C:\Program Files (x86)\Java\jre1.8.0_60\lib\resources.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\rt.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\sunrsasign.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\jsse.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\jce.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\charsets.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\jfr.jar;C:\Program Files (x86)\Java\jre1.8.0_60\classes;C:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.scala-lang\scala-library\2.11.6\jars\scala-library.jar
+	-classpath
+	C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\target\scala-2.11\classes;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.typesafe.play\twirl-api_2.11\1.1.1\jars\twirl-api_2.11.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.apache.commons\commons-lang3\3.4\jars\commons-lang3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-server_2.11\jars\play-server_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.javassist\javassist\3.19.0-GA\bundles\javassist.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.typesafe\config\1.3.0\bundles\config.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\joda-time\joda-time\2.8.1\jars\joda-time.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.joda\joda-convert\1.7\jars\joda-convert.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.fasterxml.jackson.core\jackson-core\2.5.4\bundles\jackson-core.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.fasterxml.jackson.core\jackson-annotations\2.5.4\bundles\jackson-annotations.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.fasterxml.jackson.core\jackson-databind\2.5.4\bundles\jackson-databind.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.fasterxml.jackson.datatype\jackson-datatype-jdk8\2.5.4\bundles\jackson-datatype-jdk8.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.fasterxml.jackson.datatype\jackson-datatype-jsr310\2.5.4\bundles\jackson-datatype-jsr310.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-netty-utils\jars\play-netty-utils-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.slf4j\slf4j-api\1.7.12\jars\slf4j-api.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.slf4j\jul-to-slf4j\1.7.12\jars\jul-to-slf4j.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.slf4j\jcl-over-slf4j\1.7.12\jars\jcl-over-slf4j.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\ch.qos.logback\logback-core\1.1.3\jars\logback-core.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\ch.qos.logback\logback-classic\1.1.3\jars\logback-classic.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.13.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.13.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\commons-codec\commons-codec\1.10\jars\commons-codec.jar;C:\Users\Robin\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\Robin\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\Robin\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.google.inject\guice\4.0\jars\guice.jar;C:\Users\Robin\WaCC\activator-dist-1.3.6\repository\javax.inject\javax.inject\1\jars\javax.inject.jar;C:\Users\Robin\WaCC\activator-dist-1.3.6\repository\aopalliance\aopalliance\1.0\jars\aopalliance.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.google.inject.extensions\guice-assistedinject\4.0\jars\guice-assistedinject.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-netty-server_2.11\jars\play-netty-server_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\io.netty\netty\bundles\netty-3.10.4.Final.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.typesafe.netty\netty-http-pipelining\1.1.4\jars\netty-http-pipelining.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-jdbc-api_2.11\jars\play-jdbc-api_2.11-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.jolbox\bonecp\0.8.0.RELEASE\bundles\bonecp.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.zaxxer\HikariCP\2.3.7\bundles\HikariCP.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.h2database\h2\1.4.187\jars\h2.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\tyrex\tyrex\1.0.1\jars\tyrex.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\net.sf.ehcache\ehcache-core\2.6.11\jars\ehcache-core.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.google.guava\guava\18.0\bundles\guava.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.ning\async-http-client\1.9.21\jars\async-http-client.jar;C:\Users\Robin\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\Robin\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.apache.httpcomponents\httpcore\4.0.1\jars\httpcore.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.apache.httpcomponents\httpclient\4.0.1\jars\httpclient.jar;C:\Users\Robin\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\play2-reactivemongo_2.11\jars\play2-reactivemongo_2.11-0.11.7.play24.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo_2.11\jars\reactivemongo_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo-bson-macros_2.11\jars\reactivemongo-bson-macros_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-compiler\jars\scala-compiler-2.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.4.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.4.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo-bson_2.11\jars\reactivemongo-bson_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.apache.logging.log4j\log4j-api\jars\log4j-api-2.0.2.jar;C:\Users\Robin\.ivy2\cache\org.apache.logging.log4j\log4j-core\jars\log4j-core-2.0.2.jar;C:\Users\Robin\.ivy2\cache\org.apache.logging.log4j\log4j-to-slf4j\jars\log4j-to-slf4j-2.0.2.jar
+Read from stdout: C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\app\controllers\Application.scala:78: method cursor in trait GenericQueryBuilder is deprecated: Use [[cursor]] function with read preference.
+C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\app\controllers\Application.scala:78: method cursor in trait GenericQueryBuilder is deprecated: Use [[cursor]] function with read preference.
+Read from stdout: cursor[BSONDocument].
+            cursor[BSONDocument].
+Read from stdout: ^
+            ^
+Read from stdout: there were two feature warnings; re-run with -feature for details
+there were two feature warnings; re-run with -feature for details
+Read from stdout: two warnings found
+two warnings found
+Scala compilation took 3.157876072 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 4 s, completed 30-okt-2015 16:06:32
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@58bbdd, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\app\controllers\Application.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\app\controllers\Application.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\app\controllers\Application.scala)
+
+Read from stdout: Compiling 1 Scala source to C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\target\scala-2.11\classes...
+Compiling 1 Scala source to C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\target\scala-2.11\classes...
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Running cached compiler fd8d0c, interfacing (CompilerInterface) with Scala compiler version 2.11.6
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	C:\Program Files (x86)\Java\jre1.8.0_60\lib\resources.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\rt.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\sunrsasign.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\jsse.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\jce.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\charsets.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\jfr.jar;C:\Program Files (x86)\Java\jre1.8.0_60\classes;C:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.scala-lang\scala-library\2.11.6\jars\scala-library.jar
+	-classpath
+	C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\target\scala-2.11\classes;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.typesafe.play\twirl-api_2.11\1.1.1\jars\twirl-api_2.11.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.apache.commons\commons-lang3\3.4\jars\commons-lang3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-server_2.11\jars\play-server_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.javassist\javassist\3.19.0-GA\bundles\javassist.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.typesafe\config\1.3.0\bundles\config.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\joda-time\joda-time\2.8.1\jars\joda-time.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.joda\joda-convert\1.7\jars\joda-convert.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.fasterxml.jackson.core\jackson-core\2.5.4\bundles\jackson-core.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.fasterxml.jackson.core\jackson-annotations\2.5.4\bundles\jackson-annotations.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.fasterxml.jackson.core\jackson-databind\2.5.4\bundles\jackson-databind.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.fasterxml.jackson.datatype\jackson-datatype-jdk8\2.5.4\bundles\jackson-datatype-jdk8.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.fasterxml.jackson.datatype\jackson-datatype-jsr310\2.5.4\bundles\jackson-datatype-jsr310.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-netty-utils\jars\play-netty-utils-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.slf4j\slf4j-api\1.7.12\jars\slf4j-api.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.slf4j\jul-to-slf4j\1.7.12\jars\jul-to-slf4j.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.slf4j\jcl-over-slf4j\1.7.12\jars\jcl-over-slf4j.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\ch.qos.logback\logback-core\1.1.3\jars\logback-core.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\ch.qos.logback\logback-classic\1.1.3\jars\logback-classic.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.13.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.13.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\commons-codec\commons-codec\1.10\jars\commons-codec.jar;C:\Users\Robin\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\Robin\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\Robin\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.google.inject\guice\4.0\jars\guice.jar;C:\Users\Robin\WaCC\activator-dist-1.3.6\repository\javax.inject\javax.inject\1\jars\javax.inject.jar;C:\Users\Robin\WaCC\activator-dist-1.3.6\repository\aopalliance\aopalliance\1.0\jars\aopalliance.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.google.inject.extensions\guice-assistedinject\4.0\jars\guice-assistedinject.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-netty-server_2.11\jars\play-netty-server_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\io.netty\netty\bundles\netty-3.10.4.Final.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.typesafe.netty\netty-http-pipelining\1.1.4\jars\netty-http-pipelining.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-jdbc-api_2.11\jars\play-jdbc-api_2.11-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.jolbox\bonecp\0.8.0.RELEASE\bundles\bonecp.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.zaxxer\HikariCP\2.3.7\bundles\HikariCP.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.h2database\h2\1.4.187\jars\h2.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\tyrex\tyrex\1.0.1\jars\tyrex.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\net.sf.ehcache\ehcache-core\2.6.11\jars\ehcache-core.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.google.guava\guava\18.0\bundles\guava.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.ning\async-http-client\1.9.21\jars\async-http-client.jar;C:\Users\Robin\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\Robin\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.apache.httpcomponents\httpcore\4.0.1\jars\httpcore.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.apache.httpcomponents\httpclient\4.0.1\jars\httpclient.jar;C:\Users\Robin\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\play2-reactivemongo_2.11\jars\play2-reactivemongo_2.11-0.11.7.play24.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo_2.11\jars\reactivemongo_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo-bson-macros_2.11\jars\reactivemongo-bson-macros_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-compiler\jars\scala-compiler-2.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.4.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.4.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo-bson_2.11\jars\reactivemongo-bson_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.apache.logging.log4j\log4j-api\jars\log4j-api-2.0.2.jar;C:\Users\Robin\.ivy2\cache\org.apache.logging.log4j\log4j-core\jars\log4j-core-2.0.2.jar;C:\Users\Robin\.ivy2\cache\org.apache.logging.log4j\log4j-to-slf4j\jars\log4j-to-slf4j-2.0.2.jar
+Read from stdout: C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\app\controllers\Application.scala:46: not found: type JsValue
+C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\app\controllers\Application.scala:46: not found: type JsValue
+Read from stdout: def getWeather(city: String) : Future[JsValue] = {
+    def getWeather(city: String) : Future[JsValue] = {
+Read from stdout: ^
+                                          ^
+Read from stdout: C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\app\controllers\Application.scala:91: not found: value Json
+C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\app\controllers\Application.scala:91: not found: value Json
+Read from stdout: 							    val combined = Json.obj("TIMESTAMP" -> timestamp, "CONDITION" -> resp)
+							    val combined = Json.obj("TIMESTAMP" -> timestamp, "CONDITION" -> resp)
+Read from stdout: 							                   ^
+							                   ^
+Read from stdout: C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\app\controllers\Application.scala:93: not found: type JsObject
+Read from stdout: Error occurred in an application involving default arguments.
+C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\app\controllers\Application.scala:93: not found: type JsObject
+Error occurred in an application involving default arguments.
+Read from stdout: 							    collectionStore.insert(combined.as[JsObject])
+							    collectionStore.insert(combined.as[JsObject])
+Read from stdout: 							                                       ^
+							                                       ^
+Read from stdout: three errors found
+three errors found
+Compilation failed (CompilerInterface)
+Read from stdout: (compile:compileIncremental) Compilation failed
+(compile:compileIncremental) Compilation failed
+Total time: 2 s, completed 30-okt-2015 16:07:16
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@6177bb, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\app\controllers\Application.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\app\controllers\Application.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\app\controllers\Application.scala)
+
+Read from stdout: Compiling 1 Scala source to C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\target\scala-2.11\classes...
+Compiling 1 Scala source to C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\target\scala-2.11\classes...
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Running cached compiler 18e521a, interfacing (CompilerInterface) with Scala compiler version 2.11.6
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	C:\Program Files (x86)\Java\jre1.8.0_60\lib\resources.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\rt.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\sunrsasign.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\jsse.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\jce.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\charsets.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\jfr.jar;C:\Program Files (x86)\Java\jre1.8.0_60\classes;C:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.scala-lang\scala-library\2.11.6\jars\scala-library.jar
+	-classpath
+	C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\target\scala-2.11\classes;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.typesafe.play\twirl-api_2.11\1.1.1\jars\twirl-api_2.11.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.apache.commons\commons-lang3\3.4\jars\commons-lang3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-server_2.11\jars\play-server_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.javassist\javassist\3.19.0-GA\bundles\javassist.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.typesafe\config\1.3.0\bundles\config.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\joda-time\joda-time\2.8.1\jars\joda-time.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.joda\joda-convert\1.7\jars\joda-convert.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.fasterxml.jackson.core\jackson-core\2.5.4\bundles\jackson-core.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.fasterxml.jackson.core\jackson-annotations\2.5.4\bundles\jackson-annotations.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.fasterxml.jackson.core\jackson-databind\2.5.4\bundles\jackson-databind.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.fasterxml.jackson.datatype\jackson-datatype-jdk8\2.5.4\bundles\jackson-datatype-jdk8.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.fasterxml.jackson.datatype\jackson-datatype-jsr310\2.5.4\bundles\jackson-datatype-jsr310.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-netty-utils\jars\play-netty-utils-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.slf4j\slf4j-api\1.7.12\jars\slf4j-api.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.slf4j\jul-to-slf4j\1.7.12\jars\jul-to-slf4j.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.slf4j\jcl-over-slf4j\1.7.12\jars\jcl-over-slf4j.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\ch.qos.logback\logback-core\1.1.3\jars\logback-core.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\ch.qos.logback\logback-classic\1.1.3\jars\logback-classic.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.13.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.13.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\commons-codec\commons-codec\1.10\jars\commons-codec.jar;C:\Users\Robin\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\Robin\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\Robin\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.google.inject\guice\4.0\jars\guice.jar;C:\Users\Robin\WaCC\activator-dist-1.3.6\repository\javax.inject\javax.inject\1\jars\javax.inject.jar;C:\Users\Robin\WaCC\activator-dist-1.3.6\repository\aopalliance\aopalliance\1.0\jars\aopalliance.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.google.inject.extensions\guice-assistedinject\4.0\jars\guice-assistedinject.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-netty-server_2.11\jars\play-netty-server_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\io.netty\netty\bundles\netty-3.10.4.Final.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.typesafe.netty\netty-http-pipelining\1.1.4\jars\netty-http-pipelining.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-jdbc-api_2.11\jars\play-jdbc-api_2.11-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.jolbox\bonecp\0.8.0.RELEASE\bundles\bonecp.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.zaxxer\HikariCP\2.3.7\bundles\HikariCP.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.h2database\h2\1.4.187\jars\h2.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\tyrex\tyrex\1.0.1\jars\tyrex.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\net.sf.ehcache\ehcache-core\2.6.11\jars\ehcache-core.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.google.guava\guava\18.0\bundles\guava.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.ning\async-http-client\1.9.21\jars\async-http-client.jar;C:\Users\Robin\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\Robin\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.apache.httpcomponents\httpcore\4.0.1\jars\httpcore.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.apache.httpcomponents\httpclient\4.0.1\jars\httpclient.jar;C:\Users\Robin\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\play2-reactivemongo_2.11\jars\play2-reactivemongo_2.11-0.11.7.play24.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo_2.11\jars\reactivemongo_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo-bson-macros_2.11\jars\reactivemongo-bson-macros_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-compiler\jars\scala-compiler-2.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.4.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.4.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo-bson_2.11\jars\reactivemongo-bson_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.apache.logging.log4j\log4j-api\jars\log4j-api-2.0.2.jar;C:\Users\Robin\.ivy2\cache\org.apache.logging.log4j\log4j-core\jars\log4j-core-2.0.2.jar;C:\Users\Robin\.ivy2\cache\org.apache.logging.log4j\log4j-to-slf4j\jars\log4j-to-slf4j-2.0.2.jar
+Read from stdout: C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\app\controllers\Application.scala:78: method cursor in trait GenericQueryBuilder is deprecated: Use [[cursor]] function with read preference.
+C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\app\controllers\Application.scala:78: method cursor in trait GenericQueryBuilder is deprecated: Use [[cursor]] function with read preference.
+Read from stdout: cursor[BSONDocument].
+            cursor[BSONDocument].
+Read from stdout: ^
+            ^
+Read from stdout: there were two feature warnings; re-run with -feature for details
+there were two feature warnings; re-run with -feature for details
+Read from stdout: two warnings found
+two warnings found
+Scala compilation took 3.28597286 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 4 s, completed 30-okt-2015 16:07:30
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@7a595c, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\app\controllers\Application.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\app\controllers\Application.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\app\controllers\Application.scala)
+
+Read from stdout: Compiling 1 Scala source to C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\target\scala-2.11\classes...
+Compiling 1 Scala source to C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\target\scala-2.11\classes...
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Running cached compiler 716e61, interfacing (CompilerInterface) with Scala compiler version 2.11.6
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	C:\Program Files (x86)\Java\jre1.8.0_60\lib\resources.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\rt.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\sunrsasign.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\jsse.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\jce.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\charsets.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\jfr.jar;C:\Program Files (x86)\Java\jre1.8.0_60\classes;C:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.scala-lang\scala-library\2.11.6\jars\scala-library.jar
+	-classpath
+	C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\target\scala-2.11\classes;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.typesafe.play\twirl-api_2.11\1.1.1\jars\twirl-api_2.11.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.apache.commons\commons-lang3\3.4\jars\commons-lang3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-server_2.11\jars\play-server_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.javassist\javassist\3.19.0-GA\bundles\javassist.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.typesafe\config\1.3.0\bundles\config.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\joda-time\joda-time\2.8.1\jars\joda-time.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.joda\joda-convert\1.7\jars\joda-convert.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.fasterxml.jackson.core\jackson-core\2.5.4\bundles\jackson-core.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.fasterxml.jackson.core\jackson-annotations\2.5.4\bundles\jackson-annotations.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.fasterxml.jackson.core\jackson-databind\2.5.4\bundles\jackson-databind.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.fasterxml.jackson.datatype\jackson-datatype-jdk8\2.5.4\bundles\jackson-datatype-jdk8.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.fasterxml.jackson.datatype\jackson-datatype-jsr310\2.5.4\bundles\jackson-datatype-jsr310.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-netty-utils\jars\play-netty-utils-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.slf4j\slf4j-api\1.7.12\jars\slf4j-api.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.slf4j\jul-to-slf4j\1.7.12\jars\jul-to-slf4j.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.slf4j\jcl-over-slf4j\1.7.12\jars\jcl-over-slf4j.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\ch.qos.logback\logback-core\1.1.3\jars\logback-core.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\ch.qos.logback\logback-classic\1.1.3\jars\logback-classic.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.13.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.13.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\commons-codec\commons-codec\1.10\jars\commons-codec.jar;C:\Users\Robin\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\Robin\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\Robin\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.google.inject\guice\4.0\jars\guice.jar;C:\Users\Robin\WaCC\activator-dist-1.3.6\repository\javax.inject\javax.inject\1\jars\javax.inject.jar;C:\Users\Robin\WaCC\activator-dist-1.3.6\repository\aopalliance\aopalliance\1.0\jars\aopalliance.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.google.inject.extensions\guice-assistedinject\4.0\jars\guice-assistedinject.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-netty-server_2.11\jars\play-netty-server_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\io.netty\netty\bundles\netty-3.10.4.Final.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.typesafe.netty\netty-http-pipelining\1.1.4\jars\netty-http-pipelining.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-jdbc-api_2.11\jars\play-jdbc-api_2.11-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.jolbox\bonecp\0.8.0.RELEASE\bundles\bonecp.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.zaxxer\HikariCP\2.3.7\bundles\HikariCP.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.h2database\h2\1.4.187\jars\h2.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\tyrex\tyrex\1.0.1\jars\tyrex.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\net.sf.ehcache\ehcache-core\2.6.11\jars\ehcache-core.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.google.guava\guava\18.0\bundles\guava.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.ning\async-http-client\1.9.21\jars\async-http-client.jar;C:\Users\Robin\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\Robin\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.apache.httpcomponents\httpcore\4.0.1\jars\httpcore.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.apache.httpcomponents\httpclient\4.0.1\jars\httpclient.jar;C:\Users\Robin\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\play2-reactivemongo_2.11\jars\play2-reactivemongo_2.11-0.11.7.play24.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo_2.11\jars\reactivemongo_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo-bson-macros_2.11\jars\reactivemongo-bson-macros_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-compiler\jars\scala-compiler-2.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.4.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.4.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo-bson_2.11\jars\reactivemongo-bson_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.apache.logging.log4j\log4j-api\jars\log4j-api-2.0.2.jar;C:\Users\Robin\.ivy2\cache\org.apache.logging.log4j\log4j-core\jars\log4j-core-2.0.2.jar;C:\Users\Robin\.ivy2\cache\org.apache.logging.log4j\log4j-to-slf4j\jars\log4j-to-slf4j-2.0.2.jar
+Read from stdout: C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\app\controllers\Application.scala:51: You do not have an implicit Application in scope. If you want to bring the current running Application into context, just add import play.api.Play.current
+C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\app\controllers\Application.scala:51: You do not have an implicit Application in scope. If you want to bring the current running Application into context, just add import play.api.Play.current
+Read from stdout: val request = WS.url(url).get
+        val request = WS.url(url).get
+Read from stdout: ^
+                            ^
+Read from stdout: one error found
+one error found
+Compilation failed (CompilerInterface)
+Read from stdout: (compile:compileIncremental) Compilation failed
+(compile:compileIncremental) Compilation failed
+Total time: 3 s, completed 30-okt-2015 16:07:46
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@e7d421, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\app\controllers\Application.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\app\controllers\Application.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\app\controllers\Application.scala)
+
+Read from stdout: Compiling 1 Scala source to C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\target\scala-2.11\classes...
+Compiling 1 Scala source to C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\target\scala-2.11\classes...
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Running cached compiler 53482e, interfacing (CompilerInterface) with Scala compiler version 2.11.6
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	C:\Program Files (x86)\Java\jre1.8.0_60\lib\resources.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\rt.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\sunrsasign.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\jsse.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\jce.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\charsets.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\jfr.jar;C:\Program Files (x86)\Java\jre1.8.0_60\classes;C:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.scala-lang\scala-library\2.11.6\jars\scala-library.jar
+	-classpath
+	C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\target\scala-2.11\classes;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.typesafe.play\twirl-api_2.11\1.1.1\jars\twirl-api_2.11.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.apache.commons\commons-lang3\3.4\jars\commons-lang3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-server_2.11\jars\play-server_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.javassist\javassist\3.19.0-GA\bundles\javassist.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.typesafe\config\1.3.0\bundles\config.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\joda-time\joda-time\2.8.1\jars\joda-time.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.joda\joda-convert\1.7\jars\joda-convert.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.fasterxml.jackson.core\jackson-core\2.5.4\bundles\jackson-core.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.fasterxml.jackson.core\jackson-annotations\2.5.4\bundles\jackson-annotations.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.fasterxml.jackson.core\jackson-databind\2.5.4\bundles\jackson-databind.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.fasterxml.jackson.datatype\jackson-datatype-jdk8\2.5.4\bundles\jackson-datatype-jdk8.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.fasterxml.jackson.datatype\jackson-datatype-jsr310\2.5.4\bundles\jackson-datatype-jsr310.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-netty-utils\jars\play-netty-utils-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.slf4j\slf4j-api\1.7.12\jars\slf4j-api.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.slf4j\jul-to-slf4j\1.7.12\jars\jul-to-slf4j.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.slf4j\jcl-over-slf4j\1.7.12\jars\jcl-over-slf4j.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\ch.qos.logback\logback-core\1.1.3\jars\logback-core.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\ch.qos.logback\logback-classic\1.1.3\jars\logback-classic.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.13.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.13.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\commons-codec\commons-codec\1.10\jars\commons-codec.jar;C:\Users\Robin\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\Robin\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\Robin\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.google.inject\guice\4.0\jars\guice.jar;C:\Users\Robin\WaCC\activator-dist-1.3.6\repository\javax.inject\javax.inject\1\jars\javax.inject.jar;C:\Users\Robin\WaCC\activator-dist-1.3.6\repository\aopalliance\aopalliance\1.0\jars\aopalliance.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.google.inject.extensions\guice-assistedinject\4.0\jars\guice-assistedinject.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-netty-server_2.11\jars\play-netty-server_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\io.netty\netty\bundles\netty-3.10.4.Final.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.typesafe.netty\netty-http-pipelining\1.1.4\jars\netty-http-pipelining.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-jdbc-api_2.11\jars\play-jdbc-api_2.11-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.jolbox\bonecp\0.8.0.RELEASE\bundles\bonecp.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.zaxxer\HikariCP\2.3.7\bundles\HikariCP.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.h2database\h2\1.4.187\jars\h2.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\tyrex\tyrex\1.0.1\jars\tyrex.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\net.sf.ehcache\ehcache-core\2.6.11\jars\ehcache-core.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.google.guava\guava\18.0\bundles\guava.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.ning\async-http-client\1.9.21\jars\async-http-client.jar;C:\Users\Robin\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\Robin\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.apache.httpcomponents\httpcore\4.0.1\jars\httpcore.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.apache.httpcomponents\httpclient\4.0.1\jars\httpclient.jar;C:\Users\Robin\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\play2-reactivemongo_2.11\jars\play2-reactivemongo_2.11-0.11.7.play24.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo_2.11\jars\reactivemongo_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo-bson-macros_2.11\jars\reactivemongo-bson-macros_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-compiler\jars\scala-compiler-2.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.4.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.4.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo-bson_2.11\jars\reactivemongo-bson_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.apache.logging.log4j\log4j-api\jars\log4j-api-2.0.2.jar;C:\Users\Robin\.ivy2\cache\org.apache.logging.log4j\log4j-core\jars\log4j-core-2.0.2.jar;C:\Users\Robin\.ivy2\cache\org.apache.logging.log4j\log4j-to-slf4j\jars\log4j-to-slf4j-2.0.2.jar
+Read from stdout: C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\app\controllers\Application.scala:110: not found: value Action
+C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\app\controllers\Application.scala:110: not found: value Action
+Read from stdout: def index = Action {
+    def index = Action {
+Read from stdout: ^
+                ^
+Read from stdout: one error found
+one error found
+Compilation failed (CompilerInterface)
+Read from stdout: (compile:compileIncremental) Compilation failed
+(compile:compileIncremental) Compilation failed
+Total time: 3 s, completed 30-okt-2015 16:07:57
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@25f25a, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 1 s, completed 30-okt-2015 16:08:03
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@16dbdee, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\app\controllers\Application.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\app\controllers\Application.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\app\controllers\Application.scala)
+
+Read from stdout: Compiling 1 Scala source to C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\target\scala-2.11\classes...
+Compiling 1 Scala source to C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\target\scala-2.11\classes...
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Running cached compiler a0da1, interfacing (CompilerInterface) with Scala compiler version 2.11.6
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	C:\Program Files (x86)\Java\jre1.8.0_60\lib\resources.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\rt.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\sunrsasign.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\jsse.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\jce.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\charsets.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\jfr.jar;C:\Program Files (x86)\Java\jre1.8.0_60\classes;C:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.scala-lang\scala-library\2.11.6\jars\scala-library.jar
+	-classpath
+	C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\target\scala-2.11\classes;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.typesafe.play\twirl-api_2.11\1.1.1\jars\twirl-api_2.11.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.apache.commons\commons-lang3\3.4\jars\commons-lang3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-server_2.11\jars\play-server_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.javassist\javassist\3.19.0-GA\bundles\javassist.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.typesafe\config\1.3.0\bundles\config.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\joda-time\joda-time\2.8.1\jars\joda-time.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.joda\joda-convert\1.7\jars\joda-convert.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.fasterxml.jackson.core\jackson-core\2.5.4\bundles\jackson-core.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.fasterxml.jackson.core\jackson-annotations\2.5.4\bundles\jackson-annotations.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.fasterxml.jackson.core\jackson-databind\2.5.4\bundles\jackson-databind.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.fasterxml.jackson.datatype\jackson-datatype-jdk8\2.5.4\bundles\jackson-datatype-jdk8.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.fasterxml.jackson.datatype\jackson-datatype-jsr310\2.5.4\bundles\jackson-datatype-jsr310.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-netty-utils\jars\play-netty-utils-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.slf4j\slf4j-api\1.7.12\jars\slf4j-api.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.slf4j\jul-to-slf4j\1.7.12\jars\jul-to-slf4j.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.slf4j\jcl-over-slf4j\1.7.12\jars\jcl-over-slf4j.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\ch.qos.logback\logback-core\1.1.3\jars\logback-core.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\ch.qos.logback\logback-classic\1.1.3\jars\logback-classic.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.13.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.13.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\commons-codec\commons-codec\1.10\jars\commons-codec.jar;C:\Users\Robin\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\Robin\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\Robin\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.google.inject\guice\4.0\jars\guice.jar;C:\Users\Robin\WaCC\activator-dist-1.3.6\repository\javax.inject\javax.inject\1\jars\javax.inject.jar;C:\Users\Robin\WaCC\activator-dist-1.3.6\repository\aopalliance\aopalliance\1.0\jars\aopalliance.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.google.inject.extensions\guice-assistedinject\4.0\jars\guice-assistedinject.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-netty-server_2.11\jars\play-netty-server_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\io.netty\netty\bundles\netty-3.10.4.Final.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.typesafe.netty\netty-http-pipelining\1.1.4\jars\netty-http-pipelining.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-jdbc-api_2.11\jars\play-jdbc-api_2.11-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.jolbox\bonecp\0.8.0.RELEASE\bundles\bonecp.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.zaxxer\HikariCP\2.3.7\bundles\HikariCP.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.h2database\h2\1.4.187\jars\h2.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\tyrex\tyrex\1.0.1\jars\tyrex.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\net.sf.ehcache\ehcache-core\2.6.11\jars\ehcache-core.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.google.guava\guava\18.0\bundles\guava.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.ning\async-http-client\1.9.21\jars\async-http-client.jar;C:\Users\Robin\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\Robin\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.apache.httpcomponents\httpcore\4.0.1\jars\httpcore.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.apache.httpcomponents\httpclient\4.0.1\jars\httpclient.jar;C:\Users\Robin\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\play2-reactivemongo_2.11\jars\play2-reactivemongo_2.11-0.11.7.play24.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo_2.11\jars\reactivemongo_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo-bson-macros_2.11\jars\reactivemongo-bson-macros_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-compiler\jars\scala-compiler-2.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.4.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.4.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo-bson_2.11\jars\reactivemongo-bson_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.apache.logging.log4j\log4j-api\jars\log4j-api-2.0.2.jar;C:\Users\Robin\.ivy2\cache\org.apache.logging.log4j\log4j-core\jars\log4j-core-2.0.2.jar;C:\Users\Robin\.ivy2\cache\org.apache.logging.log4j\log4j-to-slf4j\jars\log4j-to-slf4j-2.0.2.jar
+Read from stdout: C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\app\controllers\Application.scala:78: method cursor in trait GenericQueryBuilder is deprecated: Use [[cursor]] function with read preference.
+C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\app\controllers\Application.scala:78: method cursor in trait GenericQueryBuilder is deprecated: Use [[cursor]] function with read preference.
+Read from stdout: cursor[BSONDocument].
+            cursor[BSONDocument].
+Read from stdout: ^
+            ^
+Read from stdout: there were two feature warnings; re-run with -feature for details
+there were two feature warnings; re-run with -feature for details
+Read from stdout: two warnings found
+two warnings found
+Scala compilation took 2.972213654 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 4 s, completed 30-okt-2015 16:08:11
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@d2980f, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\app\controllers\Application.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\app\controllers\Application.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\app\controllers\Application.scala)
+
+Read from stdout: Compiling 1 Scala source to C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\target\scala-2.11\classes...
+Compiling 1 Scala source to C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\target\scala-2.11\classes...
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Running cached compiler 1839c0d, interfacing (CompilerInterface) with Scala compiler version 2.11.6
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	C:\Program Files (x86)\Java\jre1.8.0_60\lib\resources.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\rt.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\sunrsasign.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\jsse.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\jce.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\charsets.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\jfr.jar;C:\Program Files (x86)\Java\jre1.8.0_60\classes;C:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.scala-lang\scala-library\2.11.6\jars\scala-library.jar
+	-classpath
+	C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\target\scala-2.11\classes;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.typesafe.play\twirl-api_2.11\1.1.1\jars\twirl-api_2.11.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.apache.commons\commons-lang3\3.4\jars\commons-lang3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-server_2.11\jars\play-server_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.javassist\javassist\3.19.0-GA\bundles\javassist.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.typesafe\config\1.3.0\bundles\config.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\joda-time\joda-time\2.8.1\jars\joda-time.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.joda\joda-convert\1.7\jars\joda-convert.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.fasterxml.jackson.core\jackson-core\2.5.4\bundles\jackson-core.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.fasterxml.jackson.core\jackson-annotations\2.5.4\bundles\jackson-annotations.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.fasterxml.jackson.core\jackson-databind\2.5.4\bundles\jackson-databind.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.fasterxml.jackson.datatype\jackson-datatype-jdk8\2.5.4\bundles\jackson-datatype-jdk8.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.fasterxml.jackson.datatype\jackson-datatype-jsr310\2.5.4\bundles\jackson-datatype-jsr310.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-netty-utils\jars\play-netty-utils-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.slf4j\slf4j-api\1.7.12\jars\slf4j-api.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.slf4j\jul-to-slf4j\1.7.12\jars\jul-to-slf4j.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.slf4j\jcl-over-slf4j\1.7.12\jars\jcl-over-slf4j.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\ch.qos.logback\logback-core\1.1.3\jars\logback-core.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\ch.qos.logback\logback-classic\1.1.3\jars\logback-classic.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.13.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.13.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\commons-codec\commons-codec\1.10\jars\commons-codec.jar;C:\Users\Robin\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\Robin\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\Robin\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.google.inject\guice\4.0\jars\guice.jar;C:\Users\Robin\WaCC\activator-dist-1.3.6\repository\javax.inject\javax.inject\1\jars\javax.inject.jar;C:\Users\Robin\WaCC\activator-dist-1.3.6\repository\aopalliance\aopalliance\1.0\jars\aopalliance.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.google.inject.extensions\guice-assistedinject\4.0\jars\guice-assistedinject.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-netty-server_2.11\jars\play-netty-server_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\io.netty\netty\bundles\netty-3.10.4.Final.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.typesafe.netty\netty-http-pipelining\1.1.4\jars\netty-http-pipelining.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-jdbc-api_2.11\jars\play-jdbc-api_2.11-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.jolbox\bonecp\0.8.0.RELEASE\bundles\bonecp.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.zaxxer\HikariCP\2.3.7\bundles\HikariCP.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.h2database\h2\1.4.187\jars\h2.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\tyrex\tyrex\1.0.1\jars\tyrex.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\net.sf.ehcache\ehcache-core\2.6.11\jars\ehcache-core.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.google.guava\guava\18.0\bundles\guava.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.ning\async-http-client\1.9.21\jars\async-http-client.jar;C:\Users\Robin\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\Robin\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.apache.httpcomponents\httpcore\4.0.1\jars\httpcore.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.apache.httpcomponents\httpclient\4.0.1\jars\httpclient.jar;C:\Users\Robin\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\play2-reactivemongo_2.11\jars\play2-reactivemongo_2.11-0.11.7.play24.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo_2.11\jars\reactivemongo_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo-bson-macros_2.11\jars\reactivemongo-bson-macros_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-compiler\jars\scala-compiler-2.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.4.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.4.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo-bson_2.11\jars\reactivemongo-bson_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.apache.logging.log4j\log4j-api\jars\log4j-api-2.0.2.jar;C:\Users\Robin\.ivy2\cache\org.apache.logging.log4j\log4j-core\jars\log4j-core-2.0.2.jar;C:\Users\Robin\.ivy2\cache\org.apache.logging.log4j\log4j-to-slf4j\jars\log4j-to-slf4j-2.0.2.jar
+Read from stdout: C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\app\controllers\Application.scala:78: method cursor in trait GenericQueryBuilder is deprecated: Use [[cursor]] function with read preference.
+C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\app\controllers\Application.scala:78: method cursor in trait GenericQueryBuilder is deprecated: Use [[cursor]] function with read preference.
+Read from stdout: cursor[BSONDocument].
+            cursor[BSONDocument].
+Read from stdout: ^
+            ^
+Read from stdout: there were two feature warnings; re-run with -feature for details
+there were two feature warnings; re-run with -feature for details
+Read from stdout: two warnings found
+two warnings found
+Scala compilation took 3.192030393 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 4 s, completed 30-okt-2015 16:08:45
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@172d757, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\app\controllers\Application.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\app\controllers\Application.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\app\controllers\Application.scala)
+
+Read from stdout: Compiling 1 Scala source to C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\target\scala-2.11\classes...
+Compiling 1 Scala source to C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\target\scala-2.11\classes...
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Running cached compiler 284cd9, interfacing (CompilerInterface) with Scala compiler version 2.11.6
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	C:\Program Files (x86)\Java\jre1.8.0_60\lib\resources.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\rt.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\sunrsasign.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\jsse.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\jce.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\charsets.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\jfr.jar;C:\Program Files (x86)\Java\jre1.8.0_60\classes;C:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.scala-lang\scala-library\2.11.6\jars\scala-library.jar
+	-classpath
+	C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\target\scala-2.11\classes;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.typesafe.play\twirl-api_2.11\1.1.1\jars\twirl-api_2.11.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.apache.commons\commons-lang3\3.4\jars\commons-lang3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-server_2.11\jars\play-server_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.javassist\javassist\3.19.0-GA\bundles\javassist.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.typesafe\config\1.3.0\bundles\config.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\joda-time\joda-time\2.8.1\jars\joda-time.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.joda\joda-convert\1.7\jars\joda-convert.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.fasterxml.jackson.core\jackson-core\2.5.4\bundles\jackson-core.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.fasterxml.jackson.core\jackson-annotations\2.5.4\bundles\jackson-annotations.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.fasterxml.jackson.core\jackson-databind\2.5.4\bundles\jackson-databind.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.fasterxml.jackson.datatype\jackson-datatype-jdk8\2.5.4\bundles\jackson-datatype-jdk8.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.fasterxml.jackson.datatype\jackson-datatype-jsr310\2.5.4\bundles\jackson-datatype-jsr310.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-netty-utils\jars\play-netty-utils-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.slf4j\slf4j-api\1.7.12\jars\slf4j-api.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.slf4j\jul-to-slf4j\1.7.12\jars\jul-to-slf4j.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.slf4j\jcl-over-slf4j\1.7.12\jars\jcl-over-slf4j.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\ch.qos.logback\logback-core\1.1.3\jars\logback-core.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\ch.qos.logback\logback-classic\1.1.3\jars\logback-classic.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.13.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.13.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\commons-codec\commons-codec\1.10\jars\commons-codec.jar;C:\Users\Robin\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\Robin\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\Robin\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.google.inject\guice\4.0\jars\guice.jar;C:\Users\Robin\WaCC\activator-dist-1.3.6\repository\javax.inject\javax.inject\1\jars\javax.inject.jar;C:\Users\Robin\WaCC\activator-dist-1.3.6\repository\aopalliance\aopalliance\1.0\jars\aopalliance.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.google.inject.extensions\guice-assistedinject\4.0\jars\guice-assistedinject.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-netty-server_2.11\jars\play-netty-server_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\io.netty\netty\bundles\netty-3.10.4.Final.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.typesafe.netty\netty-http-pipelining\1.1.4\jars\netty-http-pipelining.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-jdbc-api_2.11\jars\play-jdbc-api_2.11-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.jolbox\bonecp\0.8.0.RELEASE\bundles\bonecp.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.zaxxer\HikariCP\2.3.7\bundles\HikariCP.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.h2database\h2\1.4.187\jars\h2.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\tyrex\tyrex\1.0.1\jars\tyrex.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\net.sf.ehcache\ehcache-core\2.6.11\jars\ehcache-core.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.google.guava\guava\18.0\bundles\guava.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.ning\async-http-client\1.9.21\jars\async-http-client.jar;C:\Users\Robin\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\Robin\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.apache.httpcomponents\httpcore\4.0.1\jars\httpcore.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.apache.httpcomponents\httpclient\4.0.1\jars\httpclient.jar;C:\Users\Robin\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\play2-reactivemongo_2.11\jars\play2-reactivemongo_2.11-0.11.7.play24.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo_2.11\jars\reactivemongo_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo-bson-macros_2.11\jars\reactivemongo-bson-macros_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-compiler\jars\scala-compiler-2.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.4.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.4.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo-bson_2.11\jars\reactivemongo-bson_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.apache.logging.log4j\log4j-api\jars\log4j-api-2.0.2.jar;C:\Users\Robin\.ivy2\cache\org.apache.logging.log4j\log4j-core\jars\log4j-core-2.0.2.jar;C:\Users\Robin\.ivy2\cache\org.apache.logging.log4j\log4j-to-slf4j\jars\log4j-to-slf4j-2.0.2.jar
+Read from stdout: C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\app\controllers\Application.scala:78: method cursor in trait GenericQueryBuilder is deprecated: Use [[cursor]] function with read preference.
+C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\app\controllers\Application.scala:78: method cursor in trait GenericQueryBuilder is deprecated: Use [[cursor]] function with read preference.
+Read from stdout: cursor[BSONDocument].
+            cursor[BSONDocument].
+Read from stdout: ^
+            ^
+Read from stdout: there were two feature warnings; re-run with -feature for details
+there were two feature warnings; re-run with -feature for details
+Read from stdout: two warnings found
+two warnings found
+Scala compilation took 3.290253642 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 4 s, completed 30-okt-2015 16:08:57
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@1162615, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\app\controllers\Application.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\app\controllers\Application.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\app\controllers\Application.scala)
+
+Read from stdout: Compiling 1 Scala source to C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\target\scala-2.11\classes...
+Compiling 1 Scala source to C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\target\scala-2.11\classes...
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Running cached compiler 983e6b, interfacing (CompilerInterface) with Scala compiler version 2.11.6
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	C:\Program Files (x86)\Java\jre1.8.0_60\lib\resources.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\rt.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\sunrsasign.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\jsse.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\jce.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\charsets.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\jfr.jar;C:\Program Files (x86)\Java\jre1.8.0_60\classes;C:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.scala-lang\scala-library\2.11.6\jars\scala-library.jar
+	-classpath
+	C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\target\scala-2.11\classes;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.typesafe.play\twirl-api_2.11\1.1.1\jars\twirl-api_2.11.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.apache.commons\commons-lang3\3.4\jars\commons-lang3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-server_2.11\jars\play-server_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.javassist\javassist\3.19.0-GA\bundles\javassist.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.typesafe\config\1.3.0\bundles\config.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\joda-time\joda-time\2.8.1\jars\joda-time.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.joda\joda-convert\1.7\jars\joda-convert.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.fasterxml.jackson.core\jackson-core\2.5.4\bundles\jackson-core.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.fasterxml.jackson.core\jackson-annotations\2.5.4\bundles\jackson-annotations.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.fasterxml.jackson.core\jackson-databind\2.5.4\bundles\jackson-databind.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.fasterxml.jackson.datatype\jackson-datatype-jdk8\2.5.4\bundles\jackson-datatype-jdk8.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.fasterxml.jackson.datatype\jackson-datatype-jsr310\2.5.4\bundles\jackson-datatype-jsr310.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-netty-utils\jars\play-netty-utils-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.slf4j\slf4j-api\1.7.12\jars\slf4j-api.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.slf4j\jul-to-slf4j\1.7.12\jars\jul-to-slf4j.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.slf4j\jcl-over-slf4j\1.7.12\jars\jcl-over-slf4j.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\ch.qos.logback\logback-core\1.1.3\jars\logback-core.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\ch.qos.logback\logback-classic\1.1.3\jars\logback-classic.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.13.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.13.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\commons-codec\commons-codec\1.10\jars\commons-codec.jar;C:\Users\Robin\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\Robin\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\Robin\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.google.inject\guice\4.0\jars\guice.jar;C:\Users\Robin\WaCC\activator-dist-1.3.6\repository\javax.inject\javax.inject\1\jars\javax.inject.jar;C:\Users\Robin\WaCC\activator-dist-1.3.6\repository\aopalliance\aopalliance\1.0\jars\aopalliance.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.google.inject.extensions\guice-assistedinject\4.0\jars\guice-assistedinject.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-netty-server_2.11\jars\play-netty-server_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\io.netty\netty\bundles\netty-3.10.4.Final.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.typesafe.netty\netty-http-pipelining\1.1.4\jars\netty-http-pipelining.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-jdbc-api_2.11\jars\play-jdbc-api_2.11-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.jolbox\bonecp\0.8.0.RELEASE\bundles\bonecp.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.zaxxer\HikariCP\2.3.7\bundles\HikariCP.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.h2database\h2\1.4.187\jars\h2.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\tyrex\tyrex\1.0.1\jars\tyrex.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\net.sf.ehcache\ehcache-core\2.6.11\jars\ehcache-core.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.google.guava\guava\18.0\bundles\guava.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.ning\async-http-client\1.9.21\jars\async-http-client.jar;C:\Users\Robin\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\Robin\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.apache.httpcomponents\httpcore\4.0.1\jars\httpcore.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.apache.httpcomponents\httpclient\4.0.1\jars\httpclient.jar;C:\Users\Robin\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\play2-reactivemongo_2.11\jars\play2-reactivemongo_2.11-0.11.7.play24.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo_2.11\jars\reactivemongo_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo-bson-macros_2.11\jars\reactivemongo-bson-macros_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-compiler\jars\scala-compiler-2.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.4.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.4.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo-bson_2.11\jars\reactivemongo-bson_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.apache.logging.log4j\log4j-api\jars\log4j-api-2.0.2.jar;C:\Users\Robin\.ivy2\cache\org.apache.logging.log4j\log4j-core\jars\log4j-core-2.0.2.jar;C:\Users\Robin\.ivy2\cache\org.apache.logging.log4j\log4j-to-slf4j\jars\log4j-to-slf4j-2.0.2.jar
+Read from stdout: C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\app\controllers\Application.scala:61: not found: type MongoDriver
+C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\app\controllers\Application.scala:61: not found: type MongoDriver
+Read from stdout: val driver = new MongoDriver
+        val driver = new MongoDriver
+Read from stdout: ^
+                         ^
+Read from stdout: one error found
+one error found
+Compilation failed (CompilerInterface)
+Read from stdout: (compile:compileIncremental) Compilation failed
+(compile:compileIncremental) Compilation failed
+Total time: 3 s, completed 30-okt-2015 16:09:07
+> server-post-command-error-handler
+> server-post-command-cleanup
+> server-handle-next-server-request
+> compile
+Evaluating tasks: compile:compile
+Running task... Cancel: sbt.server.ServerTaskCancellation@3efec0, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set(C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\app\controllers\Application.scala)
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set(C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\app\controllers\Application.scala)
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set(C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\app\controllers\Application.scala)
+
+Read from stdout: Compiling 1 Scala source to C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\target\scala-2.11\classes...
+Compiling 1 Scala source to C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\target\scala-2.11\classes...
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Getting compiler-interface from component compiler for Scala 2.11.6
+Other repositories:
+Default repositories:
+Running cached compiler 1d236ec, interfacing (CompilerInterface) with Scala compiler version 2.11.6
+Calling Scala compiler with arguments  (CompilerInterface):
+	-deprecation
+	-unchecked
+	-encoding
+	utf8
+	-bootclasspath
+	C:\Program Files (x86)\Java\jre1.8.0_60\lib\resources.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\rt.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\sunrsasign.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\jsse.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\jce.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\charsets.jar;C:\Program Files (x86)\Java\jre1.8.0_60\lib\jfr.jar;C:\Program Files (x86)\Java\jre1.8.0_60\classes;C:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.scala-lang\scala-library\2.11.6\jars\scala-library.jar
+	-classpath
+	C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\target\scala-2.11\classes;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.typesafe.play\twirl-api_2.11\1.1.1\jars\twirl-api_2.11.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.apache.commons\commons-lang3\3.4\jars\commons-lang3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-server_2.11\jars\play-server_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play_2.11\jars\play_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\build-link\jars\build-link-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-exceptions\jars\play-exceptions-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.javassist\javassist\3.19.0-GA\bundles\javassist.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-iteratees_2.11\jars\play-iteratees_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\org.scala-stm\scala-stm_2.11\jars\scala-stm_2.11-0.7.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.typesafe\config\1.3.0\bundles\config.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-json_2.11\jars\play-json_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-functional_2.11\jars\play-functional_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-datacommons_2.11\jars\play-datacommons_2.11-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\joda-time\joda-time\2.8.1\jars\joda-time.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.joda\joda-convert\1.7\jars\joda-convert.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.fasterxml.jackson.core\jackson-core\2.5.4\bundles\jackson-core.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.fasterxml.jackson.core\jackson-annotations\2.5.4\bundles\jackson-annotations.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.fasterxml.jackson.core\jackson-databind\2.5.4\bundles\jackson-databind.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.fasterxml.jackson.datatype\jackson-datatype-jdk8\2.5.4\bundles\jackson-datatype-jdk8.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.fasterxml.jackson.datatype\jackson-datatype-jsr310\2.5.4\bundles\jackson-datatype-jsr310.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-netty-utils\jars\play-netty-utils-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.slf4j\slf4j-api\1.7.12\jars\slf4j-api.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.slf4j\jul-to-slf4j\1.7.12\jars\jul-to-slf4j.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.slf4j\jcl-over-slf4j\1.7.12\jars\jcl-over-slf4j.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\ch.qos.logback\logback-core\1.1.3\jars\logback-core.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\ch.qos.logback\logback-classic\1.1.3\jars\logback-classic.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.akka\akka-actor_2.11\jars\akka-actor_2.11-2.3.13.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.akka\akka-slf4j_2.11\jars\akka-slf4j_2.11-2.3.13.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\commons-codec\commons-codec\1.10\jars\commons-codec.jar;C:\Users\Robin\.ivy2\cache\xerces\xercesImpl\jars\xercesImpl-2.11.0.jar;C:\Users\Robin\.ivy2\cache\xml-apis\xml-apis\jars\xml-apis-1.4.01.jar;C:\Users\Robin\.ivy2\cache\javax.transaction\jta\jars\jta-1.1.jar;C:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.google.inject\guice\4.0\jars\guice.jar;C:\Users\Robin\WaCC\activator-dist-1.3.6\repository\javax.inject\javax.inject\1\jars\javax.inject.jar;C:\Users\Robin\WaCC\activator-dist-1.3.6\repository\aopalliance\aopalliance\1.0\jars\aopalliance.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.google.inject.extensions\guice-assistedinject\4.0\jars\guice-assistedinject.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-netty-server_2.11\jars\play-netty-server_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\io.netty\netty\bundles\netty-3.10.4.Final.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.typesafe.netty\netty-http-pipelining\1.1.4\jars\netty-http-pipelining.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-jdbc_2.11\jars\play-jdbc_2.11-2.4.3.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-jdbc-api_2.11\jars\play-jdbc-api_2.11-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.jolbox\bonecp\0.8.0.RELEASE\bundles\bonecp.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.zaxxer\HikariCP\2.3.7\bundles\HikariCP.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.h2database\h2\1.4.187\jars\h2.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\tyrex\tyrex\1.0.1\jars\tyrex.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-cache_2.11\jars\play-cache_2.11-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\net.sf.ehcache\ehcache-core\2.6.11\jars\ehcache-core.jar;C:\Users\Robin\.ivy2\cache\com.typesafe.play\play-ws_2.11\jars\play-ws_2.11-2.4.3.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.google.guava\guava\18.0\bundles\guava.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\com.ning\async-http-client\1.9.21\jars\async-http-client.jar;C:\Users\Robin\.ivy2\cache\oauth.signpost\signpost-core\jars\signpost-core-1.2.1.2.jar;C:\Users\Robin\.ivy2\cache\oauth.signpost\signpost-commonshttp4\jars\signpost-commonshttp4-1.2.1.2.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.apache.httpcomponents\httpcore\4.0.1\jars\httpcore.jar;c:\Users\Robin\WaCC\activator-dist-1.3.6\repository\org.apache.httpcomponents\httpclient\4.0.1\jars\httpclient.jar;C:\Users\Robin\.ivy2\cache\commons-logging\commons-logging\jars\commons-logging-1.1.1.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\play2-reactivemongo_2.11\jars\play2-reactivemongo_2.11-0.11.7.play24.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo_2.11\jars\reactivemongo_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo-bson-macros_2.11\jars\reactivemongo-bson-macros_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-compiler\jars\scala-compiler-2.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang\scala-reflect\jars\scala-reflect-2.11.7.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang.modules\scala-xml_2.11\bundles\scala-xml_2.11-1.0.4.jar;C:\Users\Robin\.ivy2\cache\org.scala-lang.modules\scala-parser-combinators_2.11\bundles\scala-parser-combinators_2.11-1.0.4.jar;C:\Users\Robin\.ivy2\cache\org.reactivemongo\reactivemongo-bson_2.11\jars\reactivemongo-bson_2.11-0.11.7.jar;C:\Users\Robin\.ivy2\cache\org.apache.logging.log4j\log4j-api\jars\log4j-api-2.0.2.jar;C:\Users\Robin\.ivy2\cache\org.apache.logging.log4j\log4j-core\jars\log4j-core-2.0.2.jar;C:\Users\Robin\.ivy2\cache\org.apache.logging.log4j\log4j-to-slf4j\jars\log4j-to-slf4j-2.0.2.jar
+Read from stdout: C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\app\controllers\Application.scala:78: method cursor in trait GenericQueryBuilder is deprecated: Use [[cursor]] function with read preference.
+C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\app\controllers\Application.scala:78: method cursor in trait GenericQueryBuilder is deprecated: Use [[cursor]] function with read preference.
+Read from stdout: cursor[BSONDocument].
+            cursor[BSONDocument].
+Read from stdout: ^
+            ^
+Read from stdout: there were two feature warnings; re-run with -feature for details
+there were two feature warnings; re-run with -feature for details
+Read from stdout: two warnings found
+two warnings found
+Scala compilation took 3.367015124 s
+New invalidations:
+	Set()
+Initial set of included nodes: Set()
+Previously invalidated, but (transitively) depend on new invalidations:
+	Set()
+All newly invalidated sources after taking into account (previously) recompiled sources:Set()
+Total time: 4 s, completed 30-okt-2015 16:09:22
+> server-post-command-cleanup
+> server-handle-next-server-request
+> backgroundRun
+Evaluating tasks: compile:backgroundRun
+Running task... Cancel: sbt.server.ServerTaskCancellation@13a8261, check cycles: false
+Total time: 0 s, completed 30-okt-2015 16:10:02
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Robin/Weather_appBackend/Weather_app/SingleServer/webCrawler/}root/*:playForkConfig
+Evaluating tasks: *:playForkConfig
+Running task... Cancel: sbt.server.ServerTaskCancellation@1f7451e, check cycles: false
+Total time: 1 s, completed 30-okt-2015 16:10:07
+> server-post-command-cleanup
+> server-handle-next-server-request
+> root/playForkNotifyStart http://localhost:9000
+Evaluating tasks: *:playForkNotifyStart
+Running task... Cancel: sbt.server.ServerTaskCancellation@1793e5, check cycles: false
+Total time: 0 s, completed 30-okt-2015 16:10:09
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Robin/Weather_appBackend/Weather_app/SingleServer/webCrawler/}root/*:playForkReload
+Evaluating tasks: *:playForkReload
+Running task... Cancel: sbt.server.ServerTaskCancellation@147800b, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Copy resource mappings: 
+	(C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\conf\application.conf,C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\target\scala-2.11\classes\application.conf)
+	(C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\conf\logback.xml,C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\target\scala-2.11\classes\logback.xml)
+	(C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\conf\routes,C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\webCrawler\target\scala-2.11\classes\routes)
+Total time: 17 s, completed 30-okt-2015 16:10:31
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Robin/Weather_appBackend/Weather_app/SingleServer/webCrawler/}root/compile:mainClass
+Evaluating tasks: compile:mainClass
+Running task... Cancel: sbt.server.ServerTaskCancellation@8b17db, check cycles: false
+Total time: 0 s, completed 30-okt-2015 16:11:55
+> server-post-command-cleanup
+> server-handle-next-server-request
+> {file:/C:/Users/Robin/Weather_appBackend/Weather_app/SingleServer/webCrawler/}root/compile:discoveredMainClasses
+Evaluating tasks: compile:discoveredMainClasses
+Running task... Cancel: sbt.server.ServerTaskCancellation@78e78c, check cycles: false
+
+Initial source changes: 
+	removed:Set()
+	added: Set()
+	modified: Set()
+Removed products: Set()
+External API changes: API Changes: Set()
+Modified binary dependencies: Set()
+Initial directly invalidated sources: Set()
+
+Sources indirectly invalidated by:
+	product: Set()
+	binary dep: Set()
+	external source: Set()
+All initially invalidated sources: Set()
+
+Total time: 2 s, completed 30-okt-2015 16:11:57
+> server-post-command-cleanup
 > server-handle-next-server-request
 Done executing sbt server engine, result Right(Exit(0))
 Closing listening server socket
@@ -73,4 +901,4 @@ Waiting for socket thread
 Waiting for request processor thread
 Waiting for command engine result
 Returning control to sbt launcher with result Exit(0)
-Closing the 5008@PC-ROBIN logs at Wed Oct 07 00:51:35 CEST 2015, goodbye.
+Closing the 6276@Toshiba-Robin logs at Fri Oct 30 16:11:58 CET 2015, goodbye.

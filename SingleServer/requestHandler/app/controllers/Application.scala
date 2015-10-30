@@ -1,3 +1,5 @@
+//This app is the request Handler for the Weather App
+
 package controllers
 
 import play.api._
@@ -7,43 +9,27 @@ import scala.concurrent.Future
 import play.api.Play.current
 import play.api.mvc._
 import play.api.libs.ws._
-
-
-import play.api.libs.concurrent.Execution.Implicits._
-import java.util.concurrent.TimeoutException
-
 import reactivemongo.api._
-import scala.concurrent.ExecutionContext.Implicits.global
-
-import play.api.libs.iteratee.Iteratee
+import reactivemongo.bson._
 import reactivemongo.bson.BSONDocument
 import reactivemongo.api.collections.bson.BSONCollection
-import reactivemongo.api.commands.WriteResult
-import reactivemongo.api.collections._
-
-
-import play.api.libs.iteratee._
-import play.api.libs.concurrent.Execution.Implicits.defaultContext
+import play.modules.reactivemongo._
+import play.modules.reactivemongo.json._
+import play.modules.reactivemongo.json.collection.{
+  JSONCollection, JsCursor
+}, JsCursor._
+import scala.concurrent.duration._
+import scala.concurrent.ExecutionContext
+import ExecutionContext.Implicits.global
 import play.api.libs.iteratee.{Concurrent, Enumerator, Iteratee}
 import play.api.libs.concurrent.Promise
-import reactivemongo.api.{QueryOpts, DB}
 
-class Application @Inject() (ws: WSClient) extends Controller {
+class Application @Inject() extends Controller {
     
-    //initialize dummy data, than update with analytics get function
-    var analyticData: JsValue = Json.parse("""
-    { "_id" : "Amsterdam", "value" : { "count" : 114, "temp" : 32021.42000000001, "avg" : 280.8896491228071 } }
-{ "_id" : "Berlin", "value" : { "count" : 129, "temp" : 36047.29500000002, "avg" : 279.4363953488374 } }
-{ "_id" : "Connaught Place", "value" : { "count" : 129, "temp" : 38905.665000000095, "avg" : 301.59430232558213 } }
-{ "_id" : "Groningen", "value" : { "count" : 135, "temp" : 37912.67100000002, "avg" : 280.83460000000014 } }
-{ "_id" : "London", "value" : { "count" : 130, "temp" : 36841.685, "avg" : 283.3975769230769 } }
-{ "_id" : "Madrid", "value" : { "count" : 130, "temp" : 37319.16900000004, "avg" : 287.0705307692311 } }
-{ "_id" : "Meppel", "value" : { "count" : 135, "temp" : 37811.921, "avg" : 280.08830370370373 } }
-{ "_id" : "New York", "value" : { "count" : 83, "temp" : 23676.954999999984, "avg" : 285.264518072289 } }
-{ "_id" : "Zwolle", "value" : { "count" : 135, "temp" : 37745.511000000035, "avg" : 279.59637777777806 } }
-    """)
+    //initialize empty variable streamData, than update with streamData function
+    var streamData: JsValue = Json.parse("{}")
     
-        
+    //api key for Open Weather Map    
     val apiKey = "&APPID=2058452e3cf07873e426f1d723339ec6"
     
     val driver = new MongoDriver
@@ -51,6 +37,8 @@ class Application @Inject() (ws: WSClient) extends Controller {
     val db = connection("test")
     val collection = db("places")
     
+    //Function to store all places searched by user. This way we automatically build a database
+    //The webcrawler will get this list before fetching all weather data
     def storePlace(city: String) = {
         val cityNoCase = city.toLowerCase();
         val query = BSONDocument("name" -> cityNoCase)
@@ -60,111 +48,109 @@ class Application @Inject() (ws: WSClient) extends Controller {
         
         //store place name if not in database
         futureList2.map { list =>
-            println("ok, got the list: " + list)
-            println("Length of list is: " + list.length)
-            if (list.length == 0) {
-				println("Insert cityname: " + cityNoCase)
+            if (list.length == 0) { //length of list is 0 if not in database
                 val document = BSONDocument("name" -> cityNoCase)
                 collection.insert(document)
             }
         }
     }
-    def retrieveAnalytics() = {
+    
+    def getAnalytics() : Future[JsValue] = {
         val query = BSONDocument()
-        val collectionAnalytics = db("analytics")
-        val cursor = collectionAnalytics.find(query).cursor[BSONDocument]
-        val futureList3: Future[List[BSONDocument]] = cursor.collect[List]()
+        val collectionAnalytics: JSONCollection = db("analytics")
+        val cursor = collectionAnalytics.find(query).cursor[JsValue]
+        val futureList3: Future[List[JsValue]] = cursor.collect[List]()
         
-        //store place name if not in database
-        futureList3.map { list =>
-            //println("ok, got the list: " + list)
-            println("Length of the analytics list is: " + list.length)
-            val uniqueList = list.distinct
-            uniqueList.foreach { doc =>
-              println(s"found document: ${BSONDocument pretty doc}")
-              //Create json object
-            }
-            
-            //analyticData = BSONFormats.BSONDocumentFormat.writes(list).as[JsValue]
-        }
+        //Combine all items in the list into one Json Array
+        futureList3.map { list => Json.toJson(list) }
     }
-    def retrieveStreamData() = {
+    
+    def getStreamData() = {
         val query = BSONDocument()
         val numbPlaces = collection.count()
         val futureCount: Future[Int] = numbPlaces
         
         //Get random city from database collection places
         futureCount.map { limit =>
-            println("Number of entries in places collection: " + limit)
             val r = scala.util.Random
             val randNumb = r.nextInt(limit-1)
             val randCity = collection.find(BSONDocument()).options(QueryOpts(skipN = randNumb)).one[BSONDocument]
             val futureRandCity: Future[Option[BSONDocument]] = randCity
             
-            futureRandCity.map {city =>
-                println(city)
-            
+            //extract city name from returned BSON object and get the current weather for that city
+            //and store this data in global streamData variable
+            futureRandCity.map { 
+                doc => { 
+                    val stad = doc.get
+                    stad.get("name") match {
+                        case Some(BSONString(name)) => {
+                            val current = getWeather(name)
+                            current.map {
+                                resp => {
+                                    streamData = resp
+                                }
+    					    }
+                        }
+                        case _ => println("Could not get city name")
+                        
+                    }
+                }
             }
-            
-        }   
+        }
         
     }
+        
     
-    
-    //getWeather function
+    //get current Weather function
     def getWeather(city: String) : Future[JsValue] = {
         val url = (s"http://api.openweathermap.org/data/2.5/weather?q=$city&units=metric$apiKey")
         val request = WS.url(url).get
         request map{response => response.json}
     }
-    
+    //get Forecast function
     def getForecast(city: String) : Future[JsValue] = {
         val url = (s"http://api.openweathermap.org/data/2.5/forecast/daily?q=$city&cnt=6&units=metric$apiKey")
         val request = WS.url(url).get
         request map{response => response.json}
     }
     
+    //Main function where the http request goes to
+    //Gets all data and combines it into one Json object and sends it back to the front-end
     def getData(city: String) = Action.async {
-        retrieveStreamData()
-        retrieveAnalytics() 
+        
         storePlace(city: String)
         for {
             resp <- getWeather(city: String)
             resp2 <- getForecast(city: String)
+            resp3 <- getAnalytics()
             
         } yield Ok(Json.obj(
             "CURRENTWEATHER" -> resp,
-            "FORECAST" -> resp2)).withHeaders(
+            "FORECAST" -> resp2,
+            "ANALYTICS" -> resp3)).withHeaders(
                 ACCESS_CONTROL_ALLOW_ORIGIN -> "*",
                 ACCESS_CONTROL_ALLOW_CREDENTIALS -> "true"
             )
             
     }
-    // sends the time every second, ignores any input
-    def wsTime = WebSocket.using[JsValue] {
+    //Websocket that sends current weather from random city from database to the front end. It does this every 7 seconds
+    def wsStream = WebSocket.using[JsValue] {
         request =>
-          Logger.info(s"wsTime, client connected.")
-        
-          val outEnumerator: Enumerator[JsValue] = Enumerator.repeatM(Promise.timeout(analyticData, 5000))
-          val inIteratee: Iteratee[JsValue, Unit] = Iteratee.ignore[JsValue]
-        
-          (inIteratee, outEnumerator)
+            Logger.info(s"wsTime, client connected.")
+            
+            val outEnumerator: Enumerator[JsValue] = Enumerator.repeatM(Promise.timeout(streamData, 7000))
+            val inIteratee: Iteratee[JsValue, Unit] = Iteratee.ignore[JsValue]
+            
+            (inIteratee, outEnumerator)
     }
     
-    
-    //Websocket implementation
-    def socket1 = WebSocket.using[String] { request =>
-
-      // Log events to the console
-      val in = Iteratee.foreach[String](println).map { _ =>
-        println("Disconnected")
-      }
-    
-      // Send a single 'Hello!' message
-      val out = Enumerator("Hello!")
-    
-      (in, out)
+    //Function to change the data in streamData every 7 seconds
+    def startGetStreamData() = {
+        val system = akka.actor.ActorSystem("system")
+        println("Stream data is updated every 7 seconds")
+        system.scheduler.schedule(0 seconds, 7 seconds)(getStreamData)
     }
+    startGetStreamData()
   
     def index = Action {
         Ok(views.html.index("Your new application is ready."))

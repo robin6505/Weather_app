@@ -1,37 +1,13 @@
-New log file opened at Wed Oct 21 11:56:11 CEST 2015 by 6444@Toshiba-Robin
-Taking next connection to: 50002
-New client attempting to connect on port: 50003-50002
-  Address = /145.97.174.35:50002
-This client on port 50003 has uuid d9736f28-0aa0-4bba-8f21-5cf0b2174612 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
-Connected Clients: activator-d9736f28-0aa0-4bba-8f21-5cf0b2174612
-Taking next connection to: 50002
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 50002
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 50002
-New client attempting to connect on port: 50056-50002
-  Address = /145.97.174.35:50002
-Handshake exception on socket: 50056
-sbt.impl.ipc.HandshakeException: Unable to perform handshake
-	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
-	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
-	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
-Caused by: java.io.EOFException
-	at java.io.DataInputStream.readInt(Unknown Source)
-	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
-	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
-	... 2 more
-Taking next connection to: 50002
-New client attempting to connect on port: 50057-50002
-  Address = /145.97.174.35:50002
-This client on port 50057 has uuid ff8e5a61-e432-4f46-8818-43542f311fe2 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
-Connected Clients: activator-ff8e5a61-e432-4f46-8818-43542f311fe2
-Taking next connection to: 50002
-New client attempting to connect on port: 50059-50002
-  Address = /145.97.174.35:50002
-Handshake exception on socket: 50059
+New log file opened at Fri Oct 30 17:46:15 CET 2015 by 6940@Toshiba-Robin
+Taking next connection to: 51922
+New client attempting to connect on port: 51923-51922
+  Address = /145.97.175.242:51922
+This client on port 51923 has uuid 30c6d70a-3470-4da9-8ff3-0c358987e04d configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-30c6d70a-3470-4da9-8ff3-0c358987e04d
+Taking next connection to: 51922
+New client attempting to connect on port: 51924-51922
+  Address = /145.97.175.242:51922
+Handshake exception on socket: 51924
 sbt.impl.ipc.HandshakeException: Unable to perform handshake
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
 	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
@@ -47,24 +23,21 @@ Caused by: java.net.SocketException: Software caused connection abort: recv fail
 	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
 	... 2 more
-Taking next connection to: 50002
-New client attempting to connect on port: 50060-50002
-  Address = /145.97.174.35:50002
-This client on port 50060 has uuid 5caeeff8-05bc-41b1-9e3b-17c33a4702f5 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
-Connected Clients: activator-ff8e5a61-e432-4f46-8818-43542f311fe2, activator-5caeeff8-05bc-41b1-9e3b-17c33a4702f5
-Taking next connection to: 50002
+Taking next connection to: 51922
+New client attempting to connect on port: 51925-51922
+  Address = /145.97.175.242:51922
+This client on port 51925 has uuid d59630c1-0d1b-4d28-ae99-7d86334e0d0d configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-30c6d70a-3470-4da9-8ff3-0c358987e04d, activator-d59630c1-0d1b-4d28-ae99-7d86334e0d0d
+Taking next connection to: 51922
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 50002
+Taking next connection to: 51922
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 50002
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 50002
-New client attempting to connect on port: 50159-50002
-  Address = /145.97.174.35:50002
-Handshake exception on socket: 50159
+Taking next connection to: 51922
+New client attempting to connect on port: 52070-51922
+  Address = /145.97.175.242:51922
+Handshake exception on socket: 52070
 sbt.impl.ipc.HandshakeException: Unable to perform handshake
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
 	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
@@ -80,48 +53,69 @@ Caused by: java.net.SocketException: Software caused connection abort: recv fail
 	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
 	... 2 more
-Taking next connection to: 50002
-New client attempting to connect on port: 50160-50002
-  Address = /145.97.174.35:50002
-This client on port 50160 has uuid bde2e086-0890-401c-8041-3aa0bd2abfb8 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
-Connected Clients: activator-5caeeff8-05bc-41b1-9e3b-17c33a4702f5, play-fork-run-bde2e086-0890-401c-8041-3aa0bd2abfb8
-Taking next connection to: 50002
+Taking next connection to: 51922
+New client attempting to connect on port: 52071-51922
+  Address = /145.97.175.242:51922
+This client on port 52071 has uuid b8d7f772-64e2-441d-a680-8570147dffac configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: activator-30c6d70a-3470-4da9-8ff3-0c358987e04d, play-fork-run-b8d7f772-64e2-441d-a680-8570147dffac
+Taking next connection to: 51922
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 50002
+Taking next connection to: 51922
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 50002
+Taking next connection to: 51922
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 50002
+Taking next connection to: 51922
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 50002
+Taking next connection to: 51922
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 50002
+Taking next connection to: 51922
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 50002
+Taking next connection to: 51922
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 50002
+Taking next connection to: 51922
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 50002
+Taking next connection to: 51922
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 50002
+Taking next connection to: 51922
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 50002
+Taking next connection to: 51922
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 50002
+Taking next connection to: 51922
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 50002
+Taking next connection to: 51922
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 50002
+Taking next connection to: 51922
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 51922
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 51922
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 51922
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 51922
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 51922
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 51922
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 51922

@@ -11,7 +11,7 @@ libraryDependencies ++= Seq(
   cache,
   ws,
   specs2 % Test,
-  "org.reactivemongo" %% "reactivemongo" % "0.11.7"
+  "org.reactivemongo" %% "play2-reactivemongo" % "0.11.7.play24"
 )
 
 resolvers += "scalaz-bintray" at "http://dl.bintray.com/scalaz/releases"
@@ -20,6 +20,8 @@ resolvers += "scalaz-bintray" at "http://dl.bintray.com/scalaz/releases"
 // other, legacy style, accesses its actions statically.
 routesGenerator := InjectedRoutesGenerator
 
+
+fork in run := true
 
 fork in run := true
 
