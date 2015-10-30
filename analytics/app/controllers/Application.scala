@@ -77,7 +77,7 @@ class Application @Inject() (val reactiveMongoApi: ReactiveMongoApi)
     //Calculates analytics every hour
     def start() = {
         val system = akka.actor.ActorSystem("system")
-        println("word uitgevoerd")
+        println("App is now refreshing analytics every hour")
         system.scheduler.schedule(0 seconds, 1 hours)(doAnalytics)
     }
     start()

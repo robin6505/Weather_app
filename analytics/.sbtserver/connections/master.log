@@ -1,8 +1,13 @@
-New log file opened at Fri Oct 30 16:24:35 CET 2015 by 5900@Toshiba-Robin
-Taking next connection to: 51255
-New client attempting to connect on port: 51256-51255
-  Address = /145.97.175.242:51255
-Handshake exception on socket: 51256
+New log file opened at Fri Oct 30 21:16:57 CET 2015 by 3316@Toshiba-Robin
+Taking next connection to: 50094
+New client attempting to connect on port: 50095-50094
+  Address = /192.168.178.12:50094
+This client on port 50095 has uuid 5964484c-f7be-4d3c-9a18-48ae934fd69f configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-5964484c-f7be-4d3c-9a18-48ae934fd69f
+Taking next connection to: 50094
+New client attempting to connect on port: 50096-50094
+  Address = /192.168.178.12:50094
+Handshake exception on socket: 50096
 sbt.impl.ipc.HandshakeException: Unable to perform handshake
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
 	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
@@ -18,35 +23,15 @@ Caused by: java.net.SocketException: Software caused connection abort: recv fail
 	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
 	... 2 more
-Taking next connection to: 51255
-New client attempting to connect on port: 51257-51255
-  Address = /145.97.175.242:51255
-This client on port 51257 has uuid 8228baf5-1cfe-4f58-a27c-e1faf0bd9e32 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
-Connected Clients: activator-8228baf5-1cfe-4f58-a27c-e1faf0bd9e32
-Taking next connection to: 51255
-New client attempting to connect on port: 51258-51255
-  Address = /145.97.175.242:51255
-This client on port 51258 has uuid 0556ef67-eb2e-4a80-893f-70c42c910a9b configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
-Connected Clients: activator-8228baf5-1cfe-4f58-a27c-e1faf0bd9e32, activator-0556ef67-eb2e-4a80-893f-70c42c910a9b
-Taking next connection to: 51255
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 51255
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 51255
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 51255
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 51255
-Checking to see if clients are empty...
-We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 51255
-New client attempting to connect on port: 51286-51255
-  Address = /145.97.175.242:51255
-Handshake exception on socket: 51286
+Taking next connection to: 50094
+New client attempting to connect on port: 50097-50094
+  Address = /192.168.178.12:50094
+This client on port 50097 has uuid daec09a1-5c28-40e9-92d4-7a8c851589e0 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-5964484c-f7be-4d3c-9a18-48ae934fd69f, activator-daec09a1-5c28-40e9-92d4-7a8c851589e0
+Taking next connection to: 50094
+New client attempting to connect on port: 50107-50094
+  Address = /192.168.178.12:50094
+Handshake exception on socket: 50107
 sbt.impl.ipc.HandshakeException: Unable to perform handshake
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
 	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
@@ -62,19 +47,25 @@ Caused by: java.net.SocketException: Software caused connection abort: recv fail
 	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
 	... 2 more
-Taking next connection to: 51255
-New client attempting to connect on port: 51287-51255
-  Address = /145.97.175.242:51255
-This client on port 51287 has uuid ffa37277-110d-4b34-9e99-e539c9b1aacc configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
-Connected Clients: activator-8228baf5-1cfe-4f58-a27c-e1faf0bd9e32, play-fork-run-ffa37277-110d-4b34-9e99-e539c9b1aacc
-Taking next connection to: 51255
+Taking next connection to: 50094
+New client attempting to connect on port: 50108-50094
+  Address = /192.168.178.12:50094
+This client on port 50108 has uuid 12ce5a5a-298c-41d9-87f0-11972bf7f761 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: activator-daec09a1-5c28-40e9-92d4-7a8c851589e0, play-fork-run-12ce5a5a-298c-41d9-87f0-11972bf7f761
+Taking next connection to: 50094
 Checking to see if clients are empty...
 We have 1 non-daemon clients, continuing serving connections.
-Taking next connection to: 51255
+Taking next connection to: 50094
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 50094
+Checking to see if clients are empty...
+We have 1 non-daemon clients, continuing serving connections.
+Taking next connection to: 50094
 Checking to see if clients are empty...
 No non-daemon clients connected after 3 min. Shutting down.
 1 daemon clients are connected.
 Server socket thread exiting.
 1 clients open, will close them...
 All client sockets have been closed.
-Closing the 5900@Toshiba-Robin logs at Fri Oct 30 16:46:21 CET 2015, goodbye.
+Closing the 3316@Toshiba-Robin logs at Fri Oct 30 21:31:04 CET 2015, goodbye.
