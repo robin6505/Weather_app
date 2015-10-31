@@ -1,13 +1,13 @@
-New log file opened at Fri Oct 30 13:02:37 CET 2015 by 1592@Toshiba-Robin
-Taking next connection to: 49506
-New client attempting to connect on port: 49507-49506
-  Address = /145.97.175.242:49506
-This client on port 49507 has uuid 4f886a4f-c461-4b95-99de-01d4af3017a9 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
-Connected Clients: activator-4f886a4f-c461-4b95-99de-01d4af3017a9
-Taking next connection to: 49506
-New client attempting to connect on port: 49508-49506
-  Address = /145.97.175.242:49506
-Handshake exception on socket: 49508
+New log file opened at Sat Oct 31 09:45:01 CET 2015 by 6180@Toshiba-Robin
+Taking next connection to: 49388
+New client attempting to connect on port: 49389-49388
+  Address = /192.168.178.12:49388
+This client on port 49389 has uuid 648e762c-f164-4153-9353-2c8ba8874185 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-648e762c-f164-4153-9353-2c8ba8874185
+Taking next connection to: 49388
+New client attempting to connect on port: 49390-49388
+  Address = /192.168.178.12:49388
+Handshake exception on socket: 49390
 sbt.impl.ipc.HandshakeException: Unable to perform handshake
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
 	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
@@ -23,15 +23,40 @@ Caused by: java.net.SocketException: Software caused connection abort: recv fail
 	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
 	... 2 more
-Taking next connection to: 49506
-New client attempting to connect on port: 49509-49506
-  Address = /145.97.175.242:49506
-This client on port 49509 has uuid f1c476ce-b1f5-4c6c-a1c4-c3a1bf4a780d configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
-Connected Clients: activator-4f886a4f-c461-4b95-99de-01d4af3017a9, activator-f1c476ce-b1f5-4c6c-a1c4-c3a1bf4a780d
-Taking next connection to: 49506
+Taking next connection to: 49388
+New client attempting to connect on port: 49391-49388
+  Address = /192.168.178.12:49388
+This client on port 49391 has uuid bc9c7d12-a3b2-46c6-877c-2d3c0421a233 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-648e762c-f164-4153-9353-2c8ba8874185, activator-bc9c7d12-a3b2-46c6-877c-2d3c0421a233
+Taking next connection to: 49388
+New client attempting to connect on port: 49429-49388
+  Address = /192.168.178.12:49388
+Handshake exception on socket: 49429
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.net.SocketException: Software caused connection abort: recv failed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.socketRead(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.net.SocketInputStream.read(Unknown Source)
+	at java.io.BufferedInputStream.fill(Unknown Source)
+	at java.io.BufferedInputStream.read(Unknown Source)
+	at java.io.DataInputStream.readInt(Unknown Source)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 49388
+New client attempting to connect on port: 49430-49388
+  Address = /192.168.178.12:49388
+This client on port 49430 has uuid acb3902c-06c2-4d4e-a0a7-4c3df6cfe22f configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: activator-bc9c7d12-a3b2-46c6-877c-2d3c0421a233, play-fork-run-acb3902c-06c2-4d4e-a0a7-4c3df6cfe22f
+Taking next connection to: 49388
 Checking to see if clients are empty...
 No non-daemon clients connected after 3 min. Shutting down.
+1 daemon clients are connected.
 Server socket thread exiting.
-0 clients open, will close them...
+1 clients open, will close them...
 All client sockets have been closed.
-Closing the 1592@Toshiba-Robin logs at Fri Oct 30 13:05:42 CET 2015, goodbye.
+Closing the 6180@Toshiba-Robin logs at Sat Oct 31 09:50:31 CET 2015, goodbye.

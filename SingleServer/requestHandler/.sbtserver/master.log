@@ -1,5 +1,5 @@
-New log file opened at Fri Oct 30 21:31:39 CET 2015 by 7108@Toshiba-Robin
-jvm 7108@Toshiba-Robin
+New log file opened at Sat Oct 31 09:51:23 CET 2015 by 1816@Toshiba-Robin
+jvm 1816@Toshiba-Robin
 jvm vmName=Java HotSpot(TM) Client VM vmVendor=Oracle Corporation vmVersion=25.60-b23
 jvm specName=Java Virtual Machine Specification specVendor=Oracle Corporation specVersion=1.8
 jvm arguments: [-Xms256m, -Xmx1024m, -XX:MetaspaceSize=64m, -XX:MaxMetaspaceSize=256m]
@@ -27,7 +27,7 @@ sorting: ns: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.Jvm
   :: sorted deduced result: List(sbt.plugins.CorePlugin, sbt.plugins.IvyPlugin, sbt.plugins.JvmPlugin, sbt.plugins.JUnitXmlReportPlugin)
 [Loading] Done in C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\requestHandler\project, returning: (requesthandler-build)
 Loading project definition from C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\requestHandler\project
-Running task... Cancel: sbt.TaskCancellationStrategy$Null$@18a90c0, check cycles: false
+Running task... Cancel: sbt.TaskCancellationStrategy$Null$@3e5806, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -69,7 +69,7 @@ Set current project to requestHandler (in build file:/C:/Users/Robin/Weather_app
 > server-handle-next-server-request
 > compile
 Evaluating tasks: compile:compile
-Running task... Cancel: sbt.server.ServerTaskCancellation@c5b2e6, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@16cf9e7, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -86,12 +86,12 @@ Sources indirectly invalidated by:
 	external source: Set()
 All initially invalidated sources: Set()
 
-Total time: 6 s, completed 30-okt-2015 21:32:04
+Total time: 4 s, completed 31-okt-2015 9:51:39
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/C:/Users/Robin/Weather_appBackend/Weather_app/SingleServer/requestHandler/}root/compile:discoveredMainClasses
 Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@b9a638, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@1299613, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -108,18 +108,18 @@ Sources indirectly invalidated by:
 	external source: Set()
 All initially invalidated sources: Set()
 
-Total time: 2 s, completed 30-okt-2015 21:32:07
+Total time: 2 s, completed 31-okt-2015 9:51:41
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/C:/Users/Robin/Weather_appBackend/Weather_app/SingleServer/requestHandler/}root/compile:mainClass
 Evaluating tasks: compile:mainClass
-Running task... Cancel: sbt.server.ServerTaskCancellation@69c7e5, check cycles: false
-Total time: 0 s, completed 30-okt-2015 21:32:07
+Running task... Cancel: sbt.server.ServerTaskCancellation@1db6df5, check cycles: false
+Total time: 0 s, completed 31-okt-2015 9:51:42
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/C:/Users/Robin/Weather_appBackend/Weather_app/SingleServer/requestHandler/}root/compile:discoveredMainClasses
 Evaluating tasks: compile:discoveredMainClasses
-Running task... Cancel: sbt.server.ServerTaskCancellation@155e7a5, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@1b8fd89, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -136,30 +136,30 @@ Sources indirectly invalidated by:
 	external source: Set()
 All initially invalidated sources: Set()
 
-Total time: 2 s, completed 30-okt-2015 21:32:10
+Total time: 1 s, completed 31-okt-2015 9:51:43
 > server-post-command-cleanup
 > server-handle-next-server-request
 > backgroundRun
 Evaluating tasks: compile:backgroundRun
-Running task... Cancel: sbt.server.ServerTaskCancellation@1c2ee18, check cycles: false
-Total time: 1 s, completed 30-okt-2015 21:32:14
+Running task... Cancel: sbt.server.ServerTaskCancellation@1e8faa8, check cycles: false
+Total time: 0 s, completed 31-okt-2015 9:51:57
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/C:/Users/Robin/Weather_appBackend/Weather_app/SingleServer/requestHandler/}root/*:playForkConfig
 Evaluating tasks: *:playForkConfig
-Running task... Cancel: sbt.server.ServerTaskCancellation@16acdea, check cycles: false
-Total time: 2 s, completed 30-okt-2015 21:32:25
+Running task... Cancel: sbt.server.ServerTaskCancellation@5f9a14, check cycles: false
+Total time: 1 s, completed 31-okt-2015 9:52:02
 > server-post-command-cleanup
 > server-handle-next-server-request
 > root/playForkNotifyStart http://localhost:9000
 Evaluating tasks: *:playForkNotifyStart
-Running task... Cancel: sbt.server.ServerTaskCancellation@a8fbd0, check cycles: false
-Total time: 0 s, completed 30-okt-2015 21:32:29
+Running task... Cancel: sbt.server.ServerTaskCancellation@6a059e, check cycles: false
+Total time: 0 s, completed 31-okt-2015 9:52:04
 > server-post-command-cleanup
 > server-handle-next-server-request
 > {file:/C:/Users/Robin/Weather_appBackend/Weather_app/SingleServer/requestHandler/}root/*:playForkReload
 Evaluating tasks: *:playForkReload
-Running task... Cancel: sbt.server.ServerTaskCancellation@1e7fd41, check cycles: false
+Running task... Cancel: sbt.server.ServerTaskCancellation@7a518d, check cycles: false
 
 Initial source changes: 
 	removed:Set()
@@ -180,6 +180,13 @@ Copy resource mappings:
 	(C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\requestHandler\conf\application.conf,C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\requestHandler\target\scala-2.11\classes\application.conf)
 	(C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\requestHandler\conf\logback.xml,C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\requestHandler\target\scala-2.11\classes\logback.xml)
 	(C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\requestHandler\conf\routes,C:\Users\Robin\Weather_appBackend\Weather_app\SingleServer\requestHandler\target\scala-2.11\classes\routes)
-Total time: 11 s, completed 30-okt-2015 21:33:02
+Total time: 5 s, completed 31-okt-2015 9:52:17
 > server-post-command-cleanup
 > server-handle-next-server-request
+Done executing sbt server engine, result Right(Exit(0))
+Closing listening server socket
+Waiting for socket thread
+Waiting for request processor thread
+Waiting for command engine result
+Returning control to sbt launcher with result Exit(0)
+Closing the 1816@Toshiba-Robin logs at Sat Oct 31 14:40:03 CET 2015, goodbye.
