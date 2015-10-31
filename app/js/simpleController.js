@@ -7,7 +7,7 @@ angular.module('weatherApp')
     $scope.forecast;
     $scope.imageLinkF = [];
     $scope.nextDays = [];
-    $scope.liveStream;
+    $scope.liveStream = [];
     $scope.imageLinkLS;
     $scope.analytics = [[], [], [],[]];
         
@@ -63,20 +63,20 @@ angular.module('weatherApp')
      //   console.log('Geen info opgehaald');
     //});
     
-    var getLiveStream = function() {
-        ws = new WebSocket('ws://localhost:9000/stream')
-        ws.onmessage = function( message ) { 
-            console.log( message );
-            $scope.liveStream = JSON.parse(message.data);
-            console.log($scope.liveStream);
-            $scope.imageLinkLS = 'http://openweathermap.org/img/w/' + $scope.liveStream['weather'][0].icon + ".png";
-            }
-            console.log($scope.liveStream);
-            //livestream does not come out of the onmessage stream
-        
-            //create imagelink for weather
-            //
-         
-    };
-    getLiveStream();
+    // var getLiveStream = function() {
+        // ws = new WebSocket('ws://localhost:9000/stream')
+        // ws.onmessage = function( message ) { 
+            // $scope.liveStream = JSON.parse(message.data);
+            // console.log($scope.liveStream)
+            // $scope.$apply();
+        // }
+    // };
+    // var logMes = function() {console.log($scope.livestream)}
+    // var setLiveStreamData = function(data) {
+        // $scope.liveStream = JSON.parse(data);
+        // $scope.imageLinkLS = 'http://openweathermap.org/img/w/' + $scope.liveStream['weather'][0].icon + ".png";
+        // console.log($scope.liveStream.name);
+        // console.log($scope.imageLinkLS);
+    // }
+    // getLiveStream();
 })
