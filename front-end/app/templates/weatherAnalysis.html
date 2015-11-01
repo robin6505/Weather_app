@@ -1,0 +1,14 @@
+<div class="row">
+    <h4>Analytics</h4>
+</div>
+<div class="row">
+    <div class="col analytic-box">    
+        <div class="row" ng-repeat="list in analytics">
+            <h4 id="in" ng-if="$index==0"><strong>Cold: </strong><span><p id="in" ng-repeat="stad in list">{{ stad }}<em ng-if="$index != list.length-1">, </em></p></span></h4>
+            <h4 id="in"ng-if="$index==1"><strong>Mild: </strong><span><p id="in" ng-repeat="stad in list">{{ stad }}<em ng-if="$index != list.length-1">, </em></p></span></h4>
+            <h4 id="in"ng-if="$index==2"><strong>Warm: </strong><span><p id="in" ng-repeat="stad in list">{{ stad }}<em ng-if="$index != list.length-1">, </em></p></span></h4>
+            <h4 id="in"ng-if="$index==3"><strong>Hot: </strong><span><p id="in" ng-repeat="stad in list">{{ stad }}<em ng-if="$index != list.length-1">, </em></p></span></h4>                    
+        </div> 
+        
+    </div>
+</div>    
