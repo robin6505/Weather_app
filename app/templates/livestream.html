@@ -1,22 +1,22 @@
-
-    <div class="row .text-center" >
-        <div class="col-md-2 col-md-offset-5">
-            <h3>{{ liveStream.name }}</h3> 
-        </div>
-        <div class="col-sm-1"><img ng-src="{{ imageLinkLS }}" class="img-responsive"/></div>
+<div class="row .text-center" >
+    <div class="col-md-2 col-md-offset-5">
+        <h3>{{ liveStream.name }}</h3> 
     </div>
-    <div class="row">
-        <div class="col-sm-4">
-            <h5>Temperature:</h5>
-            <h5>{{ liveStream.main.temp }} °C</h5>
-        </div>
-        <div class="col-sm-4">
-            <h5>Humidity:</h5>
-            <h5>{{ liveStream.main.humidity }} %</h5>
-        </div>
-        <div class="col-sm-4">
-            <h5>Wind speed:</h5>
-            <h5>{{ liveStream.wind.speed }} km/h</h5>
-        </div>
-        
+    <div class="col-sm-1">
+        <img ng-src="{{ imageLinkLS }}" class="img-responsive"/>
     </div>
+</div>
+<div class="row">
+    <div class="col-sm-4">
+        <h5>Temperature:</h5>
+        <h5>{{ liveStream.main.temp }} °C</h5>
+    </div>
+    <div class="col-sm-4">
+        <h5>Humidity:</h5>
+        <h5>{{ liveStream.main.humidity }} %</h5>
+    </div>
+    <div class="col-sm-4">
+        <h5>Wind speed:</h5>
+        <h5>{{ liveStream.wind.speed }} km/h</h5>
+    </div>
+</div>
