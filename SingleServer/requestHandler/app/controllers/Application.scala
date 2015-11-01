@@ -136,7 +136,7 @@ class Application @Inject() extends Controller {
     //Websocket that sends current weather from random city from database to the front end. It does this every 7 seconds
     def wsStream = WebSocket.using[JsValue] {
         request =>
-            Logger.info(s"wsTime, client connected.")
+            Logger.info(s"wsStream, client connected.")
             
             val outEnumerator: Enumerator[JsValue] = Enumerator.repeatM(Promise.timeout(streamData, 7000))
             val inIteratee: Iteratee[JsValue, Unit] = Iteratee.ignore[JsValue]
