@@ -1,6 +1,7 @@
 angular.module('weatherApp')
 
 .controller('NavCtrl', function($scope, $state, SessionService, $timeout) {
+	//controller for the navbar
     $scope.getResults = function(city) {
         if(typeof city === 'undefined'){
             alert("Enter a city name in the text field");

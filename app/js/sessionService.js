@@ -6,15 +6,15 @@ angular.module('weatherApp')
     var analytics;
     var liveStream;
     var city;
-    var apiKey = "&APPID=2058452e3cf07873e426f1d723339ec6";
     
-    function saveLocation(loc) {
+	var saveLocation = function(loc) {
         return $q(function(resolve, reject) {
             city = loc;
             resolve();
         });
     }
     
+	//Makes request to the request handler and sets all data in the variables. It signals back to the controller when all data is received and set
     var getWeather = function() {
         return $q(function(resolve, reject) { //$q is needed else controller continues before data is properly set in weatherCurrent
             var link = "http://localhost:9000/getData/" + city;
@@ -40,5 +40,3 @@ angular.module('weatherApp')
     }
     
 })
-
-//apikey: 2058452e3cf07873e426f1d723339ec6

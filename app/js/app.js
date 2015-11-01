@@ -16,12 +16,11 @@ weatherApp.config(function($stateProvider, $urlRouterProvider) {
             views: {
 
                 // the main template 
-                '': { templateUrl: 'templates/results.html', controller: 'SimpleCtrl' },
+                '': { templateUrl: 'templates/results.html', controller: 'WeatherCtrl' },
 
                 // the child views
                 'currentBox@result': { templateUrl: 'templates/currentWeather.html'},
                 'forecastBox@result': { templateUrl: 'templates/forecast.html'},
-                'pastBox@result': { templateUrl: 'templates/pastDays.html' },
                 'livestreamBox@result': { templateUrl: 'templates/livestream.html', controller: 'StreamCtrl' },
                 'analysisBox@result': { templateUrl: 'templates/weatherAnalysis.html'}                
             }

@@ -1,3 +1,4 @@
+//Handles the websocket for the livestreambox
 var ws;
 angular.module('weatherApp')
 
