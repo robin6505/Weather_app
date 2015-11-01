@@ -1,4 +1,4 @@
 # Build myapp server Docker container
 FROM coreos/apache
-MAINTAINER MyName
+MAINTAINER Marcel and Robin
 COPY app /var/www/
