@@ -17,7 +17,7 @@ angular.module('weatherApp')
 	//Makes request to the request handler and sets all data in the variables. It signals back to the controller when all data is received and set
     var getWeather = function() {
         return $q(function(resolve, reject) { //$q is needed else controller continues before data is properly set in weatherCurrent
-            var link = "http://localhost:9000/getData/" + city;
+            var link = "http://188.226.144.15:9000/getData/" + city;
             $http.get(link).
                 then(function(response) {
                     weatherCurrent = response.data.CURRENTWEATHER;
