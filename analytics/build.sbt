@@ -22,15 +22,7 @@ routesGenerator := InjectedRoutesGenerator
 
 
 fork in run := true
+javaOptions in run += "-Dhttp.port=8889"
 
-fork in run := true
-
-fork in run := true
-
-fork in run := true
-
-fork in run := true
-
-fork in run := true
 
 fork in run := true

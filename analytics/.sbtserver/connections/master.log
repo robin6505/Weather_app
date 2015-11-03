@@ -1,13 +1,13 @@
-New log file opened at Sun Nov 01 23:32:18 CET 2015 by 8824@PC-ROBIN
-Taking next connection to: 54459
-New client attempting to connect on port: 54460-54459
-  Address = /192.168.178.32:54459
-This client on port 54460 has uuid e812e7bd-c182-438a-8202-97a9f5b6a82d configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
-Connected Clients: activator-e812e7bd-c182-438a-8202-97a9f5b6a82d
-Taking next connection to: 54459
-New client attempting to connect on port: 54461-54459
-  Address = /192.168.178.32:54459
-Handshake exception on socket: 54461
+New log file opened at Tue Nov 03 16:54:35 CET 2015 by 4564@PC-ROBIN
+Taking next connection to: 60050
+New client attempting to connect on port: 60051-60050
+  Address = /192.168.178.37:60050
+This client on port 60051 has uuid 0b6ce859-70e4-4d96-9c06-1f6f3f68c6be configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-0b6ce859-70e4-4d96-9c06-1f6f3f68c6be
+Taking next connection to: 60050
+New client attempting to connect on port: 60052-60050
+  Address = /192.168.178.37:60050
+Handshake exception on socket: 60052
 sbt.impl.ipc.HandshakeException: Unable to perform handshake
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
 	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
@@ -23,15 +23,15 @@ Caused by: java.net.SocketException: Software caused connection abort: recv fail
 	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
 	... 2 more
-Taking next connection to: 54459
-New client attempting to connect on port: 54462-54459
-  Address = /192.168.178.32:54459
-This client on port 54462 has uuid 6cf7554e-7331-4272-9e19-d99a2e266830 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
-Connected Clients: activator-e812e7bd-c182-438a-8202-97a9f5b6a82d, activator-6cf7554e-7331-4272-9e19-d99a2e266830
-Taking next connection to: 54459
-New client attempting to connect on port: 54464-54459
-  Address = /192.168.178.32:54459
-Handshake exception on socket: 54464
+Taking next connection to: 60050
+New client attempting to connect on port: 60053-60050
+  Address = /192.168.178.37:60050
+This client on port 60053 has uuid 7ddd745d-340f-46ce-8378-18e9cf7b3a3a configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-0b6ce859-70e4-4d96-9c06-1f6f3f68c6be, activator-7ddd745d-340f-46ce-8378-18e9cf7b3a3a
+Taking next connection to: 60050
+New client attempting to connect on port: 60054-60050
+  Address = /192.168.178.37:60050
+Handshake exception on socket: 60054
 sbt.impl.ipc.HandshakeException: Unable to perform handshake
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
 	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
@@ -47,16 +47,9 @@ Caused by: java.net.SocketException: Software caused connection abort: recv fail
 	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
 	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
 	... 2 more
-Taking next connection to: 54459
-New client attempting to connect on port: 54465-54459
-  Address = /192.168.178.32:54459
-This client on port 54465 has uuid 039327c5-d2e1-4105-a2ec-c62aee543772 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
-Connected Clients: activator-e812e7bd-c182-438a-8202-97a9f5b6a82d, activator-6cf7554e-7331-4272-9e19-d99a2e266830, play-fork-run-039327c5-d2e1-4105-a2ec-c62aee543772
-Taking next connection to: 54459
-Checking to see if clients are empty...
-No non-daemon clients connected after 3 min. Shutting down.
-1 daemon clients are connected.
-Server socket thread exiting.
-1 clients open, will close them...
-All client sockets have been closed.
-Closing the 8824@PC-ROBIN logs at Sun Nov 01 23:35:26 CET 2015, goodbye.
+Taking next connection to: 60050
+New client attempting to connect on port: 60055-60050
+  Address = /192.168.178.37:60050
+This client on port 60055 has uuid a4f4c6bc-0ec1-47c2-a531-8c3d989d4a25 configName play-fork-run humanReadableName Play Fork Run protocolVersion 1 featureTags Vector()
+Connected Clients: activator-0b6ce859-70e4-4d96-9c06-1f6f3f68c6be, activator-7ddd745d-340f-46ce-8378-18e9cf7b3a3a, play-fork-run-a4f4c6bc-0ec1-47c2-a531-8c3d989d4a25
+Taking next connection to: 60050
